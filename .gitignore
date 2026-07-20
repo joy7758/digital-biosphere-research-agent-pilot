@@ -1,0 +1,24 @@
+# Python cache（Python 缓存）
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments（虚拟环境）
+.venv/
+venv/
+env/
+ENV/
+
+# Temporary files（临时文件）
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+.cache/
+tmp/
+temp/
