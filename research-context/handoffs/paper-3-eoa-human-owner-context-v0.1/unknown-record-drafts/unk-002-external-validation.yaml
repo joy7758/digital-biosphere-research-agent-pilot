@@ -1,0 +1,30 @@
+draft_id: URD-UNK-002
+record_status: DRAFT_NOT_HUMAN_REVIEWED
+unknown_id: UNK-002
+topic: external_validation
+statement: Whether Evidence Object Architecture has undergone independent external validation is unknown.
+source_references:
+  - ../unknown-register.yaml#UNK-002
+  - ../source-verification-report.yaml#SRC-EOA-ADVISORY-V02
+  - ../source-verification-report.yaml#SRC-EOA-M1-REPORT
+impact_scope:
+  - external validity
+  - independent review claims
+status: OPEN
+truth_value: UNKNOWN
+known_boundary: The EOA advisory states external review is incomplete, and the local synthetic report is not independent validation.
+resolution_requires: Human-approved external evaluator, protocol, source set, and review record.
+prohibited_inference: Do not treat local agreement, peer publication of prior papers, DBA advice, or SAEE coverage as external validation of EOA.
+non_binding_recommendation: KEEP_OPEN
+candidate_resolution_reference: null
+resolution_reference: null
+resolution_statement: null
+human_review_decision: PENDING_HUMAN_DECISION
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations:
+  - Local verification and synthetic reports are not independent external validation.
+draft_prepared_at: "2026-07-21"
+unknown_resolution_effect: NONE
+context_status_effect: NONE

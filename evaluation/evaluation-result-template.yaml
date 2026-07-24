@@ -1,0 +1,52 @@
+# Evaluation Result Template v0.1（评价结果模板 v0.1）
+#
+# Template ≠ Evaluation Result。所有值必须来自真实 Experiment/Evidence Records。
+# Evaluation ≠ Scientific Truth；Evaluation ≠ Permission。
+
+evaluation_id: null
+protocol_reference: research/experiment-protocol.md
+metrics_reference: research/evaluation-metrics.md
+experiment_record_references: []
+evidence_record_references: []
+verification_result_references: []
+evaluator_reference: null
+evaluated_at: null
+evaluation_status: NOT_EVALUATED
+metrics:
+  reproducibility:
+    value: null
+    unit: null
+    evidence_references: []
+    limitations: []
+  evidence_completeness:
+    value: null
+    unit: null
+    evidence_references: []
+    limitations: []
+  traceability:
+    value: null
+    unit: null
+    evidence_references: []
+    limitations: []
+  human_review_efficiency:
+    value: null
+    unit: null
+    evidence_references: []
+    limitations: []
+  error_detection:
+    value: null
+    unit: null
+    evidence_references: []
+    limitations: []
+  unknown_preservation:
+    value: null
+    unit: null
+    evidence_references: []
+    limitations: []
+saee_projection:
+  reliability: null
+  evidence_quality: null
+  stability: null
+  adaptability: null
+unknowns: []
+limitations: []

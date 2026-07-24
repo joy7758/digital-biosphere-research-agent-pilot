@@ -12,6 +12,7 @@ saee_evaluations: 0
 
 ```text
 EVIDENCE_DIRECTORY_DEFINED=true
+EVIDENCE_PLAN_DEFINED=true
 EVIDENCE_BUNDLE_CREATED=false
 EVIDENCE_RECORDS=0
 EXECUTION_RECORDS=0
@@ -29,6 +30,8 @@ SAEE_EVALUATIONS=0
 - Review Evidence（复核证据）：Reviewer 意见、分歧、修订和 Owner 决定；
 - Verification Evidence（验证证据）：验证主体、范围、方法、结果和限制；
 - Evaluation Evidence（评价证据）：SAEE 输入范围、输出维度和 Recommendation 限制。
+
+流程规范见 [`research-evidence-model.md`](research-evidence-model.md)，未来空 Record 结构见 [`evidence-record-template.yaml`](evidence-record-template.yaml)。二者都是准备材料，不是 Evidence Record 实例。
 
 ## Preservation Rules（保留规则）
 

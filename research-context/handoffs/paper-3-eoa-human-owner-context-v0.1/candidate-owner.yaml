@@ -1,0 +1,33 @@
+candidate_id: HROC-PAPER3-EOA-0001
+version: v0.1
+status: CONFIRMED_AND_ASSIGNED
+discovery_status_at_creation: DISCOVERED_NOT_CONFIRMED
+
+owner_reference: "owner://bin-zhang"
+owner_reference_aliases:
+  - bin_zhang
+discovered_candidate_reference: "candidate-owner:git-identity:joy7759@gmail.com"
+display_name: Bin Zhang
+source_reference:
+  - "git-config:user.name=BIN Zhang"
+  - "git-config:user.email=joy7759@gmail.com"
+  - "git-commit:8445fe5d13cd889032c3786ba527d801f56d5351:author-and-committer"
+  - "pubmed:42204020:author=Zhang B"
+  - "doi:10.1007/s10278-026-02019-6:crossref-author=Bin Zhang"
+role_candidate: Human Research Owner
+confidence: MEDIUM
+
+requires_human_confirmation: false
+confirmation_requirements:
+  - Confirm that the Git identity and publication author refer to the same human.
+  - Confirm willingness to accept Human Research Owner responsibilities for this Pilot.
+  - Confirm responsibility for final scientific conclusions, research scope, source selection, unknown preservation, authorship, and publication decisions.
+  - Confirm any conflict of interest and whether an independent Human Reviewer is required.
+
+human_confirmation_reference: human-owner-confirmation-record.yaml
+confirmation_assurance: SELF_ATTESTED_NOT_CRYPTOGRAPHICALLY_VERIFIED
+assignment_effect: HUMAN_OWNER_RECORD_CREATED
+canonical_owner_reference_updated: true
+context_approved: false
+prototype_authorized: false
+experiment_authorized: false

@@ -69,6 +69,7 @@ DBOS 不：
 ## 6. Current Status（当前状态）
 
 ```text
+DBOS_CONNECTION_STATUS=PREPARED_ONLY
 DBOS_REFERENCE_MODEL_DEFINED=true
 DBOS_API_CALLED=false
 DBOS_RECORD_READ=false
@@ -80,3 +81,5 @@ EVIDENCE_REFERENCE_RESOLVED=false
 VERIFICATION_REFERENCE_RESOLVED=false
 INTEGRATION_IMPLEMENTED=false
 ```
+
+`PREPARED_ONLY` 表示本项目已经为 Future DBOS References（未来 DBOS 引用）保留 Identity、Execution、Evidence 和 Verification 四类语义位置；它不表示引用已创建、解析、读取、写入或验证。DBOS 仓库没有被本项目修改。

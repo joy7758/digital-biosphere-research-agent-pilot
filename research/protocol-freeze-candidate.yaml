@@ -1,0 +1,136 @@
+freeze_candidate_id: DBRAP-PROTOCOL-FREEZE-CANDIDATE-0.1
+version: v0.1
+created_at: "2026-07-21"
+last_integrity_check_at: "2026-07-21"
+status: DRAFT_FREEZE_CANDIDATE_NOT_APPROVED
+hash_algorithm: sha256
+
+purpose: Provide a traceable candidate set of research-governance artifacts for future Human Research Owner review and preregistration.
+
+artifacts:
+  - artifact_id: readiness_gate
+    path: architecture/research-agent-readiness-gate.md
+    sha256: b889f1ce7f6f5f3f811a4b323f41dcfe44c867d7f5daced6022d164cae10f9c1
+    freeze_role: prototype_readiness
+    current_state: NOT_READY
+  - artifact_id: prototype_specification
+    path: prototype/prototype-specification.md
+    sha256: a0e0b6f2404414905b8d691dbd66d867155035893e5589f4d45897b568e484ca
+    freeze_role: experimental_object_boundary
+    current_state: DESIGN_ONLY_NOT_AUTHORIZED
+  - artifact_id: task_definition
+    path: prototype/task-definition.md
+    sha256: 23a00b118bb5c21e48cd34ba80005803c9506cf947dfaaa2e7129489a2ce0c14
+    freeze_role: task_set
+    current_state: DEFINED_NOT_RUN
+  - artifact_id: human_interaction_model
+    path: prototype/human-interaction-model.md
+    sha256: e02454595dfbf75e4ad09016bcdb5ec8945a185aae609e62a319826a8a0c096c
+    freeze_role: human_oversight_flow
+    current_state: SPECIFICATION_ONLY
+  - artifact_id: research_question
+    path: research/research-question.md
+    sha256: 46ec60e0ed0048bc6030a2c6e788d267cfcd686162f03bf320a44a4e33e6abfa
+    freeze_role: primary_research_question
+    current_state: DEFINED_NOT_ANSWERED
+  - artifact_id: experiment_protocol
+    path: research/experiment-protocol.md
+    sha256: 3726c50c7a6e2b8a5b98d6859e3eb755983534af56a0c4345fdcf95aedd1928e
+    freeze_role: protocol
+    current_state: DRAFT_NOT_AUTHORIZED
+  - artifact_id: evaluation_metrics
+    path: research/evaluation-metrics.md
+    sha256: 23ad64d0de9045d48d9fbfe872f5619fb0d90cd4f69beb3b396429d7a242e6fd
+    freeze_role: metric_definitions
+    current_state: DRAFT_NOT_PREREGISTERED
+  - artifact_id: experiment_plan
+    path: research/experiment-plan.md
+    sha256: 9a2d2a97a484d2073c71d2451a2016578b70b26a38c07d977e1682b97707314f
+    freeze_role: comparison_design
+    current_state: DESIGN_ONLY
+  - artifact_id: benchmark_design
+    path: research/benchmark-design.md
+    sha256: 2a71b8ecfdc956eae5ff3c1d366a1bd2997ee189a9b13225bf507d3a308b0310
+    freeze_role: research_task_source
+    current_state: DEFINITION_ONLY
+  - artifact_id: research_evidence_model
+    path: evidence/research-evidence-model.md
+    sha256: c1b7e38dc463001a3f26ae4a313fc921575fc353fd09096aff34cb9c3eaf4f39
+    freeze_role: evidence_plan
+    current_state: PLAN_DEFINED_NOT_EXECUTED
+  - artifact_id: context_manifest
+    path: research-context/context-manifest.yaml
+    sha256: 8650a25986f15b15ff29898707d6c29f5d3f8acfb8ebb05d2c83125ac4828b35
+    freeze_role: context_binding
+    current_state: DRAFT
+  - artifact_id: paper3_research_scope
+    path: research-context/handoffs/paper-3-eoa-human-owner-context-v0.1/research-scope.md
+    sha256: a9b9e7d04675533c0b7359f541688853031c430b6f501208da056c2cf017a4e9
+    freeze_role: task_scope_candidate
+    current_state: DRAFT_PENDING_HUMAN_CONTEXT_REVIEW
+  - artifact_id: source_candidates
+    path: research-context/handoffs/paper-3-eoa-human-owner-context-v0.1/source-candidates.yaml
+    sha256: 0d0971669a4d224bb6229d9902fbf0f02a803be1b6b14ec2630172b6cc8dd26c
+    freeze_role: source_set_candidate
+    current_state: DRAFT_CANDIDATES_ONLY
+  - artifact_id: unknown_register
+    path: research-context/handoffs/paper-3-eoa-human-owner-context-v0.1/unknown-register.yaml
+    sha256: bf6441bda46e7e58bbde1e5c6dfbf1452351e9e2f19168a939e5ae5e1100df7a
+    freeze_role: unknown_set_candidate
+    current_state: DRAFT_UNKNOWN_REGISTER
+  - artifact_id: research_decisions
+    path: research-context/handoffs/paper-3-eoa-human-owner-context-v0.1/research-decisions.yaml
+    sha256: dc9950a2e327699d21e63e49a476f0caafd3d28f2628bdb44e372b4a82d77cb4
+    freeze_role: research_decision_candidate_set
+    current_state: DRAFT_PENDING_HUMAN_CONFIRMATION
+  - artifact_id: dbos_integration_model
+    path: architecture/dbos-integration-model.md
+    sha256: 3fe1b8c9170b9e8019bbd372b16c5952697bc3ccb2f097d4da618aaa63a9f104
+    freeze_role: future_dbos_reference_boundary
+    current_state: PREPARED_ONLY
+  - artifact_id: saee_evaluation_model
+    path: architecture/saee-evaluation-model.md
+    sha256: 8072fae044dc3b6d6260f2491637e47f4797eabb321ecc40811c6b7f0590b975
+    freeze_role: future_saee_interface_boundary
+    current_state: PREPARED_ONLY
+
+human_decisions_required:
+  - Decide whether an independent Human Reviewer is required; current status is UNKNOWN.
+  - Review the Context Package and move a specific version to at least REVIEWED.
+  - Approve or reject each source candidate and bind approved Source Records.
+  - Review all Unknown entries without unsupported completion.
+  - Confirm hypotheses, sample size, allocation, reviewer design, rubrics, thresholds, and analysis method.
+  - Decide data, ethics, privacy, safety, model, tool, environment, retention, and access boundaries.
+  - Approve a final freeze set after any required revisions.
+
+gate_states:
+  human_owner_status: ASSIGNED
+  context_status: DRAFT
+  approved_source_documents: 0
+  human_reviewed_unknown_records: 0
+  preregistration_status: NOT_PREREGISTERED
+  prototype_authorization: NOT_AUTHORIZED
+  experiment_authorization: NOT_AUTHORIZED
+  authorized_run_limit: 0
+
+unresolved_freeze_fields:
+  hypotheses: UNKNOWN
+  sample_size_and_repetitions: UNKNOWN
+  allocation_and_counterbalancing: UNKNOWN
+  reviewer_count_and_agreement_method: UNKNOWN
+  statistical_analysis: UNKNOWN
+  model_and_provider: UNKNOWN
+  tool_versions: UNKNOWN
+  execution_environment: UNKNOWN
+  data_and_access_scope: UNKNOWN
+  ethics_privacy_and_safety_decision: UNKNOWN
+  retention_and_access_control: UNKNOWN
+
+human_owner_reference: bin_zhang
+approved_by: null
+approved_at: null
+preregistration_reference: null
+eligible_for_preregistration: false
+freeze_effect: NONE
+authorization_effect: NONE
+execution_effect: NONE

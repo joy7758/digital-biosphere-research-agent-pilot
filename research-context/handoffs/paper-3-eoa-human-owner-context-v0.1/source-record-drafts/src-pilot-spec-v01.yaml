@@ -1,0 +1,27 @@
+draft_id: SRD-SRC-PILOT-SPEC-V01
+record_status: DRAFT_NOT_APPROVED
+source_id: SRC-PILOT-SPEC-V01
+source_type: governance_and_research_specification
+title: Digital Biosphere Research Agent Pilot Specification and Research Question
+origin: digital-biosphere-research-agent-pilot
+author_or_owner: "owner://bin-zhang"
+version: v0.1_draft
+publication_or_release_date: "2026-07-21"
+stable_reference: null
+content_digest: null
+content_digest_reference: ../source-verification-report.yaml#SRC-PILOT-SPEC-V01
+access_limitations:
+  - Local uncommitted worktree only.
+  - Files must be pinned by the verified sha256 set.
+known_limitations:
+  - Specification and governance source only; not empirical evidence or a scientific result.
+  - Context remains DRAFT and the Pilot remains NOT_READY.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selection_decision: PENDING_HUMAN_DECISION
+non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+selected_by: null
+reviewed_by: null
+timestamp: null
+source_approval_effect: NONE
+context_binding_effect: NONE

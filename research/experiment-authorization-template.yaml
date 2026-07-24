@@ -1,0 +1,28 @@
+# Experiment Authorization Record Template v0.1（实验授权记录模板 v0.1）
+#
+# Template ≠ Experiment Authorization。当前 decision_status 必须保持 NOT_AUTHORIZED。
+# Prototype Authorization ≠ Experiment Authorization。
+# Experiment Authorization ≠ Agent Permission，也不授权范围外任务或自动发表。
+
+authorization_id: null
+protocol_reference: research/experiment-protocol.md
+protocol_version: v0.1
+preregistration_reference: null
+prototype_authorization_reference: null
+context_reference: null
+human_owner_reference: null
+task_references: []
+source_references: []
+metrics_reference: research/evaluation-metrics.md
+evidence_plan_reference: evidence/research-evidence-model.md
+data_access_decision_reference: null
+ethics_review_reference: null
+privacy_and_safety_review_references: []
+authorized_conditions: []
+authorized_run_limit: 0
+valid_from: null
+valid_until: null
+decision_status: NOT_AUTHORIZED
+decision_notes: []
+decided_by: null
+timestamp: null

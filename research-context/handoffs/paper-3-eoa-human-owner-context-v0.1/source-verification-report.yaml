@@ -1,0 +1,1145 @@
+verification_id: SVR-PAPER3-EOA-0001
+version: v0.1
+status: VERIFIED_FOR_HUMAN_REVIEW_ONE_BOUNDED_EXTERNAL_SOURCE_DECISION_RECORDED_NOT_CONTEXT_APPROVED
+verified_at: "2026-07-22T22:20:13+08:00"
+human_decision_sync_date: "2026-07-22"
+verification_scope: Identity, local resolvability, file integrity, public bibliographic metadata, formal ledger status, and declared limitation consistency.
+
+source_candidate_count: 7
+source_candidates_verified_for_review: 7
+source_documents_approved: 0
+source_documents_bound_to_context: 0
+paper3_external_source_selection_values_recorded: 1
+paper3_complete_external_source_decisions: 1
+paper3_bounded_human_approved_external_sources: 1
+automatic_binding_allowed: false
+
+shared_local_repository_observation:
+  repository_path: /Users/zhangbin/GitHub/evidence-object-architecture
+  repository_present: true
+  git_head: null
+  git_state: NO_COMMIT_HEAD_ALL_CURRENT_FILES_UNTRACKED
+  implication: EOA files can be pinned by current sha256 for Human review, but cannot be attributed to a committed repository version.
+
+source_verifications:
+  - source_id: SRC-EOA-ADVISORY-V02
+    verification_status: LOCALLY_RESOLVED_FOR_REVIEW
+    resolved_artifacts:
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/dba-advisory-response.md
+        sha256: d07ebf1153711aa2eb0b7e0301562b9af9d63c048957f3e1558b4035f10a7db1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/dba-advisory-decision.json
+        sha256: 7245a72849d0e66afd89d76408d92f3035ca22b49207af67dd8aa8cd55ddef5b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/dba-advisory-clarification.md
+        sha256: 1b58e7b4848435adfc80449b3fc7230dd6582509e7eb720c4ee6a002f9a7dc94
+    json_parse_verified: true
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Directly constrains EOA positioning and prohibited DBA/DBOS/SAEE claims.
+    mandatory_limitations:
+      - Local advisory only; not an external architecture review.
+      - Repository has no commit HEAD; use these exact hashes if included.
+      - Advisory recommendations are not Human Research Owner decisions.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-EOA-SPEC-V01
+    verification_status: LOCALLY_RESOLVED_FOR_REVIEW
+    resolved_artifacts:
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research-manifest.json
+        sha256: 51747bdaab566c07513daa1a8c79caae758d083a7ab9393b101028804af07396
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/docs/evidence-object-model.md
+        sha256: e495a06d207dc7181fa96b9adf75da04961218ac0e8d5f0909f397e8122f5271
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/docs/evidence-closure-model.md
+        sha256: cf8f436484bbd235f3ed572eaf0e86a90b83dd5fce4d293ef629f4b3c7190c32
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/schema/evidence-object.schema.json
+        sha256: 8c3ee902188a33b7d992244f696e338f2dc8cae7f0014e01c0c5a2bf308d609d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/tier-c-source-distinction-matrix-v0.1.yaml
+        sha256: f27b80acc504e3976e2fd2722f4d7e8ef6398623f1d079fa9e61c02f575ee1c8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/tier-c-human-source-decision-brief-v0.2.md
+        sha256: 7e2a1248af621b4c91bd8c290aacb83220af968e864aea353fdb40e126ab7a5a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.5.yaml
+        sha256: 7dd58b9587344493e72323929f37db97f0b54d9cd35605d845f13b135966dd6a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/source-version-convergence-review-v0.1.yaml
+        sha256: db43ee8ccaad72876888b83be628edb197dba4285be3d538a1b5f069fff085c1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-source-version-comparison-brief-v0.1.zh.md
+        sha256: 8f94748d2f69a2fa5c1430b534355237014f5585cee94deeef560353bce05e9c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.6.yaml
+        sha256: 6745fe0a65ddbb6ca258c9bf0a54c9637552b16970c18361749dc0cedea5a941
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/source-claim-scope-version-review-v0.1.yaml
+        sha256: dbb396f172483f512c97bf49afb21750f5650abdb82ed07db2ef8391069ff3a3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-source-version-decision-brief-v0.2.zh.md
+        sha256: a0d26328f6e48e3eda94526f4e58e8e9e5d462209742675d89b8dac03251658c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.7.yaml
+        sha256: 6731ab8c90fdb965b3642abd9b66a5b4e3ab51f437afc649216decc475e4ef3b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/mutable-source-status-and-claim-scope-review-v0.1.yaml
+        sha256: c2262eafc3640603a42c77b6e03f611a1a34de74da83a76fd985d5f3bea1f153
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-mutable-source-decision-brief-v0.1.zh.md
+        sha256: 42dc658d4f29801a0bd5e80b7073471e244d69f89d33949709c88539e7f6527b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.8.yaml
+        sha256: 07c4ca721701ea871d68a835134592b101c715afdd956bf630a8028e3103bd95
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/technical-neighbor-status-and-claim-boundary-review-v0.1.yaml
+        sha256: b1d863262cbeb88e08c904d48d131b206d2271e672c99fc5071e95692d658d31
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-technical-neighbor-decision-brief-v0.1.zh.md
+        sha256: 1533dd50bbc4e36d53a8276f7d54199f4ee4e595808f0e12ac148cd2568bff61
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_technical_neighbor_status_claim_boundary_review.py
+        sha256: eb6ae8dc86f38e3ea594c0b8e4d7b907627e7c98564031d81e84cbb879d447d8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.9.yaml
+        sha256: a9c4d6dde22373e26d59906bb3ae4760bce51e3bedcffb2cf2673ee721c6dfdb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-full-text-claim-boundary-review-v0.1.yaml
+        sha256: 6c4b5ff419fb3a3bb2a05ccbd99b93d98cca97a8ede5600e2a62b5918c6ca926
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-gsn-v3-source-decision-brief-v0.1.zh.md
+        sha256: ad4a3797bf8721e9f858c6dec66e6ed98ec4d585368cd9c19db504350da1b377
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_full_text_claim_boundary_review.py
+        sha256: b3f2189dff1b80725fce7b6ac384c8198e0d7bf4950cf9f01166c6f9a9cc1e68
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.10.yaml
+        sha256: 6ead43ed58a4ce1009dfa18a084f603bdc64e2dc28a5046d24b94c5078e258a3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/ai-model-passport-vor-claim-boundary-review-v0.1.yaml
+        sha256: c924a8414b54237fff4497968a0f3f0a2f9566945ddd2ffc23d3beac4bc6dd68
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-ai-model-passport-source-decision-brief-v0.1.zh.md
+        sha256: 57869a010f04848c8ae818fe79503be68a4913d4bfd920856652a00f6cba049f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_ai_model_passport_vor_claim_boundary_review.py
+        sha256: cace0f1e652b6b9a8dfd5b687903453a47950a2f9e699c66af4b465e63935a26
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.11.yaml
+        sha256: 01198c02c84e0cd050e527f1a62256f5fc7dbaf6c3b57f13f961b34e4b5afd77
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/provimaps-vor-abstract-preprint-claim-boundary-review-v0.1.yaml
+        sha256: 36ac3b0fb7ecb102ef31a1a5b1184959156eeb7f75a6fd37c2088c4097930b2a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-provimaps-source-decision-brief-v0.1.zh.md
+        sha256: 45c6a7f61030008a104adb185fef6c53c90ca854e5a5dcc5295a8085a19ee097
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_provimaps_vor_abstract_preprint_claim_boundary_review.py
+        sha256: 0be9881893827877a629f1a533acaa129a4e3dc4205b6667fdd786f48d39f19f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.12.yaml
+        sha256: 606d502076f67d3b995de7e63fc5acc2776b5d5552afe275c253d9f61ff01c8f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/vids-current-specification-implementation-claim-boundary-review-v0.1.yaml
+        sha256: 9b68cb9f89536eb638dfdaff1a366373f897db82f60fae79448388b6ebf2b2c8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-vids-source-decision-brief-v0.1.zh.md
+        sha256: 72359d98ea704c070ebbb76033b00ce303a7175cf05157ea10f769462c34bad8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_vids_current_specification_implementation_claim_boundary_review.py
+        sha256: 215938132003074dcc6710d0fa326b89a1d4a8ef45116d038a68ae7e4e4c0b32
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.13.yaml
+        sha256: eb2f3abcf7738126472bbecd35d380258803d426e833948e28b538cdb0374057
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/omni-decision-arxiv-v1-evidence-state-claim-boundary-review-v0.1.yaml
+        sha256: 4bd24c68ae65b19526c8886be239bf57ad8c28e5cdb0990068e43c1ae082d62d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-omni-decision-source-decision-brief-v0.1.zh.md
+        sha256: 49c2a7f8035c8be49e74a56ad3cd2d7423032f33689e2bada88a538dc12859f2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_omni_decision_arxiv_v1_evidence_state_claim_boundary_review.py
+        sha256: 1e73c680ec7eb8e774705e3bfd542465bd304b63ddea8e1d04930242a7bfb869
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.14.yaml
+        sha256: 008ffa935c63ba57d9e2b5375d4b913bd4c4595abb44b5a60e0dc5f5e2bf932f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/odes-current-draft-repository-claim-boundary-review-v0.1.yaml
+        sha256: 802b09996837f318f9f2d470aabab2a328fe59ea6e5b18f4ce63253ed34b9ee3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-odes-source-decision-brief-v0.1.zh.md
+        sha256: 94e4dce37c69c9a832d224d1f483a2239193e3f614d1b035163fc22db85689fb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_odes_current_draft_repository_claim_boundary_review.py
+        sha256: 29a4890c75aa850050750eb96e05c8b38acbd085eae62d9a513f314949d000c6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.15.yaml
+        sha256: 77169413ea42deb2f7337bf0ee05346907b32b01dfdc8846dd6fffee978a4f1e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/w3c-prov-recommendation-claim-boundary-review-v0.1.yaml
+        sha256: 4c62d8c471ce37d2b36413502c08f5be5fa3fb8944276343c496db7b4a2753e9
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-w3c-prov-source-decision-brief-v0.1.zh.md
+        sha256: a9179b35e27921d522f0f1ba475c5f9ddb952b139a817321995a12b2590c5653
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_w3c_prov_recommendation_claim_boundary_review.py
+        sha256: 475916f39fd3ad909c970e0502963e32c63c80f0fa64659c4fb5621da3675553
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.16.yaml
+        sha256: 95a2ddaa72b8b820878be629a265ccf8974c64257725c0c04bbd3eef651b9727
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-3-2026c-claim-boundary-review-v0.1.yaml
+        sha256: 7336975ee160409fe0b6bd4276e9d6a762a90d883baeb0c0de08a709525159cd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-dicom-ps3-3-source-decision-brief-v0.1.zh.md
+        sha256: efac671da22f676c2da886d22a1ec7f126b4e5cd6749e7c9f13ca4f79f0cd679
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_3_2026c_claim_boundary_review.py
+        sha256: d68bd79d0da777d65de05b829a0ce1eb75bb9927c44ad017e1b048b0f193eceb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.17.yaml
+        sha256: 6dc9863ca821bf9bb2529fc0a8a72e24749b00382bb90430fe2fb6bea135f54c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-15-2026c-claim-boundary-review-v0.1.yaml
+        sha256: 11c976b73958f85c28733c13d84f3590f7769ee02bfc60dd27213970f5125637
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-dicom-ps3-15-source-decision-brief-v0.1.zh.md
+        sha256: de6c4b5bc88f01e801860b10e6565c5edeb274e8538c97a6ddc330cd9da78737
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_15_2026c_claim_boundary_review.py
+        sha256: e04489c4174256873b540f54ef352d44a83a53accb72936868c78b19c2f2b86f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.18.yaml
+        sha256: 4302710f6334231954788399906050c63c0ce1c1c01e2a91801c6cc533d29cf5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-device-4.0.1-claim-boundary-review-v0.1.yaml
+        sha256: 7f30c7d2eb927d929b4b1b269f9cb180edaa4bddaa17306c1982a3a2bbc76122
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-device-source-decision-brief-v0.1.zh.md
+        sha256: 276d7cdb9e22356380c4fae6098f43e0510474ebb507c79af42f661a0dd83054
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_device_4_0_1_claim_boundary_review.py
+        sha256: 9fa2eacb35fec49039e187dba4a2e430361ed65ca4656fc0e91769dd3f3038a2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.19.yaml
+        sha256: e002dd6e7c53f519862a2d95558fe4468f2cb48686c23fe2d9d19f8c809eb835
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-provenance-4.0.1-claim-boundary-review-v0.1.yaml
+        sha256: 5078df7657797aa7238562ce9b7569a7d3bf9194c24181fae36ce5248ba29a09
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-provenance-source-decision-brief-v0.1.zh.md
+        sha256: 69fa53e5a418028b9b57c81672eb02ac3401d81831a29f37556da9147930b82e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_provenance_4_0_1_claim_boundary_review.py
+        sha256: 7bb1fec47844ab89c455022764da0066759e8c7a47be008da99c90fbf65a86bd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.20.yaml
+        sha256: 0ee744e21b5ecd7272f842936a47e6828ef482038ab732a07cf0acf79b159901
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-auditevent-4.0.1-claim-boundary-review-v0.1.yaml
+        sha256: 18f075c6c38dad5af8c9e81539aec84f579de2dfd95ecaba9ffd97c605b6b800
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-auditevent-source-decision-brief-v0.1.zh.md
+        sha256: b086600618b251561f0faff057055916a00a6811b34c16770b0882c066199c3c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_auditevent_4_0_1_claim_boundary_review.py
+        sha256: 337a0b8dabb1b62d1515d57dde1a555a715dbf9078c2e0d96f08c56347f021a6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.21.yaml
+        sha256: 6c45a2abb9cabf725eadf0364fd843194fbda838f89d7449b1ad62c1e8e4752f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-imagingstudy-4.0.1-claim-boundary-review-v0.1.yaml
+        sha256: 8cc534ac8e0946888b7e8f5167a18da50f4850c0bbf8fe5c8058004075c1368f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-imagingstudy-source-decision-brief-v0.1.zh.md
+        sha256: 4957a1802a65714017af34abcabdbc86c78683ae48497c9ef501179386bcbe7e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_imagingstudy_4_0_1_claim_boundary_review.py
+        sha256: 0615083e4f9168d5b9301122e5b50066ab0eb75f8a8b79a8df32c08957d3a06d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.22.yaml
+        sha256: dae18a69d25c456c4d87d037e88644856dbb9fd91f31feb1eabef8331050c8e6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/opentelemetry-semconv-1.43.0-claim-boundary-review-v0.1.yaml
+        sha256: 485e154efe9aff1922143453df4710089e3e6070fd7d5763857b10054bc47bed
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-opentelemetry-semconv-source-decision-brief-v0.1.zh.md
+        sha256: f3672d9db45514be73bd09e27c0c3a13dc4f846cfdf04614ac6691491c539768
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_opentelemetry_semconv_1_43_0_claim_boundary_review.py
+        sha256: c73d14f39cdbb63ae8f6e23343fa8b2f9fef20ef2d32104005f7fbaa992bc6a9
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.23.yaml
+        sha256: 38f1b92e024af4784551ecce4f9aeb903704ed48b7a6bcdfbf6a66b271ccfc0e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/slsa-1.2-provenance-claim-boundary-review-v0.1.yaml
+        sha256: 46fcd7ad8146b7caba0cb18c5e0f713f68b1574d03e95e1404a6b7f6029d50f9
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-slsa-1.2-source-decision-brief-v0.1.zh.md
+        sha256: 057e407e83fb50123a1cc124ee0ee4af0dcfafe404ebba578c46858f819f07db
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_slsa_1_2_provenance_claim_boundary_review.py
+        sha256: 73fbd64830145caf260bf408f361c7265e6004824a099ddb2419c032b16f6c1b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.24.yaml
+        sha256: 8713245be3090dab184ae0a45e96683058d0ecef1de9083fc7473fea4af31b43
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/ai-model-passport-human-passage-review-worksheet-v0.1.yaml
+        sha256: 0279ce4f91998a0e6bfe62dd0db29e4ac7dbf5373e3e50b17ae2855bebf71131
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_ai_model_passport_human_passage_review_worksheet.py
+        sha256: d274e7c57ab5c4f5dec49e7d9317ac14c4e2c5bc722dea4b8a06a1beb8ce938f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.25.yaml
+        sha256: 14d7c843f88097136bec91b0cbd13cb9452b51713880cee305f3949ce58afe6c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-ai-model-passport-source-decision-gate-v0.1.zh.md
+        sha256: dcdce68716e631aa8affaaff102bd9cd8926cb669b5c027f922cd09d8826e0c6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_ai_model_passport_human_source_decision_gate.py
+        sha256: 7173728963c82c2b9dd3575f007d89fd7bd8852a7b11bbc433badd58f58cb6f6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.26.yaml
+        sha256: d4e60d9c500c8ef2e22ae6443b6288d7014a7bd57e0a07b4170711b7d4f6bded
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/ai-model-passport-human-source-decision-record-v0.1.yaml
+        sha256: 1a673f945e0ae163ef01d4b5c9723f874de653686b1bf07ac1006c8fd756e8a8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-ai-model-passport-source-decision-completion-gate-v0.1.zh.md
+        sha256: 85a57d080f5b0caf8f83080d8e19d774348021a33f28bd96d80ee34a12a95f44
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_ai_model_passport_human_source_decision_record.py
+        sha256: ee4e91190ecd22fc961a390474ddf317c16e457e2bda05ae63218b3cbb07f99e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.27.yaml
+        sha256: 2d1c97308c329627c8e39fbe5644d88571b27eb301a2945510dde69cfd163320
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/ai-model-passport-human-source-decision-record-v0.2.yaml
+        sha256: d3d51d93e422915db1b1ce522e95b387504858e3d24a783815f4d4f1f311b9ec
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-decisions-v0.1.yaml
+        sha256: 788055fc448a7fac1a501b96147c165966b908eed82bfda8d1386267fcb765a8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-ai-model-passport-source-decision-completion-v0.1.zh.md
+        sha256: 285a2014def37828731d0ed3d54996d807b040a552cc1d7be3fd0e2d843adea6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_ai_model_passport_human_source_decision_completion.py
+        sha256: 76c3f4279f949369d8d2ca91e6b213fb5ab95b97d26edd180c5895f9222ea46b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.28.yaml
+        sha256: 4aaeb8c83884563c3a5dbc536ac6b40e10cb4efc3ed4da7d1c9445aa1b4ceeb1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/vids-human-passage-review-worksheet-v0.1.yaml
+        sha256: df8be2cddf49aa70ab22b0495189b719b14da7fa62f89a871d58e67a1a26830a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-vids-source-decision-gate-v0.1.zh.md
+        sha256: 8bc713232d089e6307b9156e3b1f793677c9377896d24125f88665f73df86c8f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_vids_human_source_decision_surfaces.py
+        sha256: 498fcc02754347dbab821aed293e2b1e725d0d95ab8c033d9a12484e4eaa43a3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.29.yaml
+        sha256: 5d866fd740f03162dad68a0162c8c17e086c1c514d3b57d481651da51760a57a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/provimaps-human-passage-review-worksheet-v0.1.yaml
+        sha256: 080e0acb6c02a6251018394fcae9e7cc59d2f4fddc3835f79f4f0a588426606d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-provimaps-source-decision-gate-v0.1.zh.md
+        sha256: f92d7edf86ef78dcd6c3bc12ad84475d0b09735855cfe11177ec1a4d14454001
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_provimaps_human_source_decision_surfaces.py
+        sha256: a32c8914c5787c00e8a98479a281d5217fbec4b83a8b374ac5671bf6e687ee22
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.30.yaml
+        sha256: 9e76d91687b9ec35d7197c4825b22ed8b64acb263a394e3e38f95ddf320800c1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/omni-decision-human-passage-review-worksheet-v0.1.yaml
+        sha256: 61c201c6736ffd457d65bcbdce3c57917b980cd6266179137a52ebf74b670122
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-omni-decision-source-decision-gate-v0.1.zh.md
+        sha256: dcf45f4dea06f04c31ffcfe327ad6faafc63f9da9bb787e60421767dbf47e58f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_omni_decision_human_source_decision_surfaces.py
+        sha256: 9a0e8f26264114a0906f6a6a61baef49836a903e50b6ebf18a0d5c6b8507cdfb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.31.yaml
+        sha256: b10bfa1b6191e2e32531171fec2ae28e57d89f619f43cd18b3deb07b3277f381
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/odes-human-passage-review-worksheet-v0.1.yaml
+        sha256: 30783b2903ea53f69bf45bd61bddc50b21d1af8796678767fda3b77340ded834
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-odes-source-decision-gate-v0.1.zh.md
+        sha256: 3c41c4ffb116c951c5f071e595de4b4fda476c431d1f5a7f172c7c481946ff16
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_odes_human_source_decision_surfaces.py
+        sha256: 9fddcc2d37f346e7394ac47f146c453c2fcd1b6b7f6a2f2a2904852f5dcdc3a5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.32.yaml
+        sha256: 3d67fdd8eaf6c847f7a75a358ebb255a3e91116e0be165168ba368f1382e5c64
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/w3c-prov-human-passage-review-worksheet-v0.1.yaml
+        sha256: 4cc51a64493cd2c6155e290b6550d7d09decce0add8b3d1bed623fd0ca3f1522
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-w3c-prov-source-decision-gate-v0.1.zh.md
+        sha256: b1eba61854b8896ce4f4256bf947a175cab9bf5fe7afb9d283fa6548673f1094
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_w3c_prov_human_source_decision_surfaces.py
+        sha256: fb64babdd8b585a369ed91b1701fb5a480ba62d9f34057f4372fc7d2b99e5935
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.33.yaml
+        sha256: fec5ed63b0f7dec18afe11accd55f4ebd1cd8d55ca6bee0f7fe40e976021d224
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-3-2026c-source-surface-correction-v0.1.yaml
+        sha256: 58f306a810266beac92474ac488fe7ec09f1a6d520a5a96dbc3ca1539df51b5b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-3-human-passage-review-worksheet-v0.1.yaml
+        sha256: 3c41b973dd8db51bf8cce262202d4e8609d34a7a194dcca5cc42c37230190d87
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-dicom-ps3-3-source-decision-gate-v0.1.zh.md
+        sha256: 81d9d1366bf3249f22d1c020afb102147730a3241460d1d59d591cead400f1ec
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_3_human_source_decision_surfaces.py
+        sha256: 4666eb42277ea8928ca7a8181c7d5b69d4b2aa05ba177dd7881cfce8e419b4bb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.34.yaml
+        sha256: 2ba71a900d15d1ba73bdb13a19c0342c1592e6b8061ccf1956f6670e42f62d52
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-15-human-passage-review-worksheet-v0.1.yaml
+        sha256: 2c23f07bcb08b922c770e6cd724f5846d2cbfc0966dc8c969ddaa6cac7647f12
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-dicom-ps3-15-source-decision-gate-v0.1.zh.md
+        sha256: e18f9beb5fec9b3fa9fd7bdf350c8b9dbd4dda68aabf07347cd3364df5c96247
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_15_human_source_decision_surfaces.py
+        sha256: d3f3970dc2a4d7525c8f5a219d2d5cc498737e5b01bda30aaddf8e4184f2a916
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.35.yaml
+        sha256: 3a889c5900713b19e08600416e10c719902c04d111d0e839f76fe739766d9374
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-device-human-passage-review-worksheet-v0.1.yaml
+        sha256: 7f5f689e329ee9e08d83b813173d7f537c1b2691d1c05e65c42f1e4ab79ff4f4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-device-source-decision-gate-v0.1.zh.md
+        sha256: 4225f155c8d5caf988621c08ec67b3c5306858de3e4c7f7f839d18e5dd34ec76
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_device_human_source_decision_surfaces.py
+        sha256: 74afd68f34cad409e007e714faef6a8d00703e97e5132c7fa5e24c4e5e2bac46
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.36.yaml
+        sha256: 30281ca39ecaaf3789c2ac9a32ec84b0a45072f0da750f449e318136432ebdb8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-provenance-human-passage-review-worksheet-v0.1.yaml
+        sha256: c15c5358735193851c7f2e659ce63a3aeaecea7f0024ed7f84ea013c63c98462
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-provenance-source-decision-gate-v0.1.zh.md
+        sha256: 48105aca4d64fe0a5126fff149bf06467834ae171f7359fb56eb73d562bc716b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_provenance_human_source_decision_surfaces.py
+        sha256: 5bb7321aeef9752db757b4b4997f3cab33abd51663fda529d80e04d029f51e55
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.37.yaml
+        sha256: b8e37da5f6c2c94414f7bb245579f7cf1f30b0230227372ff0edc72db34fdaa6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-auditevent-human-passage-review-worksheet-v0.1.yaml
+        sha256: 0db5ce9af028ee8f39a007e47cf558092e70a05b267b07b13d53010aa2da253b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-auditevent-source-decision-gate-v0.1.zh.md
+        sha256: 5ad4b764f71cd271ae35289d4f3807a2177927e7d8fc43005bec2c6a97299f45
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_auditevent_human_source_decision_surfaces.py
+        sha256: 61d76a08906d87a046f012724531a538bb8fd0e3edf622ba222e519ff11d417d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.38.yaml
+        sha256: b673bd620b72b7e66cd0c8910f1a96c07cc8ad68ce53c84b38c770320bbbff0f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-imagingstudy-human-passage-review-worksheet-v0.1.yaml
+        sha256: 8fe2ea87418e6f9d167fdbc813c6e2706bdd3e795fcbb2e8230610856c08e890
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-fhir-r4-imagingstudy-source-decision-gate-v0.1.zh.md
+        sha256: 0388c545baf82c9424956d9ee8639451da34f62fd52189b634a2e9e87afcd7de
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_imagingstudy_human_source_decision_surfaces.py
+        sha256: 330e751f9567547522dff50444ac4dae49fb79ee675e537327a12028f98a86e6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.39.yaml
+        sha256: 25582c4c4e33c9c75f435420e75d8767a45181a7138396949ccbab48c2569020
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/opentelemetry-semconv-1.43.0-human-passage-review-worksheet-v0.1.yaml
+        sha256: 0adc505bc165cdb1588f773b413c5f555131bd22ffcc38abc1bb0cec182a15e4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-opentelemetry-semconv-source-decision-gate-v0.1.zh.md
+        sha256: 28ddbec25a2f845044ceb056690694eabb08c0b8d5d3c87baef0c149996b3b8d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_opentelemetry_semconv_human_source_decision_surfaces.py
+        sha256: 499aaa5b5293c723bc90df8e81b4c938daf12a3ef0205c215c5250e0674ff135
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.40.yaml
+        sha256: 3e48843f78d119086c8c6bcf8b3aab129243395418ea74e3d22131c623b9f3f3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/slsa-1.2-human-passage-review-worksheet-v0.1.yaml
+        sha256: 9197f3fbab66ee1f966a9437972d8f601b6c8f8aa8ffdb5a1532012c1567503d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-slsa-1.2-source-decision-gate-v0.1.zh.md
+        sha256: 661631e20983a6c5b79ea7679f8cac7ce28a66dcb5179135648a7c0d709559f3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_slsa_1_2_human_source_decision_surfaces.py
+        sha256: 6d7d5a5592957adc70c95bea1c566d5e90d48cdc9cc2dcd93b0e09423e1fcece
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.41.yaml
+        sha256: d5fd0736dcd212b79e91b74bc1a16ce8295169bf958b17f10ccb4947f71f7d58
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-human-passage-review-worksheet-v0.1.yaml
+        sha256: b3c0f8202ef7c7b1a75730afce17d4204a6515da3c271e346e5ba471d7b4f29c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-gsn-v3-source-decision-gate-v0.1.zh.md
+        sha256: 8b369fea9be448cccf34e1a7b97bc49bce5c420e4388f647b2fb4346423f98b3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-gsn-v3-source-decision-gate-v0.2.zh.md
+        sha256: 19787a74cd7e9181f97f7fb6fff10ad7b76454166a1940b37d1f20dad3b4a3ed
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_human_source_decision_surfaces.py
+        sha256: c97ad00e5b762c2d5b9771333589dd7b60a76f3d567931bb8db7638a0a856794
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.42.yaml
+        sha256: 08f80596cbeada5e9c50d2fb4d7131928f8348602f63af8878b20c6ff95c402e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/c2pa-2.4-claim-boundary-review-v0.1.yaml
+        sha256: 998d65737bae2aa48d3dae891b1187b8072061b06b441dbd71e620092d946a5e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-c2pa-2.4-source-decision-brief-v0.1.zh.md
+        sha256: 2a413567bdf27c34ba4f5a0d1b0432848be5d97666a8f42d3f49279d0bf422b3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_c2pa_2_4_claim_boundary_review.py
+        sha256: 264d2044e9c236717096fa7068419ed11c226ae57bd3221fb01b923b5d433352
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/c2pa-2.4-human-passage-review-worksheet-v0.1.yaml
+        sha256: 131e03cd616428011ee6a33a3a24919a8219ab9bf09f9f081421d3e078ce6997
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-c2pa-2.4-source-decision-gate-v0.1.zh.md
+        sha256: b95340f3550f96a8787e3b4c61ce718504fb74ee3cb652750ddd1b41d3315e37
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_c2pa_2_4_human_source_decision_surfaces.py
+        sha256: fef6b365bbf6376fecf81f030a9311123e6400b92ec1bd503be14ccb2ff3e431
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.43.yaml
+        sha256: df9fe4121fcca96aa7ccea04d7523b7cae3a7f12d0967a2fd3c3d85725a8e98d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/nist-ai-rmf-1.0-claim-boundary-review-v0.1.yaml
+        sha256: b6f32c0bd5ed59e172686fd0dde453357e1bede79b35a89c271db83dd39b3639
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-nist-ai-rmf-1.0-source-decision-brief-v0.1.zh.md
+        sha256: 3721c817aa8fde48a9be86c855595d828ac28e4917f5abc358c00b03da9cbd8b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_nist_ai_rmf_1_0_claim_boundary_review.py
+        sha256: 535c2f9ddfa73f54c4019a0387bbb307172fdaf49128bde7abd2e2bfac673a5f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/nist-ai-rmf-1.0-human-passage-review-worksheet-v0.1.yaml
+        sha256: bfbb180720ab825a6cd4be44b3ee3f7d3dab184ff9908f17f281876b7848fc8a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-nist-ai-rmf-1.0-source-decision-gate-v0.1.zh.md
+        sha256: d4d8fa52afdbe55b5c4b6eaae9256d784d74c19e7ddc13c79f5fdefe6f606503
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_nist_ai_rmf_1_0_human_source_decision_surfaces.py
+        sha256: 6c9c236482b8a2681f29244e88185b72a953bee7ccc8a66d04a8e6edf6bbfa2b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.44.yaml
+        sha256: 850f11529f4a06e61ea926ffdd6182e454b199b8e7a2581798b82b12bb71b33c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/in-toto-spec-1.0-claim-boundary-review-v0.1.yaml
+        sha256: d6eed0bbc7c24c5ac62a76bbb797091a3eead3d7dbbf15290b621c8b43a32308
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-in-toto-spec-1.0-source-decision-brief-v0.1.zh.md
+        sha256: f43a2539d7de0849e575659558a3152be28b7b302e6b34edb6b46f999aab9ab9
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_in_toto_spec_1_0_claim_boundary_review.py
+        sha256: f2fd32956fabe782cce5642e4de70ba3d2b850a9864f847397ee756e53d15167
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/in-toto-spec-1.0-human-passage-review-worksheet-v0.1.yaml
+        sha256: 98a6be33a787b986a53ea7754528049d1b1daed0cadb68ebdd338e3472366239
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-in-toto-spec-1.0-source-decision-gate-v0.1.zh.md
+        sha256: 336da28879b0c102be952c907b242784f20e4db198118c2337e1ad02bf6f8a55
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_in_toto_spec_1_0_human_source_decision_surfaces.py
+        sha256: a968d70407f043c88758acdafb5dde79ffb667b8becb09d2f02fc97a352eb29d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.45.yaml
+        sha256: aa8d1b0a14422b87aae43cabec36c9650cb19be1d906273da2e1515b4bd01a13
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/model-cards-2019-claim-boundary-review-v0.1.yaml
+        sha256: c2305ac03e175d042cfc6d362864de39e94a10bd849f07c8f41de6a8cbc25435
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-model-cards-2019-source-decision-brief-v0.1.zh.md
+        sha256: 2ecd628f32e38605d2c7694cfe932d892f90d10ab89d85a0d6b0381657d3c440
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_model_cards_2019_claim_boundary_review.py
+        sha256: 5f5faa9d159e40beaf5f41a85fa70e1139f927fb4adc513dd6d4461327ed2b27
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/model-cards-2019-human-passage-review-worksheet-v0.1.yaml
+        sha256: 6fb8224534c1cea51db4af90a088a23df9510e9641908f9ae094a08a143eb215
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-model-cards-2019-source-decision-gate-v0.1.zh.md
+        sha256: ebcb25744a07bd42a3e004690a4ad6085eda94b25b5bab5e1fd538a35483b443
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_model_cards_2019_human_source_decision_surfaces.py
+        sha256: 5915412edee09687239cf0d08e14eec819e52137ba7aebbdc8aa0b9840d8c7d6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.46.yaml
+        sha256: 93602ee39960c34211fc36ed0603f3acb89033091f0f50179a71f2ad6e60bd02
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/datasheets-2021-claim-boundary-review-v0.1.yaml
+        sha256: 44d722f144d2f060a5862eb533cf0f6e7ccb3f3f35235fa0ee80eaa07be6a052
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-datasheets-2021-source-decision-brief-v0.1.zh.md
+        sha256: cfb1c757b8e7f84c2b9d309e1b537cec86604dc7e32331c401f0f179b7320fea
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_datasheets_2021_claim_boundary_review.py
+        sha256: 5ea98c6709ca669a67717866ca26e32433df8acc51c1f5f09ffc1bf225ad7f1f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/datasheets-2021-human-passage-review-worksheet-v0.1.yaml
+        sha256: 244b0445073341a0dd74289055f9b5ee20001713ef3d34ca850ded83adbdc31c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-datasheets-2021-source-decision-gate-v0.1.zh.md
+        sha256: 1d1b0ae0d83501c6dc5b37898ac1c7414c0b05ec0602ed137cbeebfb018981eb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_datasheets_2021_human_source_decision_surfaces.py
+        sha256: 6a9b245fb70e32b72a36d145dea9abc3e28fa3e04b361a7cf091e9c5937374af
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.47.yaml
+        sha256: 5415b839d727e9ebe7989795c359e7115e5e788b416821bbf714d1a1b372a84f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/udi-dicom-paper1-claim-boundary-review-v0.1.yaml
+        sha256: 7c5f8ba376d1fa5ce1aa846cbd1700948c2b2641785c37d07cb05825f3531631
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-udi-dicom-paper1-source-decision-brief-v0.1.zh.md
+        sha256: 81a56b4ecf3f185e3443d766dd0dbbc306642c98d0abdcffc92fe9e5986ae5a2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_udi_dicom_paper1_claim_boundary_review.py
+        sha256: 18d93b2a2ac657d9c0c66b91c2a5fcd35acf6309234d09afc5fa6f450b89dfd0
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/udi-dicom-paper1-human-passage-review-worksheet-v0.1.yaml
+        sha256: 1991daee6fc6e3605f91500487da78dc7d4849fe74cc15d91eac6310b2554ed8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-udi-dicom-paper1-source-decision-gate-v0.1.zh.md
+        sha256: da6608f348769ec1b89e1d01704eed7f03175fad0968ac5826cf254106ac4a69
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_udi_dicom_paper1_human_source_decision_surfaces.py
+        sha256: 7a023f04e3d2679edcb1c6de2b985bc1c38cec69eb0fffb58e44e5483e2e2d66
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.48.yaml
+        sha256: 044ce50b409b25b2afe6632b917a5ce37298467926cce2c162cfa7bc6b9a7920
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.49.yaml
+        sha256: 30d5cef442f566a835872e3a046f5c685b9c0c07e9c269158c16f827c06293bd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/public-dicom-paper2-claim-boundary-review-v0.1.yaml
+        sha256: bab0ddf07c0c7003253a26cb0ffec5f6d662c685adb76ab8a440509491952f17
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-public-dicom-paper2-source-decision-brief-v0.1.zh.md
+        sha256: 2263c5ff663b726f71c6cd40263445d9679ec30c0e89a3be70d3f312936a0abe
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_public_dicom_paper2_claim_boundary_review.py
+        sha256: 2126bb06efe8192188369ef54a1d8882fc9e86b1fe001e46e505ab4ad0dcb231
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/public-dicom-paper2-human-passage-review-worksheet-v0.1.yaml
+        sha256: 014d3d070bcf041aa55eab3a6056a085761e6168b679bba900e1e96e078b8630
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-public-dicom-paper2-source-decision-gate-v0.1.zh.md
+        sha256: 350b7ea1abdadecb0fc2bc9046615b6ef8ec2c85a3e86032d3ec9a1cb3d314ca
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_public_dicom_paper2_human_source_decision_surfaces.py
+        sha256: 76555daa8330f57c539dd59cf3007de59b12ba79e2290ee8e5bb02efbc3082e7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.50.yaml
+        sha256: 3e1c54dbd815e09c7024dffd8ffc5fbac9c9e05be507bf3e7c3875f2d60dd57a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-input-scope-truth-correction-v0.1.yaml
+        sha256: 7a5984ce578412a3ea7d1a58ecb7b1b1f5dd40a05d5b2872746f275a16d433e6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_human_input_scope_truth_correction.py
+        sha256: 106cc4de381e4e0e8ec4b0e2b0721e2e7e1fcb6b528fc287c459e03fca6abb5c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_human_input_scope_truth_correction_v0_2.py
+        sha256: 52f956118c5c48d075def6acf25aafb226505d3e83237718f363f8bbf8033d7a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.51.yaml
+        sha256: 703a48a3acb4751b0205fe4810c69cf8ad85a8b933c29de7376b1960499468fc
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.52.yaml
+        sha256: 4544fa28d37866b0e4638b3fad7abc04ece35e00e0c3de7155f52585af6cd05b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-human-passage-review-worksheet-v0.2.yaml
+        sha256: 127fd10a2d8c71ef20d6051efe2dbf688da8c3eb9fe9ccb201bda53c95f23bcd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-source-role-impact-matrix-v0.1.yaml
+        sha256: 04e84e59c21a49954202fca4400efb49bb6474be48e9104e84a65274d53e9c99
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-gsn-v3-source-decision-brief-v0.2.zh.md
+        sha256: f2f27b732716f6c19452d73edb48f0cbc4e09664b6c3e67ae171706733c16ca3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_source_role_impact_boundaries.py
+        sha256: 8a4314e860c330f3d86fbde21db5113b8a3e2bf4c88acda84689bdb21d58f8bd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.53.yaml
+        sha256: 59825b1953c7f7e9bd6aa62e1ef7015f7d88be624e340ee6026cb6f1258f4248
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-human-source-decision-input-schema-v0.1.json
+        sha256: 6dca4d0ee554ae8196c28255fe5dd77f59c8596dd13bca5834bb95b202b36af7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-human-source-decision-input-template-v0.1.yaml
+        sha256: c1b235187a37d25b877aa283de9e7756ff2b6389ffbc6fc8c181304b5e5a15b5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_human_source_decision_input_contract.py
+        sha256: ef630e118e45b97c558b20de52b115fef7e0266aff34ba0883ce165308cb6175
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.54.yaml
+        sha256: e8c980fbd0fb740c0f43e8ec650c2c80c737824e330e546d207ecf5b14b5ae68
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 9d94007e25341cf0bc6a39a15d084b6a9d408dd0eb45b4c77101b0c09d79f43c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 11f0877b389f62efed219059566b88ab8910492255813d61e8b85a0630d01bfc
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.55.yaml
+        sha256: 775d4871e79aba0054b8324d329aef482bc441a7796919b480aa2d7ff3a2f960
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/provimaps-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: bff2a305757c9511de0691cff1d265457d74b1b1c0d2b8826e8287f8f94e7577
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_provimaps_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 81a8c9863f2b629cded1cc1e1d5de2d654f21a50c34ec976d34c7de0f9c2e2da
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.56.yaml
+        sha256: 51f4741a292ede18681a55f2c764435ab88070f152fa282e43f709f9bef4e614
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/provimaps-human-source-decision-input-schema-v0.1.json
+        sha256: 5704ba05ad17ebfbd4b06a3a396461e95f8f91a1a5990e42d1264468d3ccb4e4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/provimaps-human-source-decision-input-template-v0.1.yaml
+        sha256: 1dc0d75c82f0cc14ffe9358e3bfcc1e3e4066dee70c853515f4be7a49fbf770a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_provimaps_human_source_decision_input_contract.py
+        sha256: 5ccb38e88193dd0c04d927eadb9c0f84d8155e6d0e782bc91aa6577da9f59d26
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.57.yaml
+        sha256: b0f64d4db55d00f693d7952414e9d1fb8f175984093939c75e014d904a23620e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/vids-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: a107a2e335c899e9831131a2444008dbfd5fa1f68fae6f359dbd06f26b9b1ac4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_vids_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: b0c6b0c3dd27c89f5cc20e686012c1a4f0c5caa8a8c978af4173f33c0c4a3754
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/vids-human-source-decision-input-schema-v0.1.json
+        sha256: 1b19b2656e1b5bf0b1b68aa7e249df48b0d698d4b5efa7c93e5b6a88071e78cf
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/vids-human-source-decision-input-template-v0.1.yaml
+        sha256: a300ae216d5b2205b5b508df8a7f0f9c86c648e32452079a890fe4fa4683dc2f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_vids_human_source_decision_input_contract.py
+        sha256: 45267f0dcd42d4c1aee7919aaa46040b3d2fcab0aa764d092fcecaabcccbcee1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.58.yaml
+        sha256: 37d30811df8ccff62b246678cf27281412bafe0bcb41249f32c712589a2a7bf4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/omni-decision-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: a98fec865420968ab7a6ab40467156b50e607da67590453cfd3751f0a1af29d2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_omni_decision_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 0f51ccd21acaa353658a135ff0426f1ed0185e40e68601a2022d47f639f1a0dc
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/omni-decision-human-source-decision-input-schema-v0.1.json
+        sha256: db08e133b90a5431a1670073d10f47854d9b7f282af2993a834d08ae30cfa372
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/omni-decision-human-source-decision-input-template-v0.1.yaml
+        sha256: 00307f3c4e7517c056dfbbc284e4e28d97c686b9cbf19db6135ce6b2708df43f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_omni_decision_human_source_decision_input_contract.py
+        sha256: f9aa8ff981dfa17a6016621d935fed65ace376ceaabfcfe3e882b500699172ad
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.59.yaml
+        sha256: c58d248df88a025b92b644831c9389ca201f6456a287f747b0cf934038d98edc
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/odes-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: f02fa0dd535e6c095fc6d90016a382b3e4e68d54753872ef5bba6e4e302b3c1b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_odes_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 0837d9c02b945ca759f7b6c86a80c9e59b17997e7532a1a1d2df6db62ac58b5b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/odes-human-source-decision-input-schema-v0.1.json
+        sha256: b2f1590ded9d77f8756affe1897e9d08084e46e620077d8509fe5cd56ee657cf
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/odes-human-source-decision-input-template-v0.1.yaml
+        sha256: aea1bb0c2c38673973103eda3faedd6a4d9f7b84b171bda6cc3de17d054027a7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_odes_human_source_decision_input_contract.py
+        sha256: 126b099089861d7bf93d261fdf487f3a6b81b3c9bc96979d2d219e29c2ad0c9a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.60.yaml
+        sha256: f40d0e36b0df99219c786c0e86e266008f406a6b279a39704610cbd8245402af
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/udi-dicom-paper1-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 8f2ab65cf7afae9cb358cc397546955c2f63280ed6a27ddff0bf722b822fb840
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_udi_dicom_paper1_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 02fcbd91f4c4dc25afc750f6e1ae3c2cb69f27e91d861c1e8aa01d943f81a7fb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/udi-dicom-paper1-human-source-decision-input-schema-v0.1.json
+        sha256: a30f303848869accdb77add72b159c79cf4757adbf4218e4dcfa2ce16d5872a0
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/udi-dicom-paper1-human-source-decision-input-template-v0.1.yaml
+        sha256: 9061a8cccaed4f3c613d9dfd0329a86cc595e2e0f444e98d92426c2ae807a01d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_udi_dicom_paper1_human_source_decision_input_contract.py
+        sha256: 61c2c82a8f09b87aac7638c91b130e612f26b3be991bcbf892055bdc7ca6f31d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.61.yaml
+        sha256: a799449f02ddc2034136966fefe8734b98b2734e3d6243f665a10e69d7763719
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/public-dicom-paper2-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 823bcd0400a22fb7cd3d9802bd0d5d5595205e2224577d8bf7502b264b6967d1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_public_dicom_paper2_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 998a22448dc06081c1b0c71383ec66b6dcc01ae13f50783e2a147d963b8e649d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/public-dicom-paper2-human-source-decision-input-schema-v0.1.json
+        sha256: aa3e4d60602725bd0dd328ef4f2f255d7a02f27cfe1d642ec5b84ff80601b520
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/public-dicom-paper2-human-source-decision-input-template-v0.1.yaml
+        sha256: 3bde1c076c76102584ef076d625053112b2f7a1afd0c07b6fc6bc9dc51b5a7b6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_public_dicom_paper2_human_source_decision_input_contract.py
+        sha256: 8c87156e4a158ce84e5116707f812bfa74697a52535413453e588cd1a570b059
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.62.yaml
+        sha256: 6228cacd96328ecd46352f186347c890a628c6fe5961047a8ccd8d2ee1d8d76c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/model-cards-2019-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 53fda9aafbcf020ad0b3d4fbc7f2df0f4a14ce6e51420c60db272206f6d6f87f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_model_cards_2019_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 448cccf674c05308add5e62e589caaea595c61ffb193ec6f2076666790ec8b1c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/model-cards-2019-human-source-decision-input-schema-v0.1.json
+        sha256: d5e6ffae91f4f8c0252484083b0c0fb249afc525013742165ae6f96e75e5eea2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/model-cards-2019-human-source-decision-input-template-v0.1.yaml
+        sha256: ba93ff0f08e47c4a28b7d46ae7486af0d86f22ab5774397bfd01c91d87582c80
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_model_cards_2019_human_source_decision_input_contract.py
+        sha256: 94c45452846222a4bd6619fc9d52461baee43399334e62bc9559c0a9ee2dc42c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.63.yaml
+        sha256: facf963d303fab31258a640113a4e5f48658f39b903c97dc5232351caeb54da7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/datasheets-2021-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 3127111b8bb004dda0865f568c81952b305cf201184b1f22f5412db1760d6551
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_datasheets_2021_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 5760950a1882d9598fdd4231979f8ad7e775cada6bdb60da60209a8ab15f47f0
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/datasheets-2021-human-source-decision-input-schema-v0.1.json
+        sha256: 496ac11867b5bd0422c1450a26265a7bcc93805f15775807ed258df75534b234
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/datasheets-2021-human-source-decision-input-template-v0.1.yaml
+        sha256: ed7f638c3d2886e7bbd4e2a6cfafddf174f695caaa3ff21b6b5d9aab5322c9dd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_datasheets_2021_human_source_decision_input_contract.py
+        sha256: 70a659e5d5e8e2f2d91780cde9f7936d9db693f274523992c5a68a7381d3dc3a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.64.yaml
+        sha256: 187ef31588d019675463c201f67f459796aa35f798bca320df3c5bf962bfb84c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/w3c-prov-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 205238760fb3634424eefc823ef75a330a24342ce2d149f92632baea6314d045
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_w3c_prov_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 14f759492d9d9d11bb1aca0ecbb3a9cc7051ab8375ff9fe0f1c2c2109a064e81
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/w3c-prov-human-source-decision-input-schema-v0.1.json
+        sha256: 24f825a4ed2dd5c7e1212286fc18a9c37dab1f4d985c07821bde762638ba4934
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/w3c-prov-human-source-decision-input-template-v0.1.yaml
+        sha256: ccd01e658c0c5c986bf3b767eef7b3cb40e1513e788b08d6d6b0e144317541cd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_w3c_prov_human_source_decision_input_contract.py
+        sha256: 4461527c8e4bda3b4c83fa71edb85e973f7ba25f073ec6991983ba284dd721bf
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.65.yaml
+        sha256: 83e0f5b49dea34da29ddb74454db81a95640fe4d3bada194fc6ade5a67d271a1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-3-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 507590fe99c9172b249eb9aedc07812d0691f15ba1e79144216e46a413ad6714
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_3_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 745e9c15529bdb897db4d7152972b4d0f3a877446112732c09d35260b29464c5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-3-human-source-decision-input-schema-v0.1.json
+        sha256: cf7a2bfe032cb18a81d29207d2d90486346853538b6628310879590fcc905529
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-3-human-source-decision-input-template-v0.1.yaml
+        sha256: a9626f64ff78d247df406f97966432df96315b6b292595b09ad0ba0de517f5ff
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_3_human_source_decision_input_contract.py
+        sha256: ce31878600f413d416a844f3fd47f7a224e0a56f80d59294f83acb16b1d91da3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.66.yaml
+        sha256: eeec28dc82d148771c3d815b9448435170d94a9f22cec3c6f39c5de0a767d7b7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-15-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 021631548f4ba5fc11efd0948d4f7df1337bd810432ea9436d268f5573d72354
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_15_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: e3fbe73b70f642a6dc4e1a25ece47e1966a67896e345c610bb9fac80be2aa2b6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-15-human-source-decision-input-schema-v0.1.json
+        sha256: 6359abc012b429ca7bc308ec963c3013456dae0486d321c5e876ba9fa37a009d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/dicom-ps3-15-human-source-decision-input-template-v0.1.yaml
+        sha256: 61bff68aba0eb68e562f5742a6aa550ed4e747cfe23e026e2afa552088257757
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dicom_ps3_15_human_source_decision_input_contract.py
+        sha256: 1e0fe9bd4b487ba44267d4c256839cfeadbc9afe9c58f934abc247d38726cc2f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.67.yaml
+        sha256: 047b15a68f323eb73b924f4396254e47af50db1124bc2b8ae88a514e3aaae735
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-device-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 506d918adb26113cc7f0d37273d31731b68d14a417c1898a3fc2734404894c1d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_device_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 28ab89e3ecb72355734bb4d4f82419022105a0612b056f6be092bb2c98e867c5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-device-human-source-decision-input-schema-v0.1.json
+        sha256: 43e3433d9b20bf2a55fab9a6ead58d63c7f7d74d4e3987eaeec10fb1173fd003
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-device-human-source-decision-input-template-v0.1.yaml
+        sha256: 1f0fe4e103cc0610793a5d2252dcb4508706ff538eecf3625b4a7daab3d4b0b0
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_device_human_source_decision_input_contract.py
+        sha256: 29eaa19e7c49dd66a3cc271da4ad7904662b9339a8a923af8d4d94dee54690ab
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.68.yaml
+        sha256: 4a3eb9046945f7cb6bc06c02bbe8ece2bd98ba5cc7b3d0ea97956b038f150947
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-provenance-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: fb86e8520743354161d4d1c72b9d390f5a9ea3af2ca4d457222a70ef4019fb44
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_provenance_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: be909ebd4aae4ee14aae240cbed34d8184afdddab7908067704d75ade07bd17e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-provenance-human-source-decision-input-schema-v0.1.json
+        sha256: f0a792922c5db63d2ea6db67fbbfe6846b96cfea8c2a8787032b0583b3c6b015
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-provenance-human-source-decision-input-template-v0.1.yaml
+        sha256: a754b1c1909c66d71bdb2e168e7d33909db7d3dca279c74ed48cc5f30b74383c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_provenance_human_source_decision_input_contract.py
+        sha256: 89a2d7e43252b4216566bf70c40417b8e1d27e745597058e4b46224fa66b9e39
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.69.yaml
+        sha256: d826714f41e98088d068659bc65ef7b1082be449ae61fb0db8f624479c093510
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-auditevent-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 4bab372d501f6b815cd590c601f3520de715602b3f2b36bdbaac252a24aed2d5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_auditevent_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: e0fce67dfc7640469b8824c3b60fe1f4ee605e4994acc77e8506e6fc49d316ad
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-auditevent-human-source-decision-input-schema-v0.1.json
+        sha256: a0f7d272ea4e86984c1d4bf18617880aeed40faaebf40d3bad90ac6ac3054d28
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-auditevent-human-source-decision-input-template-v0.1.yaml
+        sha256: a5472ebf03773ab1ffe312c86b96ace2d4b30a80b4cc8ccc0b25d6ca393aa961
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_auditevent_human_source_decision_input_contract.py
+        sha256: 80045fc1406fd95e08fd526456a6a8960786733861a2cbaebd55517d24f644b4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.70.yaml
+        sha256: fef5e9227768013ad957ca9c1ec0d8a4c0f7cc5cac0aded82862b89731f25335
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-imagingstudy-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: c07fffc83cd79570d78bbe6d77a5f7fec4be440d5b231ae574a4d5dc2627c39f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_imagingstudy_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: cf848890d250e6a454baf7aa7c6d25967396b46010e6213d129707defb754d5d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-imagingstudy-human-source-decision-input-schema-v0.1.json
+        sha256: e268ec9c9bfe78d0f2226605583b49ff0a74a040720d45e2234457d555a162a5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/fhir-r4-imagingstudy-human-source-decision-input-template-v0.1.yaml
+        sha256: f0f80ff3ebc323a68e92a764cec7c0befad4b6a195ff4f5aace68a44bfb5ff70
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_fhir_r4_imagingstudy_human_source_decision_input_contract.py
+        sha256: a8080a4b997c457ff4958055ff3be9709e283d35a421b684097eacd5d2f715f0
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.71.yaml
+        sha256: 862519d8bd8c112c5abf8ad7b081c08e080b06e2acae11cd7b6de28ad89c4e74
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/opentelemetry-semconv-1.43.0-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: e7ff56664e5f5017b0ad03309f1afb146891d7ac02bc72190bf644d051eeaa10
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_opentelemetry_semconv_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 3d52fb445a1deaa7233e564cae7646887b02a317e4f1142d5ffaf577f5f778df
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/opentelemetry-semconv-1.43.0-human-source-decision-input-schema-v0.1.json
+        sha256: 529bacb821678dd3446aa213d02bbc4db6463c2cc0ae33afd9ff02edf2077fb4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/opentelemetry-semconv-1.43.0-human-source-decision-input-template-v0.1.yaml
+        sha256: 4e65e2c01d0f018982ef8f13aa258dc477bfba0cd5ceff5908cddfdcf4827803
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_opentelemetry_semconv_human_source_decision_input_contract.py
+        sha256: b8e99806cc8d564780e93663526e53429a0e0b3b9bd81b44df1770aa51ce7123
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.72.yaml
+        sha256: 13019ff153d501175c161a643904edf6d11af2b9fa9755a34ca2f42be180424a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/in-toto-spec-1.0-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 9888e277a15373fc7b7dc587ded3e06dfb02b7a8670fbbfc3a4483f7b375b124
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_in_toto_spec_1_0_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: d13a2a52bc5e22b823b737fa9fc326076272e85b26c14fb8e9442ebb184b7e4f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/in-toto-spec-1.0-human-source-decision-input-schema-v0.1.json
+        sha256: ed577d24a7898e055252f3474f85b6e7d12fe9b6e4b8553586bad5a0ee93f904
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/in-toto-spec-1.0-human-source-decision-input-template-v0.1.yaml
+        sha256: 08367adc2dc08b596578b8c815a9603eb4f80af57ab7a0a555cc181bd00975b8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_in_toto_spec_1_0_human_source_decision_input_contract.py
+        sha256: d577ef7f57c6263c7bda5038643317ff5011ebfcf8f324d4d42fa17b91f43604
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.73.yaml
+        sha256: e99632852efb8eb2c6de078dc16158fe0d5cee0cac761418a21735c8973d5e9a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/slsa-1.2-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 5fed2cb152163a4ac9602d687185e5c23adf3236f0d971d741eafb2e719671fb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_slsa_1_2_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 62dadf5020a39b6ff7143772d51ef6615d1ac87bf1c1a62d6520f4607c7eaf46
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/slsa-1.2-human-source-decision-input-schema-v0.1.json
+        sha256: 379d1ce6e686cab24f2d63d84e7c06963bec7b05b7de9c4a4bc02c9a8d7c5e7e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/slsa-1.2-human-source-decision-input-template-v0.1.yaml
+        sha256: a5345a93710bc27daca1ac34d787a2adb33a5e364d1516cb83d2eed64dd214b6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_slsa_1_2_human_source_decision_input_contract.py
+        sha256: 93806c55c3f6534025dd752eac79ce4cbd6d153d77e337c8e450d73308384d84
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.74.yaml
+        sha256: 693604721f7a594341fd4dfd82c044b9956625ef67b1524d628a914aaa7cc8f7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/nist-ai-rmf-1.0-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: 404bafc189bceb455b62af8265921a66df6488fac4a6c63b8b9d38ec75967595
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_nist_ai_rmf_1_0_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 7edc3719130b960d6c401e8f7c57ebc180ae2bf9de4a356760258558d20ea45a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/nist-ai-rmf-1.0-human-source-decision-input-schema-v0.1.json
+        sha256: 67a1f364bf4cebff4f0e4596f6aa0b29f4360bff13ec050dfcf23163c7914015
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/nist-ai-rmf-1.0-human-source-decision-input-template-v0.1.yaml
+        sha256: 49ebc99f72955b6657536e30e78e0994082a39bd20663aa83f8b5a62028ba400
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_nist_ai_rmf_1_0_human_source_decision_input_contract.py
+        sha256: 85002bd800223cdd098e47a5bfc922e8e8b39374314c099ef69a6df77e5df935
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.75.yaml
+        sha256: e7dd8b00a7c0dee03425abad7b5953de26da0f8807bd98f4ce2a78f05134a036
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/c2pa-2.4-dba-saee-dbo-source-advisory-v0.1.yaml
+        sha256: c2995b34280f16251955ff2a58605c8649c256f467b800838cff22c332363236
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_c2pa_2_4_dba_saee_dbo_source_advisory_boundaries.py
+        sha256: 4bbe8e80238fc26a8bfa659f6adae2f65270597bd552967e467b808fb804cbf7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/c2pa-2.4-human-source-decision-input-schema-v0.1.json
+        sha256: 54a7c00d1a21d9cc80b03c8321dacf858ed3645a99063a1dc5061e64a9ec0999
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/c2pa-2.4-human-source-decision-input-template-v0.1.yaml
+        sha256: b716c8944fa5da5500f8fb13b07f2e895ccaedec7098c7b3800731a5f021e272
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_c2pa_2_4_human_source_decision_input_contract.py
+        sha256: cb528e4daaf9823b34b01ad8f6faa8b079f5516c3ab9aa263255a93ee88d95d9
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-evidence-manifest-v0.76.yaml
+        sha256: b39eabfe9c1dfe8175f6c5769cc1fa030cbc9ee17fc23aba6f36ee89b60a4b75
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-human-field-set-confirmation-record-v0.1.yaml
+        sha256: e68447ba39ed349be80700137743272e2347ec764650ac258b49e2555d049ad7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_human_field_set_confirmation_record_boundaries.py
+        sha256: 91012b3192ddb0757c15dede79c55b29c77fb632a23c99063aeedff0a9273cba
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/source-by-source-review-progress-v0.1.yaml
+        sha256: 97edf499ccb0ee758a2403c45d773b84b410d26659b4db38b25b5c084a8ce5ef
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_mutable_source_status_claim_scope_boundaries.py
+        sha256: 960fc0d26fd0e321171a8bf9e1134b8c6f019e0206ae245876e83a3becb02265
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_source_claim_scope_version_review_boundaries.py
+        sha256: 2438f403a4761bef8df88927fba0198011d2d0d0dc55a2ce7e6f78ca4b148c5e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_source_version_convergence_boundaries.py
+        sha256: aa9bdaea8648b476bc544da84add198860c824de9ca59f95d72b0aa827b9a761
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_tier_c_source_distinction_matrix_boundaries.py
+        sha256: 03e1ba74f24c7600fbff824b3df12e0862da78319703bffbb97045c33903610e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-source-decision-docket-v0.3.md
+        sha256: 672b61483fc795ccd67c82de0af298b89c671a3d8ebf772573b2854e8e8908fa
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-source-decision-docket-v0.4.md
+        sha256: 350826eea87b3c4eed0d13061222cd88b109bd16fd0ea65a2555c0bd10342844
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-next-action-queue-v0.1.yaml
+        sha256: 8e1db19f41138dd0159d330adcee5efd76a8e464fe0e70dd770ddfdc40d70f5d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_human_source_review_next_action_queue_boundaries.py
+        sha256: 56cf0d34b0eb621ac93cc0161dceee618923ee5dc5322eb468b2f78987ba7a3f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_current_source_review_pointer_consistency.py
+        sha256: 99433df56f1d4296ade1902a84c4ece371cf912815dd62e24da3640d3075647d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/gsn-v3-source-identity-refresh-v0.1.yaml
+        sha256: dc6659b6de357741b0b7aee7220c32d9f2517dcc113522d5f1ad2e1c7d9b1d2a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-gsn-v3-field-confirmation-card-v0.1.yaml
+        sha256: 96a5abfe96249c6dd4e7ca971cab5fead35d5abab3e52b6c132c9d4fae8bf377
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_field_confirmation_card_boundaries.py
+        sha256: c133dd1a5e2dbe4036908f6e535e8187291b0afb9b77c39442c40795760a491d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/human-source-review-decisions-template-v0.3.yaml
+        sha256: ef0403ce3c659a9c97c22801a6155b163791157fb8a9fa45c1e4865c79be3d1f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-source-selection-gate-v0.3.zh.md
+        sha256: 6866dbe763473e5d3b57e8a4312eee869664cd2e2a290684ec879f5488b54a80
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-challenge-protocol-v0.1.md
+        sha256: 7bf377d673efc20b6d57bb2f8eb3acf7a46bb74d8d158e826e0cbd74be42b4eb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-template-v0.1.yaml
+        sha256: 5ef20911a75ad899e153ddf2340dd1dbd7586feae7ee9f486feb1320c4dcaca3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_source_decision_and_novelty_review_boundaries.py
+        sha256: cca39a5f08fb0cf6732bd0d513decd86ab31e7680f58d2373a6b0db638b1351f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-packet-v0.2-candidate.yaml
+        sha256: 3db9ba76fe27043be2ca8497f7628ee22f244bf5a8923b360b40d3c0f5869a9d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-record-v0.2-template.yaml
+        sha256: 2cc20616775c60e5fbd25183f03191f9db06ad2e987bf22439b01e401d4b2bc7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_novelty_review_packet_v0_2_candidate_boundaries.py
+        sha256: 768f1af817b2b33abe97cc9150630ce920211b17236c0712cd8a57d4ef75b9f3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-reviewer-eligibility-schema-v0.1.json
+        sha256: b1b473a43cf62897c60f580186d8ad4e597fbb8db8d1a0d377a214a5207dbcd5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-reviewer-eligibility-and-conflict-template-v0.1.yaml
+        sha256: 27adba31d07a1b1c5db6ffb2352e646505f5ed9d0037753e72162074966c5905
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-reviewer-eligibility-gate-v0.1.zh.md
+        sha256: 52515d927979a14d799ab01a5a95a7428d98b4602a06b0d5625c1977e2d7877a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_novelty_reviewer_eligibility_boundaries.py
+        sha256: aa8b3b9684ea3a19f1b46968bd3be35b236e49ab14b7cdaa88a0302bf2730db8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/build_independent_novelty_review_pre_freeze_candidate.py
+        sha256: 53783f9ada69d1d3f71a962235d508d826814f9e6af079b1e26a53f6d72f4f51
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/INDEPENDENT_NOVELTY_REVIEWER_GUIDE_v0.2.md
+        sha256: 53951e9438c08fa288cae374fbd4d8e01329f119931444757ece7c44bce35b23
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-novelty-review-pre-freeze-candidate-v0.2/package-manifest.json
+        sha256: 3896eaf20cfcadac7773d47241da738a41a75f34a31f1a26015b350cc18f2823
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-novelty-review-pre-freeze-candidate-v0.2/checksums.sha256
+        sha256: 45b86132ec5d16e32fd3b3d00d05fb95b15e393c734f87a3fdf8d53cd6d945fe
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-novelty-review-pre-freeze-candidate-v0.2.zip
+        sha256: d9731b543f5d69879df6a782cf77018c4479009100d52604669ff2ececb81757
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-novelty-review-pre-freeze-candidate-v0.2-build-report.md
+        sha256: 872647c80e163d4d6227287262eff1a1ac8ca2e99d80533e6043b4daf341000d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_novelty_review_pre_freeze_candidate.py
+        sha256: aefb254c83f6d9d925435f45c7ead1c88c064de5f634bec0c9fef6c2358c7fa1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-reviewer-nomination-assignment-schema-v0.1.json
+        sha256: 5d7e51b4690285a42378511d54cf57f3e6ef58269ca41b9d52395a945cd0232a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-reviewer-nomination-assignment-template-v0.1.yaml
+        sha256: 8fd1993c58c07e0ffafb97b6a1e770d585bd122a36e9c874f33bc61ef5a05649
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-dispatch-authorization-schema-v0.1.json
+        sha256: ce9ea46c94203ad7663a2c2d9bcb6893f264541fe46e165e5d74e8932da58d17
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-dispatch-authorization-template-v0.1.yaml
+        sha256: 9df860cca9d29bba397fc687def4701fb00670afd9ec5c96f08c7bbaf0f8b591
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-dispatch-receipt-acknowledgement-schema-v0.1.json
+        sha256: e7306eebed140d9dc71b4e3109be9b06a374b1cbe0d4fa0deff23e660e342a78
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-dispatch-receipt-acknowledgement-template-v0.1.yaml
+        sha256: 5e544c059fd168cf91b51fc23ff32dea8c526b102757ac6a9a0cb3538e6cccd2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-human-dispatch-gate-v0.1.zh.md
+        sha256: aaeee15d5f7e9ce8355d480b75a992293a036f611abd1c42500012633cdc411d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_novelty_review_human_dispatch_boundaries.py
+        sha256: a17c98233181fadc6ece0934e172ac83a9e12fb5e2efb52141a255f2a6665d45
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/verify_independent_novelty_review_dispatch_chain.py
+        sha256: fa813df817be414efb9063d48c1975d9246159c9743ccf8289e3acb8a392bc44
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_novelty_review_dispatch_chain_verifier.py
+        sha256: 93ad20bef1d8142c48be916767db55ddc603a4f7252a6470af7ce7399d58e191
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/references/citation-readiness-current-state-v0.2.yaml
+        sha256: a567be49d366c5dfb5cc21b1b482987904a11d6f975911e15a3c58a9be075c4a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-novelty-review-post-freeze-rebuild-gate-v0.1.yaml
+        sha256: fa2b23c1988ceba464f19e27d5b7246c29279333cdda5b2418e4335510da2c01
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/assess_independent_novelty_post_freeze_readiness.py
+        sha256: 45dcfdeb437be9f8bdfe88117271781386770f0421f4ba11ae8be3678e0afb83
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_novelty_post_freeze_readiness.py
+        sha256: 49d98298878b219f3f8fbd6e05637db4bd621eea30d85c602a5d1ed6e8c6e1e6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-novelty-post-freeze-readiness-status.json
+        sha256: 0c4180f501dea4d4bdd654d62f39dd87b753b742a5d5ec7a98479c2285e21c97
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-novelty-post-freeze-readiness-status.md
+        sha256: 8fa76576609d1c4acefb480b3aed055e716496332542876843722435d9820a96
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/assess_gsn_v3_human_source_decision_input.py
+        sha256: 782ae0ab80556d2cf15ac4ced4723c570d4c768a90b2aad1a528490dc39ed62b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_human_source_decision_input_assessor.py
+        sha256: fcfcd681dc3102ff1ceec925e070399f654793ea1ad505019ba187a925e1b93f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/gsn-v3-human-source-decision-completeness-status.json
+        sha256: 7e5aa178a449756b93fd217c66a0a53046ff97c8c279112a7398d3eede3f76cc
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/gsn-v3-human-source-decision-completeness-status.md
+        sha256: 5f1887e246daf5f433e057f38645211077a6ece02d5966576193f5019bb02492
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/gsn-v3-human-source-decision-packet-v0.1-candidate.yaml
+        sha256: bef5adbf389ff113a39a96b26ad189aaab029ec06857f2c0f24e8b6a8ff959a6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/HUMAN_GSN_V3_SOURCE_DECISION_GUIDE_v0.1.md
+        sha256: a4e26dc2d266655dfcf58585237ce3cb527e5862b59636fedea5d15d299ac304
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/build_gsn_v3_human_source_decision_candidate.py
+        sha256: 2634eb38782563e2a1b2f9f47d4a7ab3ffc4a866985abf11d5e1e47766b34ac3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_gsn_v3_human_source_decision_candidate.py
+        sha256: a43a17edec7e64efcdcedd864c130dcfdb085e6cbfd2e9c2aaa90a27c7844e41
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/gsn-v3-human-source-decision-candidate-v0.1/package-manifest.json
+        sha256: c7316208aeec1d34cb61d261fd5f051fc2118fd337ad29562968aa5d1c96b256
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/gsn-v3-human-source-decision-candidate-v0.1/checksums.sha256
+        sha256: 4d1bf37737cc7620436207d8bf699e011758c805c7baf53d040dc12f573b1aa2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/gsn-v3-human-source-decision-candidate-v0.1.zip
+        sha256: 03b2da0f82ce449d256e9ccc980bcf82376681d202ae23c969928694a0caa64b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/gsn-v3-human-source-decision-candidate-v0.1-build-report.md
+        sha256: d96ee20f6087688c4ba8d05fe1e9cf6ce531c27cc87522d3fdfb2698ab582475
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-packet-v0.1.yaml
+        sha256: 0dfe8d80a1e755c612995912862300cb362e98326b60546c83f110be8693c331
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-template-v0.1.yaml
+        sha256: 5ad510bea36d341d0ce4f1ba116f063d560f5dfbbfdbc46b50220ea26566ffb8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_methods_review_packet_boundaries.py
+        sha256: 3bcad609d4f61fa0d641a47384398254bcfb5a084fbc7a37c1fddedc4cd67c31
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-packet-v0.2-candidate.yaml
+        sha256: 806efbba66b4f0a719215511e5b35a86d10155fddc6f3d9c8af4c271a84e9fac
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-record-v0.2-template.yaml
+        sha256: 5c6b2fe0160508bc74b341c3069ac58dca0b1d8d6450c7b2483fa5a7c8177d86
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_methods_review_packet_v0_2_candidate_boundaries.py
+        sha256: b95186fa1168e5fd2288503b7034fc7078d29ecc6fff914f1f0918115c25b258
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-reviewer-eligibility-schema-v0.1.json
+        sha256: 72854f06969c66b017351b3ac4175d232a5f885ea7ab9cbd5576702cc6681cc1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-reviewer-eligibility-and-conflict-template-v0.1.yaml
+        sha256: 39845f12f84f9435c55b35dd1fadeadd41dd55941c818fc54f0f0b89b4d4abf1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-reviewer-eligibility-gate-v0.1.zh.md
+        sha256: 6ec8f06f061137fc6bcb17ec5d57a225796610b5d043fc6b85d7376c4ffd3408
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_methods_reviewer_eligibility_boundaries.py
+        sha256: b1753e466ca5ee82c94486552b10f83dc877024d10ccab92d86324e51d8875b3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/build_independent_methods_review_dispatch_candidate.py
+        sha256: 7c361dd12754a0168584b0b80beefad2c35bcbd1b629443245ff126e32719101
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/INDEPENDENT_METHODS_REVIEWER_GUIDE_v0.2.md
+        sha256: 50296a64c3a4315d6883721a83ddf3772ba67c27d69f3522180dc3d4b63f05eb
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-methods-review-dispatch-candidate-v0.2/package-manifest.json
+        sha256: 2b9aa8974dd65fc0cfeaab6865d48ba2649cb8b758af2fba54859866513777a5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-methods-review-dispatch-candidate-v0.2/checksums.sha256
+        sha256: cd575e9c56da68aadc30ccc74383932cef22abf85ed946e16ad7a672899d111f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-methods-review-dispatch-candidate-v0.2.zip
+        sha256: 61252b138f62cd5b1e9912a09cd197cc48c75561b55a361e14cbd5d24d1db33a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/independent-methods-review-dispatch-candidate-v0.2-build-report.md
+        sha256: 2ef3cb4831faedc40922d77454b6e02948270d3aa2f98309ba69993f2aa482a2
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_methods_review_dispatch_candidate.py
+        sha256: aacd28cace7628acd5048319847587f7f34b95fdd9aa2463c305262c02355b7f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-reviewer-nomination-assignment-schema-v0.1.json
+        sha256: e06adbcce83cf8e187cec32da9d93647e0cab2b1a95a137e117f33e98d308c61
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-reviewer-nomination-assignment-template-v0.1.yaml
+        sha256: 147e27460fa6c7ca310155f49e9acd2b3a5311c5eea3f04d135affa89006f3dd
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-dispatch-authorization-schema-v0.1.json
+        sha256: b8fc1c58d68e291a0b50991b530f43e6350cda8dc631ace48b39f6b76ae113a5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-dispatch-authorization-template-v0.1.yaml
+        sha256: 5e4d1d1f3eb9198e6e8986966c3afcde74036e23c050ec47044352a455fa5eed
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-dispatch-receipt-acknowledgement-schema-v0.1.json
+        sha256: 7d0118b1440b54c857a46d743e6c7a6b100cf5d79a1ecb40ea8d24a45308b771
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-dispatch-receipt-acknowledgement-template-v0.1.yaml
+        sha256: 6ac46f2512c108bf5a1aaace6ff206e1195468ba83430ef24dcd9d8df3283fe6
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/independent-methods-review-human-dispatch-gate-v0.1.zh.md
+        sha256: 28e28c18b8e001e03ed08c7219019a682f28e06e1884d88ca689fdff890f283d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_methods_review_human_dispatch_boundaries.py
+        sha256: 600bc0be44fa17b2379c10d8a59853d2800d327f82ccc021b5eced3471ede030
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/review/verify_independent_methods_review_dispatch_chain.py
+        sha256: 6a846857d802597fd311dfd119f967d81af8fc0bfe3223296f133adc7e78e12f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_independent_methods_review_dispatch_chain_verifier.py
+        sha256: 5d20164a88d66294c49ea8ce5a1f8df5234ef424ef735e0610f58276784d0696
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-readiness-gate-v0.1.yaml
+        sha256: d32ec0c2e74f94db4cfbe109952ccbe16cf3555a7068a4f5b72873b61924229b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-readiness-audit-v0.2.md
+        sha256: 76dbe0ea3c8378e0213e1d2643b1467cb3ae0ac2c5d2d0dd60fae942a5ff0169
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_preregistration_readiness_gate_boundaries.py
+        sha256: ff11bd51dc21d03470fb9b6713f20f39fc1a2ccaaf211080598400af23702f2a
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-readiness-gate-v0.2.yaml
+        sha256: e7241fba579ce095f2194918331735ea845b8e6363bb14c7e962fdea7f080734
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-readiness-audit-v0.3.md
+        sha256: 4d46a2927f22b568bd87237a78f50e24cb69ca0b01c37069d34c09165b90cc07
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-readiness-audit-v0.4.md
+        sha256: b71f8756742855c4ae9a6e2a87a07c52725d25578a4403705ae1a9286b0a90f7
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/methods-section-design-draft-v0.2.md
+        sha256: 4eba3c56a56effeefc6422cc0f057e8b944bdd7fe3f1d48c1d237421d13964d8
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/research-infrastructure-observation-protocol-v0.1.yaml
+        sha256: 71335a02324b349d9de6f47b10c65ac8031c870b1de4d0136a4c4f8ed0fb0856
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-research-infrastructure-observation-design-gate-v0.1.zh.md
+        sha256: ab880625c64222772594de2707e1cfcb2744737e85c813e05bf32f4939fa3681
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_research_infrastructure_observation_protocol_boundaries.py
+        sha256: 0bdb2cd7caefe14b4c9afb2a15ba7983b13b443354bdd27b79f0ced32641f94b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-critical-path-v0.1.yaml
+        sha256: 180847a9015daba39a7a2f2659ce0226544e040f2e54df47a4724ef80ff3527d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-critical-path-work-pack-v0.1.zh.md
+        sha256: 8a7bd16c20c9cac812411de59a42887226f5a16fcb527671cf87bcf13f931d6d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_preregistration_critical_path_boundaries.py
+        sha256: 7a1217b1caa69a26d907278a8a81912160b5cb1a5c42af2f22fb1cf9bafca658
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/docs/source-capability-audit.md
+        sha256: dc65c970136cc85a4dda302dd24b6bdb45cbd39898b7906933acc2d6ff785c82
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/docs/dba-dbos-saee-capability-map.md
+        sha256: 04b20aa770c9e30d4059a38e0f6c90641c5bdbe407d19b2c2901069c91e32402
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/saee-c2-current-source-refresh-v0.1.yaml
+        sha256: f75e2dd4af24b0d72d02836fb61575e55becd424348dcac48d8b477eeff76722
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_dba_saee_dbo_capability_dataflow_boundaries.py
+        sha256: 21192528b4a7bc11aebdd2e6a922347dd78a1c8f3c450b1821ee80a9ccf0eb8f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/protocol-statistical-reconciliation-options-v0.1.yaml
+        sha256: 6a29d05a6d660735f85e02d4b60abc7a8fae0aaedd9cd69d6985fc5394df0168
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-protocol-statistical-reconciliation-gate-v0.1.zh.md
+        sha256: 80331afbbcbd52f46783fe56dfbbb86de6e4229f8bf97055baed07b4d357458d
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_protocol_statistical_reconciliation_boundaries.py
+        sha256: 9ca11676a27f57bbba42adca8c233cb3a45bc15176d3dd2c9d857fb7bea30c53
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-protocol-v0.2-candidate.md
+        sha256: 76367ca4573a6a4f9c3981f19bfe973d6c6a89c3b7ccaac388d348ef8c786bbf
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-protocol-v0.2-change-log.md
+        sha256: 6c59c83a659deb5c71e336e4c12c73100e14a0b8a4a4ac434a07e45aa47f405b
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_preregistration_protocol_v0_2_candidate_boundaries.py
+        sha256: 3c20551910caff93763685216481a9e849876744d2e0bf202902242b71d221e5
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-target-options-v0.1.yaml
+        sha256: e42101e29f09283b19955d58ba97a464909662dcbc77afffc5f9aa0aa638814c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/preregistration-artifact-freeze-candidate-v0.1.yaml
+        sha256: 85a293889356ffb2b2e00c55a3e373285055cfbd2c9b59dfe94fb2860b819c36
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-preregistration-target-decision-gate-v0.1.zh.md
+        sha256: 83dc0708e09a09d3e9b69f8760704251679eb2ae7d4b3897cd87ceba1fe734e4
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_preregistration_target_options_boundaries.py
+        sha256: 922d290aa4ca4f05466aca9a7b24ac44d7489ac359502f6d25367d817f62ae9f
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/benchmark/ground-truth-and-blinding-contract-v0.1.yaml
+        sha256: 59df5952ed863177aa92f95cdf228d9c04805249dcc4e510c2b87c24a1b44715
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/human-ground-truth-and-blinding-decision-gate-v0.1.zh.md
+        sha256: 3360f5d4488731794143d533794014bb473eacc3ef7ae2dd742cfdb868aec2a9
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_ground_truth_and_blinding_contract_boundaries.py
+        sha256: 2063a56355814319fd955892c2b2d8b3f0a3c69c2ea6853afdc4fda72808ec44
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/benchmark/evidence-closure-construct-operationalization-v0.1.yaml
+        sha256: 9e78fc4d26fea73f8d057ca806c8c44e6dce28ae9bcb56fe8ecf53a586b67fef
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/research/construct-validity-and-anti-tautology-review-brief-v0.1.md
+        sha256: 44866263ccc2dbe12f72111ea4e0c1a8c593666f281793aa459f88e10c5db639
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_construct_operationalization_boundaries.py
+        sha256: ced6bef5f1ec0c536bb09db4a5d2f46934ee1f75cffa0e7d9d3fa6dae9882086
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/writing-readiness-and-blockers-v0.2.md
+        sha256: 7364cf1c5bec7073cd73fabe9a546c4f647819cfd07e98af59be11d3cfb4e017
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/writing-readiness-and-blockers-v0.3.md
+        sha256: 3c2afd7292affb827abcf1d7565bf28d9244f51a3b372b575c2f976afde88c4c
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/writing-readiness-and-blockers-v0.4.md
+        sha256: d1bff4202315d930542f3f02b9f3c95970047f5a687529edd20cdda5c2470b21
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/claims-evidence-ledger.yaml
+        sha256: 2040c73bd607472bebcfe7233adce1b30dca5f0ecd02102b82c386571ca06e79
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/tables/table-07-claim-evidence-and-non-claim-summary-v0.1.csv
+        sha256: a7eb251f1fcc7c94364364d1426e2f9859fe062e4458a07785019aa89a9d81da
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/tables/table-07-claim-evidence-and-non-claim-summary-v0.1.md
+        sha256: 207e18b13f021f25dcd8b77660dbf546037ccffb9f786b2fe4b4830f2725b1a3
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/manuscript-architecture-v0.2.yaml
+        sha256: 6cb8ce25786d6104e1405b9e1aec3d7d063484a4fbe83177476fb3aa252f9d79
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/integrated-manuscript-design-draft-v0.2.md
+        sha256: 1b9846414e15f8b0c83b5cc7a976bdb0b5a02a99e6e733debf41d1d84b1dfab1
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_manuscript_current_truth_v0_2.py
+        sha256: 5da95e018757094d6b665573536705680a80169345987700921d257cf1643535
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/paper/manuscript-assembly-contract-v0.2.yaml
+        sha256: 308cb9508461d92331d3bc776b00a271b07b602723793373d58b4e96b0421823
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_manuscript_assembly_contract_v0_2.py
+        sha256: 03349656787de1802386126c51485c0ea24a433fd08041f872107d0fc781762e
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/tests/test_preregistration_readiness_gate_v0_2_boundaries.py
+        sha256: 40143a4e5562d75bec537c124d5fe6d0300ace4c5ccfad76d270f6ad6376431b
+    json_parse_verified: true
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Defines the bounded operational object and closure model that Paper 3 proposes to test.
+    mandatory_limitations:
+      - Local specification, not a validated universal theory or canonical DBO contract.
+      - Repository has no commit HEAD; use these exact hashes if included.
+      - Schema validity does not establish scientific validity.
+      - The Human Research Owner reported review complete and explicitly selected INCLUDE for the AI Model Passport source.
+      - The Human Research Owner completed citation identity, bounded roles, bounded claims, and prohibited-inference review for the AI Model Passport source; this grants candidate-bibliography effect only.
+      - This bounded source decision does not approve the Pilot Context Package, freeze final numeric citations, establish novelty, or authorize implementation, experiment, Agent creation, or a scientific conclusion.
+      - SLSA 1.2 is reviewed only as an Approved generic software supply-chain provenance specification; its provenance, signatures, verification summary attestations, levels, and covered verification do not establish UDI, DICOM, medical event truth, AI model/action binding, authorization, clinical correctness, or medical workflow closure.
+      - No SLSA verifier, build/source workflow, attestation, signature, VSA, CI/CD pipeline, artifact build, conformance assessment, medical-event verification, real workflow, or clinical interoperability test was executed.
+      - The GSN Version 3 field set and review boundaries are Human-confirmed for review only; no GSN source selection, citation, role, claim, prohibited-inference, conformance, argument-truth, evidence-truth, comparator assignment, or novelty decision is recorded.
+      - No GSN parser, validator, model generation, well-formedness assessment, conformance assessment, assurance-argument evaluation, evidence-reference resolution, evidence-authenticity or completeness verification, medical-workflow test, clinical or regulatory assessment, or Paper 3 experiment was executed.
+      - C2PA 2.4 now has source-specific official-specification review and zero-preselection Human decision surfaces, but no C2PA source, citation, role, claim, prohibited-inference, conformance, manifest-truth, assertion-truth, signer-identity, authorization, medical-semantic, or novelty decision is recorded.
+      - No C2PA validator, manifest or claim generation, assertion or binding generation, signature verification, trust-list or credential resolution, manifest-state assessment, soft-binding resolution, asset-byte or tamper validation, interoperability test, medical-workflow test, clinical or regulatory assessment, or Paper 3 experiment was executed.
+      - NIST AI RMF 1.0 now has source-specific official full-text review and zero-preselection Human decision surfaces, but no NIST AI RMF source, citation, role, claim, governance assignment, TEVV boundary, risk/compliance/authorization boundary, profile-support, or novelty decision is recorded.
+      - No NIST AI RMF framework application, Core assessment, profile creation or comparison, risk-tolerance determination, risk or trustworthiness measurement, TEVV, independent assessment, compliance or conformance assessment, medical-workflow test, clinical or regulatory assessment, or Paper 3 experiment was executed.
+      - in-toto Specification 1.0 now has source-specific official stable full-text review and zero-preselection Human decision surfaces, but no in-toto source, citation, role, claim, generic-attestation assignment, layout-policy boundary, signature-truth boundary, medical-semantic boundary, executable-baseline, or novelty decision is recorded.
+      - No in-toto installation, layout or link generation, signing, artifact-rule execution, inspection, final-product verification, key-binding verification, policy-quality assessment, executable baseline, medical-workflow test, clinical or regulatory assessment, or Paper 3 experiment was executed.
+      - Model Cards for Model Reporting now has the first Tier C source-specific arXiv v2 and version-of-record identity review plus zero-preselection Human decision surfaces, but no citation-surface, model-documentation, runtime, intended-use, evaluation, truth/completeness, baseline, analysis-unit, role, claim, prohibited-inference, or source decision is recorded.
+      - No Model Cards artifact was generated for Paper 3; no model or inference was invoked, no model evaluation or runtime verification was executed, and no referenced-data use, action authorization, medical workflow, clinical or regulatory assessment, or Paper 3 experiment was verified or executed.
+      - Datasheets for Datasets now has the second Tier C source-specific arXiv v8 and version-of-record identity review plus zero-preselection Human decision surfaces, but no citation-surface, dataset-documentation, runtime, recommended-use, truth/UNKNOWN, baseline, analysis-unit, role, claim, prohibited-inference, or source decision is recorded.
+      - No Datasheets artifact was generated for Paper 3; no dataset was accessed or used, no executable datasheet baseline or runtime data-use verification was executed, and no data-object binding, action authorization, medical workflow, clinical or regulatory assessment, or Paper 3 experiment was verified or executed.
+      - Published UDI-DICOM Paper 1 now has the third Tier C source-specific Springer version-of-record identity and final accepted manuscript review plus zero-preselection Human decision surfaces. Its review field set and boundaries are AI-assisted prepared surfaces; no Human confirmation, citation-surface, self-citation, prior-contribution, overlap, profile-runtime, validation-generalization, independent-validation, baseline, analysis-unit, role, claim, prohibited-inference, or source decision is recorded.
+      - Paper 1's UDI-DICOM profile, external parsing and registry path, machine-readable manifest, and profile validator remain prior work; they do not establish Paper 3 runtime model/action/authority/provenance closure, comparative fault detection, novelty, or independent validation.
+      - No Paper 1 profile validator or registry lookup was executed for Paper 3; no DICOM was accessed or processed, and no runtime AI workflow, real-device, medical workflow, clinical or regulatory assessment, or Paper 3 experiment was verified or executed.
+      - Accepted Paper 2 now has the fourth Tier C source-specific accepted-manuscript review plus zero-preselection Human decision surfaces, but no citation-surface, prior-contribution, overlap, sampling/inference, archive/original-device, software-route/clinical, baseline, analysis-unit, role, claim, prohibited-inference, or source decision is recorded.
+      - Paper 2 remains accepted_for_publication / awaiting_production; no DOI, online publication, or version-of-record equivalence is inferred. Its one-series-per-successful-IDC-collection convenience sample, descriptive record-level intervals, one exploratory TCIA series, six synthetic controls, and 16-record FHIR publication view must retain their actual denominators and boundaries.
+      - Paper 2's public archive metadata, synthetic controls, local Orthanc route, and local FHIR publication view do not establish original device truth, independent validation, real-device behavior, clinical or regulatory validation, hospital deployment, or Paper 3 runtime evidence closure.
+      - No Paper 2 scanner, DICOM acquisition, Orthanc or HAPI FHIR server route, registry or manifest closure, baseline, medical workflow, clinical or regulatory assessment, or Paper 3 experiment was executed in this Pilot sync.
+      - Paper 2 now also has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS_AS_PRIOR_WORK` advisory and a zero-preselection Human input contract. They preserve accepted-not-published status, production refresh, selected-series sampling, archive/device separation, local-route limits, and equal-information comparator boundaries without recording a Human source decision.
+      - Model Cards now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve DOI identity versus reviewed arXiv v2 passages, model-documentation versus workflow-instance runtime boundaries, truth/completeness limits, and equal-information requirements without creating a model card, executable baseline, invocation, or Human source decision.
+      - Datasheets now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve DOI identity versus reviewed arXiv v8 passages, dataset-documentation versus workflow-instance data-use and object-binding boundaries, UNKNOWN preservation, truth/completeness limits, and equal-information requirements without generating a datasheet, accessing a dataset, creating an executable baseline, or recording a Human source decision.
+      - W3C PROV now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve Recommendation identity, conceptual provenance reuse without a C2R conformance claim, event-truth and authorization boundaries, and equal-information conceptual-baseline requirements without running a reasoner, validating a PROV instance, creating an executable baseline, or recording a Human source decision.
+      - DICOM PS3.3 now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve the retained `2025D` candidate ID versus reviewed `2026c` edition, mutable citation refresh, bounded Type semantics, Device UID versus UDI-DI, and equal-information field-presence baseline-design boundaries without validating an instance or IOD, reviewing private tags, querying a registry, testing a real device, creating or executing a baseline, or recording a Human source decision.
+      - DICOM PS3.15 now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve the retained `2025D` candidate ID versus reviewed `2026c` edition, mutable citation refresh, audit-message format versus event truth, configurable triggering, de-identification, privacy, and equal-information baseline-design boundaries without validating a message or instance, testing profile conformance, executing a de-identifier, reviewing private tags, testing a real device, creating or executing a baseline, or recording a Human source decision.
+      - FHIR R4 Device now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve R4 `4.0.1` version pinning, Device versus DeviceDefinition, business identifier versus UDI-DI, traceable source UDI, publication-view versus source-truth, and local-readback versus conformance boundaries without generating or validating a resource, invoking an official validator or server, resolving a registry, testing a real device, creating or executing a baseline, or recording a Human source decision.
+      - FHIR R4 Provenance now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve R4 `4.0.1` version pinning, record-keeping versus event truth, Provenance versus AuditEvent, generic relation assignment to a future equal-information C2R comparator, base-reference versus candidate fail-closed resolution, and local-readback versus conformance boundaries without generating or validating a resource, resolving a reference, testing W3C PROV conformance, invoking a server, observing a real event, creating or executing a baseline, or recording a Human source decision.
+      - FHIR R4 AuditEvent now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve R4 `4.0.1` version pinning, security-audit record versus event truth, AuditEvent versus Provenance, generic multi-actor consistency assignment to a future equal-information C2R comparator, policy/identity assertion boundaries, and resource-handling guidance versus cryptographic immutability without generating or validating a resource, validating a DICOM audit message, invoking a server, observing a real event, creating or executing a baseline, or recording a Human source decision.
+      - FHIR R4 ImagingStudy now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve R4 `4.0.1` version pinning, Study/Series/Instance representation versus source bytes, references versus existence and retrieval, subject/performer versus identity and authorization, subset versus completeness, and local-readback versus conformance boundaries without generating or validating a resource, resolving an Endpoint, retrieving DICOM, inspecting source bytes, invoking a server, creating or executing a baseline, or recording a Human source decision.
+      - OpenTelemetry Semantic Conventions 1.43.0 now has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve telemetry representation versus event truth, requirement-level versus underlying-fact absence, stability versus authenticity and completeness, event fields versus occurrence and clock trust, and correlation versus medical binding or evidence closure without executing an SDK, Collector, schema, validator, ingestion, correlation, event verification, baseline, Agent, experiment, or Human source decision.
+      - in-toto Specification 1.0 now also has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve stable-tag identity versus current master, layout conformance versus policy quality, signature and configured functionary attribution versus real-world identity or event truth, artifact relationships versus medical semantics, and static review versus executable verification without installing or running in-toto, generating or signing layout/link metadata, executing rules or inspections, creating a baseline, invoking SAEE, or recording a Human source decision.
+      - SLSA 1.2 now also has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve the lightweight tag and maintained-branch identity split, Build L1/L2/L3 trust boundaries, configured roots and expectations, optional dependency recursion, and software-supply-chain versus medical-workflow closure boundaries without running a verifier, workflow, attestation, signature, VSA, CI/CD system, conformance assessment, baseline, SAEE, Agent, experiment, or Human source decision.
+      - NIST AI RMF 1.0 now also has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve NIST AI 100-1 identity, the separate evolving Playbook, organizational-governance versus event-truth boundaries, TEVV guidance versus execution, Human risk-tolerance and authorization authority, and profile versus evidence-object distinctions without applying the framework, creating a profile, running TEVV, an assessment, a baseline, SAEE, Agent, experiment, or Human source decision.
+      - C2PA 2.4 now also has a non-binding DBA/SAEE/DBO `INCLUDE_WITH_LIMITATIONS` advisory and zero-preselection Human input contract. They preserve Valid/Trusted Manifest versus assertion or medical truth, signer credential versus medical actor or device authorization, hard/soft binding versus universal identity or workflow closure, and specification identity versus the separate informative guidance surface without running a validator, generating a manifest, claim, assertion, or binding, verifying a signature, resolving a trust list or credential, creating a baseline, invoking SAEE, or recording a Human source decision.
+      - All 21 pending sources now have prepared zero-preselection Human source-decision input contracts. This preparation does not select a source, role, claim, citation, prohibited inference, comparator, novelty position, Context, protocol, implementation, Agent, experiment, or scientific conclusion.
+      - Current source-review pointers in the queue, progress register, decision docket, preregistration freeze candidate, and current-claim support now converge on manifest v0.76. Historical manifests remain historical evidence and this pointer correction creates no Human source decision, bibliography freeze, protocol, implementation, Agent, experiment, or scientific-conclusion effect.
+      - The current preregistration readiness mirror records 22/22 source review surfaces, one bounded source decision, 21 pending decisions, and 4/24 satisfied gates. This is status correction only and does not approve Context, bibliography freeze, novelty, methods, protocol, implementation, Research Agent creation, experiment, or a scientific conclusion.
+      - The current v0.51 truth-correction manifest binds the Human scope-confirmation statement only to LIT-AI-MODEL-PASSPORT-2025 and withdraws the later AI-derived GSN and Paper 1 field-set attributions. This adds no Human decision and leaves 21 source decisions pending.
+      - A zero-preselection protocol/statistical reconciliation packet now exposes four Human choices. The AI-assisted RECON-OPTION-A recommendation is nonbinding; the Human decision remains null, PRG-008 and PRG-010 remain false, and the protocol is unchanged.
+      - A separate zero-preselection preregistration target packet exposes OSF and Zenodo venue, visibility, timestamp, amendment, and artifact-policy choices. The AI-assisted PRT-OPTION-A recommendation is nonbinding; PRG-022 remains false and no external registration, DOI, or registration URL exists.
+      - A candidate ground-truth and blinding contract now separates case specification, materialization, label review, blind execution, and post-run verification. It creates no labels, cases, blind pack, reviewer assignment, benchmark run, or external medical validation; PRG-018 remains false.
+      - A candidate construct operationalization now separates contract conformance, internal diagnostic validity, discriminant validity against generic checking, and external validity. External validity remains out of scope and untested; all Human construct decisions are null, independent review is not executed, and the current Agent recommendation is DO_NOT_RECOMMEND_FOR_OPERATIONAL_OR_CUSTOMER_USE.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-EOA-BENCHMARK-V01
+    verification_status: LOCALLY_RESOLVED_FOR_REVIEW
+    resolved_artifacts:
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/docs/benchmark-design.md
+        sha256: 5b2e9c3fd3256e686f78bf469c66012ae16a765a0a298267328d60cf1ce5bf42
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/benchmark/expected-results/expected-results.json
+        sha256: b3fd866cd3cc4de7c091d78f6342b420d760de5d65228f31004e5637f0b52f8d
+    json_parse_verified: true
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Supplies the current task and fault-class design needed to review the future benchmark.
+    mandatory_limitations:
+      - Five synthetic cases only; expected results are not observed Pilot results.
+      - Benchmark is not preregistered or authorized.
+      - Repository has no commit HEAD; use these exact hashes if included.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-EOA-M1-REPORT
+    verification_status: LOCALLY_RESOLVED_FOR_REVIEW
+    resolved_artifacts:
+      - path: /Users/zhangbin/GitHub/evidence-object-architecture/experiments/command-001/REPORT.md
+        sha256: 08bcf691e019b5f61c7699824cd20bcb71382c4a1bd64c53e3e3f507f187d1a8
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Preserves the existing local synthetic sanity-check history as prior material rather than rerunning or hiding it.
+    mandatory_limitations:
+      - Existing local synthetic report only; not a Pilot Experiment Record.
+      - Not independently validated and not clinical, real-device, regulatory, or deployment evidence.
+      - Repository has no commit HEAD; use this exact hash if included.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-UDI-DICOM-PAPER1
+    verification_status: PUBLIC_METADATA_RESOLVED_FOR_REVIEW
+    public_metadata:
+      title: A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows
+      author_crossref: Bin Zhang
+      author_pubmed: Zhang B
+      doi: 10.1007/s10278-026-02019-6
+      pubmed_id: "42204020"
+      publisher: Springer Science and Business Media LLC
+      work_type: journal-article
+      crossref_reference: https://api.crossref.org/works/10.1007%2Fs10278-026-02019-6
+      pubmed_reference: https://pubmed.ncbi.nlm.nih.gov/42204020/
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Provides the published bounded UDI-DICOM identity profile used as a prior input to Paper 3.
+    mandatory_limitations:
+      - Prior publication does not prove the Paper 3 hypothesis.
+      - Reported validation boundaries must remain synthetic/fixture and bounded where applicable.
+      - No clinical, regulatory, real-device, hospital-deployment, or universal-interoperability inference.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-UDI-DICOM-PAPER2
+    verification_status: LOCAL_ACCEPTED_REVISION_AND_FORMAL_LEDGER_RESOLVED_FOR_REVIEW
+    formal_status: accepted_for_publication / awaiting_production
+    manuscript_id: JDIM-D-26-01809R1
+    resolved_artifacts:
+      - path: /Users/zhangbin/GitHub/paper-udi-dicom-profile/research/public-dicom-metadata-audit/revisions/JDIM-D-26-01809-major-revision/manuscript/full-manuscript-revised-v0.5.md
+        sha256: 2cb9f341577d923c6603150c57c9c4c7dcd9a075085e1528ed5c524dd5a42d5b
+      - path: /Users/zhangbin/GitHub/paper-udi-dicom-profile/research/public-dicom-metadata-audit/revisions/JDIM-D-26-01809-major-revision/submission-v0.5/01_full-manuscript-revised-v0.5.docx
+        sha256: 01b254cedea325462cec6c573e2874d475f0d228031ede11f72e541540d34601
+      - path: /Users/zhangbin/GitHub/paper-udi-dicom-profile/research/public-dicom-metadata-audit/revisions/JDIM-D-26-01809-major-revision/README_FOR_REVISION_UPLOAD_v0.5.md
+        sha256: 5030f92a62010e3b7ad80280780fa039936fb549956d28aa0028cd0e4efae2ec
+      - path: /Users/zhangbin/GitHub/MANUSCRIPT_STATUS.md
+        sha256: ab3c8d80b93094d1d0545fc889b763684af679c9bd1f385b351310a8587d6b65
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Supplies the accepted public-metadata audit and reproducibility experience relevant to Paper 3 evidence-gap framing.
+    mandatory_limitations:
+      - Accepted manuscript awaiting production; not online publication, DOI-assigned work, or version of record.
+      - Do not transfer Paper 1 publication metadata to Paper 2.
+      - No clinical, regulatory, real-device, hospital, deployment, or universal public-DICOM conclusion.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-PILOT-SPEC-V01
+    verification_status: LOCALLY_RESOLVED_FOR_REVIEW
+    resolved_artifacts:
+      - path: architecture/pilot-specification.md
+        sha256: b18908eb0ca87147cceeec781312463a6440ef1d00182d59e1eca438a5df8464
+      - path: research/research-question.md
+        sha256: 46ec60e0ed0048bc6030a2c6e788d267cfcd686162f03bf320a44a4e33e6abfa
+      - path: research-context/README.md
+        sha256: a338afbd50a39bc73d20781f25c8f35f4ee561a8dff636c88443506dbc926578
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Provides the governing research question, Human Owner boundary, Context lifecycle, and Unknown rules for the Pilot itself.
+    mandatory_limitations:
+      - Specification and governance source only; not empirical evidence or a scientific result.
+      - Current worktree is uncommitted; use these exact hashes if included.
+      - Context remains DRAFT and the Pilot remains NOT_READY.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+human_owner_reference: "owner://bin-zhang"
+human_decision_required: true
+verification_effect: REVIEW_INPUT_ONLY
+source_approval_effect: NONE
+context_binding_effect: NONE
+context_status_effect: NONE
+authorization_effect: NONE

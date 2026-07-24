@@ -1,0 +1,36 @@
+handoff_id: HROCH-PAPER3-EOA-0001
+version: v0.1
+status: HUMAN_CONFIRMED_ASSIGNED
+
+# This file now references a separately recorded Human assignment. It does not
+# create an AI responsibility subject or advance the context review status.
+owner_reference: bin_zhang
+canonical_owner_reference: "owner://bin-zhang"
+owner_reference_aliases:
+  - bin_zhang
+owner_record_reference: human-owner-record.yaml
+owner_confirmation_reference: human-owner-confirmation-record.yaml
+research_role: Human Research Owner
+scientific_responsibility:
+  - Approve or reject the research question, hypotheses, benchmark design, and interpretation boundaries.
+  - Select and approve the source documents that may enter the Research Context Package.
+  - Resolve or explicitly retain unknowns without allowing unsupported inference.
+  - Review methods, analyses, scientific claims, limitations, and conclusions.
+  - Decide whether ethics, privacy, data-governance, or external review is required.
+  - Retain responsibility for authorship, publication, corrections, and withdrawal decisions.
+  - Confirm that Human owns scientific conclusions.
+final_decision_scope:
+  - Final scientific conclusions
+  - Acceptance or rejection of Research Agent suggestions
+  - Research-scope changes
+  - Source inclusion and exclusion
+  - Experiment and prototype authorization
+  - Interpretation of evidence and unknowns
+  - Authorship and publication decisions
+  - External claims about validation, deployment, or regulatory relevance
+
+independent_human_reviewer_required: UNKNOWN
+assignment_effect: OWNER_ASSIGNMENT_RECORDED
+agent_created: false
+experiment_authorized: false
+context_approved: false

@@ -1,0 +1,125 @@
+recommendation_id: CRR-PAPER3-EOA-0001
+version: v0.1
+status: RECOMMENDATION_ONLY_REQUIRES_HUMAN_DECISION
+prepared_at: "2026-07-21"
+human_owner_reference: "owner://bin-zhang"
+
+source_review_state:
+  source_candidates: 10
+  source_verifications_available: 10
+  source_decisions_recorded: 7
+  source_decisions_pending: 3
+  source_documents_approved: 0
+
+research_decision_recommendations:
+  - decision_id: RD-003
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    rationale: The question is falsifiable only when the workflow, domain profile, baselines, fault classes, and evidence visibility are frozen before execution.
+    mandatory_boundaries:
+      - Bounded medical-imaging AI workflow only.
+      - No clinical, regulatory, deployment, or universal-theory inference.
+      - No claim is established until authorized Experiment Records exist.
+    human_decision: null
+  - decision_id: RD-004
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    rationale: This positioning matches the current local specification and prevents profile-level results from being promoted to Digital Biosphere theory validation.
+    mandatory_boundaries:
+      - EOA remains a bounded evidence-closure profile and diagnostic benchmark candidate.
+      - EOA is not a validated universal evidence theory.
+      - Paper 3 is not a DBOS paper and does not validate DBA theory.
+    human_decision: null
+  - decision_id: RD-006
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    rationale: Separation prevents an evaluation lens, a domain closure contract, and an identity-profile input from being collapsed into one authority or object type.
+    mandatory_boundaries:
+      - DBA remains an evaluation lens.
+      - EOA remains a domain-semantic closure contract candidate.
+      - UDI-DICOM remains a bounded identity-profile input.
+      - None of these creates DBOS identity, permission, runtime, or scientific truth.
+    human_decision: null
+  - decision_id: RD-009
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    rationale: Equal-source-evidence comparisons and fault-level measures are more falsifiable and less compensatory than a single weighted score.
+    mandatory_boundaries:
+      - Final hypotheses, sample size, allocation, rubric, thresholds, and statistics remain UNKNOWN until preregistered.
+      - False acceptance, false rejection, reason-code agreement, and abstention must remain separately visible.
+      - Weighted aggregation must not hide category failure or Unknown.
+    human_decision: null
+
+unknown_recommendations:
+  - unknown_id: UNK-001
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: No approved clinical study or clinical-validation evidence exists.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-002
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: No independent external evaluator, protocol, or review record exists.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-003
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: No Human-approved real-device data source, protocol, or evidence record exists.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-004
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: No jurisdiction-specific regulatory question or qualified regulatory review exists.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-005
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: No Prototype, Agent, DBOS registration, SAEE execution, or deployment authorization exists.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-006
+    non_binding_recommendation: RESOLVE_WITH_HUMAN_CONFIRMATION_RECORD
+    rationale: HOC-001 explicitly confirms the Human Research Owner and canonical reference.
+    proposed_status: RESOLVED
+    proposed_value: "owner://bin-zhang"
+    proposed_resolution_reference: human-owner-confirmation-record.yaml
+    resolution_assurance: SELF_ATTESTED_NOT_CRYPTOGRAPHICALLY_VERIFIED
+    human_decision: null
+  - unknown_id: UNK-007
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: Ten candidates are verified for Human review; the original seven have recorded source decisions, the three added DBA / SAEE / DBO candidates remain pending, and no canonical Source Records exist.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-008
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: Final hypotheses, protocol, baselines, sampling, metrics, and stopping rules are not Human-approved or preregistered.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-009
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: The final data sources, jurisdiction, institutional requirements, and experiment protocol are not approved.
+    proposed_resolution_reference: null
+    human_decision: null
+  - unknown_id: UNK-010
+    non_binding_recommendation: KEEP_UNKNOWN
+    rationale: No Human-approved primary-source novelty review or collision analysis exists.
+    proposed_resolution_reference: null
+    human_decision: null
+
+ai_usage_boundary_recommendation:
+  non_binding_recommendation: CONFIRM_AS_WRITTEN
+  allowed:
+    - Literature organization using Human-approved sources
+    - Knowledge synthesis with traceable references and preserved conflicts
+    - Draft assistance subject to Human review
+    - Experiment planning assistance without execution authority
+  prohibited:
+    - Scientific conclusion ownership
+    - Autonomous publication or authorship
+    - Raw data modification or Evidence deletion
+    - Context, Source, Unknown, Review, Permission, or Authorization self-modification
+  human_decision: null
+
+recommended_current_review_outcome: CONTINUE_REVIEW_NOT_READY_FOR_REVIEWED
+human_decision_required: true
+research_decision_effect: NONE
+unknown_resolution_effect: NONE
+ai_boundary_approval_effect: NONE
+context_status_effect: NONE
+source_approval_effect: NONE
+authorization_effect: NONE

@@ -1,0 +1,31 @@
+draft_id: URD-UNK-006
+record_status: DRAFT_NOT_HUMAN_REVIEWED
+unknown_id: UNK-006
+topic: human_research_owner_reference
+statement: Whether the Human Context Review accepts HOC-001 as adequate resolution evidence for the canonical Human Research Owner reference remains undecided.
+source_references:
+  - ../unknown-register.yaml#UNK-006
+  - ../human-owner-confirmation-record.yaml
+  - ../human-owner-record.yaml
+impact_scope:
+  - research ownership
+  - context review accountability
+status: OPEN
+truth_value: UNKNOWN
+known_boundary: HOC-001 explicitly confirms owner://bin-zhang and responsibility acceptance, but no Human Context Review decision has resolved UNK-006.
+resolution_requires: Human Research Owner must explicitly accept HOC-001 as the resolution reference during Context Review.
+prohibited_inference: Do not convert Owner confirmation into Context approval, source approval, reviewer independence, Prototype authorization, or Experiment authorization.
+non_binding_recommendation: RESOLVE_WITH_HUMAN_CONFIRMATION_RECORD
+candidate_resolution_reference: ../human-owner-confirmation-record.yaml
+resolution_reference: null
+resolution_statement: null
+human_review_decision: PENDING_HUMAN_DECISION
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations:
+  - HOC-001 is self-attested and not cryptographically verified.
+  - Independent Human Reviewer requirement remains UNKNOWN.
+draft_prepared_at: "2026-07-21"
+unknown_resolution_effect: NONE
+context_status_effect: NONE

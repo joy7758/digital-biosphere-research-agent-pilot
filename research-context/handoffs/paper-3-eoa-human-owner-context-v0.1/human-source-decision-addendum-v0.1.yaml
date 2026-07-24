@@ -1,0 +1,64 @@
+template_id: HSDAT-PAPER3-EOA-0001
+version: v0.1
+template_status: AWAITING_EXPLICIT_HUMAN_INPUT
+record_status: TEMPLATE_NOT_A_DECISION_RECORD
+
+purpose: Capture explicit Human Research Owner source decisions for the three DBA, SAEE, and DBO candidates added after the original seven-source decision record, without preselecting or applying any decision.
+
+context_reference:
+  context_id: RCP-DBRAP-0001
+  context_version: v0.1
+  current_context_status: DRAFT
+  context_manifest_reference: ../../context-manifest.yaml
+  base_human_decision_reference: human-context-decision-record.yaml
+  verification_reference: source-verification-addendum-v0.2.yaml
+
+human_decision_authority:
+  expected_human_owner_reference: "owner://bin-zhang"
+  owner_confirmation_reference: human-owner-confirmation-record.yaml
+  submitted_by: null
+  submitted_at: null
+  human_attestation: null
+
+decision_vocabulary:
+  source_decision:
+    - INCLUDE_WITH_LIMITATIONS
+    - EXCLUDE
+    - DEFER
+
+source_decisions:
+  - source_id: SRC-DBA-RESEARCH-CANONICAL
+    source_record_draft_reference: source-record-drafts/src-dba-research-canonical.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-SAEE-CAPABILITY-INVENTORY
+    source_record_draft_reference: source-record-drafts/src-saee-capability-inventory.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-DBO-CAPABILITY-AUDIT
+    source_record_draft_reference: source-record-drafts/src-dbo-capability-audit.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+
+submission_rules:
+  - Every source decision must be explicit; null is not a decision.
+  - Verification and a non-binding recommendation do not approve or bind a source.
+  - Human identity, timestamp, limitations acknowledgment, and attestation are required before a separate canonical decision record can be created.
+  - This template must not be edited in place into a decision record.
+
+human_decisions_recorded: 0
+source_approval_effect: NONE
+context_binding_effect: NONE
+context_status_effect: NONE
+prototype_authorization_effect: NONE
+experiment_authorization_effect: NONE
+agent_creation_effect: NONE
+runtime_creation_effect: NONE
+permission_effect: NONE
+execution_effect: NONE

@@ -1,0 +1,98 @@
+handoff_id: HROCH-PAPER3-EOA-0001
+version: v0.1
+status: DRAFT_CANDIDATES_ONLY
+selection_effect: NONE
+approved_source_documents_added: 0
+
+# Candidates are not approved sources. A Human Research Owner must verify and
+# select them before they can be added to context-manifest.yaml.
+source_candidates:
+  - source_id: SRC-EOA-ADVISORY-V02
+    title: EOA DBA Advisory and Clarification v0.2
+    type: internal_architecture_advisory
+    origin: evidence-object-architecture/review/dba-advisory-response.md; dba-advisory-decision.json; dba-advisory-clarification.md
+    version: v0.2.0
+    date: "2026-07-20"
+    purpose: Bound the proposed EOA positioning, benchmark direction, DBA/DBO/DBOS/SAEE roles, and prohibited theory or deployment claims.
+    limitations: Local constraint-based advisory only; no external DBA agent was called, no DBA runtime evaluation was executed, external review is incomplete, and recommendations are not Human Research Owner decisions.
+
+  - source_id: SRC-EOA-SPEC-V01
+    title: Evidence Object Architecture v0.1 Specification Package
+    type: local_research_specification
+    origin: evidence-object-architecture/research-manifest.json; docs/evidence-object-model.md; docs/evidence-closure-model.md; schema/evidence-object.schema.json
+    version: v0.1.0
+    date: "2026-07-20"
+    purpose: Define the bounded EO=(Identity,DataObject,Action,Validation,Provenance) operational abstraction and non-compensatory closure contract for the medical-imaging profile.
+    limitations: Local research prototype; not a validated universal theory, canonical DBO contract, clinical system, regulatory artifact, real-device validation, or deployment authorization.
+
+  - source_id: SRC-EOA-BENCHMARK-V01
+    title: Evidence Closure Benchmark Design v0.1
+    type: benchmark_design
+    origin: evidence-object-architecture/docs/benchmark-design.md; benchmark/expected-results/expected-results.json
+    version: v0.1
+    date: "2026-07-20"
+    purpose: Provide the current synthetic benchmark unit, initial fault classes, baseline candidates, and future preregistration requirements.
+    limitations: Five synthetic cases only; baseline transformations, balanced scaling, ablation, preregistration, and external cases are not yet completed or authorized by this handoff.
+
+  - source_id: SRC-EOA-M1-REPORT
+    title: COMMAND 001 Milestone 1 Execution Report
+    type: existing_local_synthetic_report
+    origin: evidence-object-architecture/experiments/command-001/REPORT.md
+    version: Milestone 1
+    date: "2026-07-20"
+    purpose: Record the existing local synthetic sanity-check results and their explicit truth boundary for later Human Research Owner review.
+    limitations: Existing local synthetic output only; not independently validated, not patient or pixel data, not real-device, clinical, regulatory, or deployment evidence, and no new experiment is executed by this handoff.
+
+  - source_id: SRC-UDI-DICOM-PAPER1
+    title: A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows
+    type: published_peer_reviewed_article
+    origin: Journal of Imaging Informatics in Medicine; https://doi.org/10.1007/s10278-026-02019-6
+    version: version_of_record
+    date: "2026-05-27"
+    purpose: Supply the prior bounded UDI-DICOM identity-mapping profile, external evidence linkage concept, and validation-artifact boundaries used as a medical identity-layer input.
+    limitations: Publication date and bibliographic metadata require Human verification against the publisher record; the reported artifact used fixtures and synthetic DICOM and did not establish real-device, clinical, regulatory, hospital, or universal-interoperability validation.
+
+  - source_id: SRC-UDI-DICOM-PAPER2
+    title: A Bounded Public DICOM Metadata Audit for UDI-DICOM Evidence Readiness in Medical Imaging Workflows
+    type: accepted_manuscript
+    origin: Journal of Imaging Informatics in Medicine; manuscript JDIM-D-26-01809R1
+    version: accepted_revision_R1
+    date: "2026-07-20"
+    purpose: Supply the public-metadata evidence-gap study, covered-field audit boundaries, positive controls, local Orthanc/FHIR artifacts, and reproducibility experience relevant to Paper 3.
+    limitations: Current formal status is accepted_for_publication / awaiting_production, not verified online publication or version of record; no DOI is recorded here; the work does not establish clinical, regulatory, real-device, hospital, or universal public-DICOM conclusions.
+
+  - source_id: SRC-PILOT-SPEC-V01
+    title: Digital Biosphere Research Agent Pilot Specification and Research Question
+    type: governance_and_research_specification
+    origin: digital-biosphere-research-agent-pilot/architecture/pilot-specification.md; research/research-question.md; research-context/README.md
+    version: v0.1_draft
+    date: "2026-07-21"
+    purpose: Define the Pilot research question, Human Research Owner requirement, Context Package lifecycle, unknown-handling rules, and current specification-only gate.
+    limitations: Specification only; Human Research Owner is confirmed, but source documents are not bound to the Context Manifest, context review is pending, prototype authorization is NOT_AUTHORIZED, and no Agent, experiment, evidence result, or scientific conclusion exists.
+
+  - source_id: SRC-DBA-RESEARCH-CANONICAL
+    title: DBA Research Manifest and Canonical Research Boundaries
+    type: architecture_research_reference
+    origin: digital-biosphere-architecture/research-manifest.yaml; AGENTS.md; theory/agent-recommendation-gate.md
+    version: research_manifest_schema_0.7
+    date: "2026-07-21"
+    purpose: Supply the six Persistence Evidence Dimensions and the bounded persistence-oriented evaluation lens available to Paper 3.
+    limitations: DBA is a public meaning and evaluation layer, not a runtime dependency; synthetic conformance does not establish physical validation, validated theory, production readiness, or a unique formal primitive.
+
+  - source_id: SRC-SAEE-CAPABILITY-INVENTORY
+    title: SAEE Canonical Capability Inventory
+    type: machine_readable_capability_inventory
+    origin: SAEE/capability-package/manifest.json#canonical_inventory; AGENTS.md; agent-interface/capabilities/saee-capability-manifest.v0.1.json
+    version: canonical_inventory_1.0.0
+    date: "2026-07-21"
+    purpose: Define the implemented local-alpha `saee.evaluate_evidence` and `saee.evaluate_agent_run` capability surfaces, input/output contracts, and non-authority boundaries.
+    limitations: Local deterministic evaluation only; no public deployed endpoint, trace authentication, external identity binding, customer validation, production readiness, authorization, compliance, safety, or domain-semantic medical closure is established. The 2026-07-21 capability-ledger projection drift was repaired and the canonical-ledger smoke check passed; capability facts still remain authoritative only in `capability-package/manifest.json`.
+
+  - source_id: SRC-DBO-CAPABILITY-AUDIT
+    title: DBO Capability and Canonical-Contract Audit
+    type: negative_capability_finding
+    origin: evidence-object-architecture/docs/source-capability-audit.md; docs/dba-dbos-saee-capability-map.md; docs/evidence-object-model.md
+    version: v0.1
+    date: "2026-07-20"
+    purpose: Preserve the verified absence of a standalone DBO repository or canonical callable contract and constrain DBO to a candidate evidence-bearing-object hypothesis.
+    limitations: Absence in the audited local workspace is not universal non-existence; DBO is not implemented, validated, registered, callable, or established as a novel formal object by these sources.

@@ -1,0 +1,28 @@
+draft_id: SRD-SRC-DBO-CAPABILITY-AUDIT
+record_status: DRAFT_NOT_APPROVED
+source_id: SRC-DBO-CAPABILITY-AUDIT
+source_type: negative_capability_finding
+title: DBO Capability and Canonical-Contract Audit
+origin: evidence-object-architecture/docs/source-capability-audit.md; docs/dba-dbos-saee-capability-map.md; docs/evidence-object-model.md
+author_or_owner: null
+version: v0.1
+publication_or_release_date: "2026-07-20"
+stable_reference: null
+content_digest: null
+content_digest_reference: ../source-verification-addendum-v0.2.yaml#SRC-DBO-CAPABILITY-AUDIT
+access_limitations:
+  - Local workspace access only.
+  - Source repository has no Git commit HEAD; files must be pinned by the verified sha256 set.
+known_limitations:
+  - The negative finding is limited to the audited local workspace and does not prove universal non-existence.
+  - DBO is a candidate concept, not an implemented, registered, callable, validated, or novel formal object.
+  - DBO must not be equated with a DBOS Digital Entity without a separate governance decision.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selection_decision: PENDING_HUMAN_DECISION
+non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+selected_by: null
+reviewed_by: null
+timestamp: null
+source_approval_effect: NONE
+context_binding_effect: NONE

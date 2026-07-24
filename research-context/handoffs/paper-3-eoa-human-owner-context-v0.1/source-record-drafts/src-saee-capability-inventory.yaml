@@ -1,0 +1,28 @@
+draft_id: SRD-SRC-SAEE-CAPABILITY-INVENTORY
+record_status: DRAFT_NOT_APPROVED
+source_id: SRC-SAEE-CAPABILITY-INVENTORY
+source_type: machine_readable_capability_inventory
+title: SAEE Canonical Capability Inventory
+origin: SAEE/capability-package/manifest.json#canonical_inventory; AGENTS.md; agent-interface/capabilities/saee-capability-manifest.v0.1.json
+author_or_owner: null
+version: canonical_inventory_schema_1.0.0
+publication_or_release_date: "2026-07-21"
+stable_reference: null
+content_digest: null
+content_digest_reference: ../source-verification-addendum-v0.2.yaml#SRC-SAEE-CAPABILITY-INVENTORY
+access_limitations:
+  - Local workspace access only.
+  - The initial verification used a dirty-worktree snapshot; the 2026-07-22 refresh observes a clean worktree at commit 697ae2080f11b7905b20c39079914eb98169783b with unchanged selected contract bytes. Continue to use the verified sha256 set, and do not interpret the refresh as Human approval or evaluator freeze.
+known_limitations:
+  - Local deterministic evaluation of declared evidence only; source-event authenticity is not verified.
+  - No authority, permission, compliance, safety, medical domain closure, customer validation, public deployment, or production readiness is established.
+  - Capability facts remain authoritative only in `capability-package/manifest.json#canonical_inventory`.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selection_decision: PENDING_HUMAN_DECISION
+non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+selected_by: null
+reviewed_by: null
+timestamp: null
+source_approval_effect: NONE
+context_binding_effect: NONE

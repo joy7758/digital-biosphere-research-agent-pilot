@@ -1,0 +1,65 @@
+schema_version: "0.1"
+sync_id: PILOT-PAPER3-EOA-GSN-V3-HUMAN-SOURCE-DECISION-SYNC-0.1
+status: HUMAN_SOURCE_DECISION_SYNCED_CONTEXT_REVIEW_STILL_PENDING
+recorded_on: "2026-07-22"
+human_research_owner_reference: owner://bin-zhang
+
+source_decision:
+  source_id: LIT-GSN-STANDARD-3
+  title: Goal Structuring Notation Community Standard Version 3
+  selection_decision: INCLUDE
+  human_review_status: HUMAN_REVIEWED
+  citation_identity_status: VERIFIED
+  citation_surface: DOI_CITATION_RECORD_AND_OFFICIAL_STANDARD_PAGE
+  doi: 10.65391/r1386
+  official_standard_page: https://scsc.uk/gsn-standard
+  canonical_record: repo://evidence-object-architecture/references/gsn-v3-human-source-decision-record-v0.1.yaml
+  current_evidence_manifest: repo://evidence-object-architecture/references/human-source-review-evidence-manifest-v0.77.yaml
+
+allowed_use:
+  - BACKGROUND
+  - METHOD_BOUNDARY
+  - BASELINE_DESIGN
+  - NOVELTY_COLLISION
+
+human_accepted_source_facts:
+  - GSN is a generic graphical argument notation for documenting claims, evidence references, contextual information, and relationships among them.
+  - Version 3 separates a normative notation definition from informative guidance for developing and evaluating goal structures.
+  - Core GSN represents goals, strategies, solutions, contexts, assumptions, and justifications connected through SupportedBy and InContextOf relations.
+  - GSN documents an asserted argument and does not, by use of the notation alone, establish the truth of that argument.
+
+mandatory_interpretation_boundaries:
+  - GSN notation and well-formedness do not prove argument truth or evidence truth.
+  - A GSN Solution reference does not establish evidence authenticity, completeness, or correct binding.
+  - GSN does not establish medical identity, authorization, workflow closure, clinical validity, or regulatory validity.
+  - GSN inclusion does not establish EOA novelty, GSN conformance, implementation readiness, or benchmark validity.
+  - GSN is a bounded comparison and baseline-design source; it is not an EOA validator.
+
+paper3_source_review_state:
+  candidate_sources: 22
+  complete_human_source_decisions: 2
+  included_sources: 2
+  pending_human_source_decisions: 20
+  current_human_action_source_id: LIT-PROVIMAPS-2026
+  final_bibliography_frozen: false
+  numeric_citations_frozen: false
+  novelty_resolution: UNKNOWN
+
+pilot_context_boundary:
+  context_package_status: DRAFT
+  context_review_status: REVIEW_PENDING
+  prototype_authorization: NOT_AUTHORIZED
+  context_source_approval_effect: NONE
+  context_binding_effect: NONE
+  implementation_authorization_effect: NONE
+  experiment_authorization_effect: NONE
+  research_agent_creation_effect: NONE
+  scientific_result_effect: NONE
+  scientific_conclusion: NONE
+
+interpretation: >-
+  This record mirrors one explicit Human literature-source decision into the
+  Paper 3 handoff. It does not add GSN to the Pilot's ten Context Source
+  candidates, approve or bind the Research Context Package, authorize a
+  Prototype or Experiment, create a Research Agent, or establish a result or
+  scientific conclusion.

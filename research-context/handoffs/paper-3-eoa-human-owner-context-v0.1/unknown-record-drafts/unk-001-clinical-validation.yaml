@@ -1,0 +1,29 @@
+draft_id: URD-UNK-001
+record_status: DRAFT_NOT_HUMAN_REVIEWED
+unknown_id: UNK-001
+topic: clinical_validation
+statement: Whether Evidence Object Architecture has clinical validity, safety, effectiveness, or patient-benefit evidence is unknown.
+source_references:
+  - ../unknown-register.yaml#UNK-001
+impact_scope:
+  - clinical claims
+  - safety claims
+  - effectiveness claims
+status: OPEN
+truth_value: UNKNOWN
+known_boundary: No clinical-validation claim or authorization is present in the candidate sources.
+resolution_requires: Human decision plus an approved clinical study design and evidence, if clinical validation is ever placed in scope.
+prohibited_inference: Do not infer clinical validity, clinical invalidity, safety, effectiveness, or patient benefit.
+non_binding_recommendation: KEEP_OPEN
+candidate_resolution_reference: null
+resolution_reference: null
+resolution_statement: null
+human_review_decision: PENDING_HUMAN_DECISION
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations:
+  - This draft records an Unknown; it is not evidence of a clinical assessment.
+draft_prepared_at: "2026-07-21"
+unknown_resolution_effect: NONE
+context_status_effect: NONE

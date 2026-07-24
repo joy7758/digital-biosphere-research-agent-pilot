@@ -1,0 +1,98 @@
+discovery_id: HROD-PAPER3-EOA-0001
+version: v0.1
+status: RESOLVED_BY_HUMAN_CONFIRMATION
+discovery_status_at_creation: REQUIRES_HUMAN_CONFIRMATION
+discovered_at: "2026-07-21T08:33:50+08:00"
+
+candidate_owners:
+  - candidate_id: HROC-PAPER3-EOA-0001
+    candidate_record: candidate-owner.yaml
+    display_name: Bin Zhang
+    role_candidate: Human Research Owner
+    status: CONFIRMED_AND_ASSIGNED
+
+sources_checked:
+  - source_id: SRC-OWNER-GIT-CONFIG
+    source_type: git_configuration
+    source_reference: "git config --show-origin --get user.name; git config --show-origin --get user.email"
+    scope: user-level configuration resolved for the current repository
+    result: FOUND
+  - source_id: SRC-OWNER-GIT-COMMIT
+    source_type: git_commit_metadata
+    source_reference: "git commit 8445fe5d13cd889032c3786ba527d801f56d5351"
+    scope: current repository initial commit author and committer metadata
+    result: FOUND
+  - source_id: SRC-OWNER-README
+    source_type: project_document
+    source_reference: README.md
+    result: NO_PERSONAL_OWNER_DECLARATION_FOUND
+  - source_id: SRC-OWNER-CONTRIBUTING
+    source_type: project_document
+    source_reference: docs/CONTRIBUTING.md
+    result: NO_PERSONAL_OWNER_DECLARATION_FOUND
+  - source_id: SRC-OWNER-AUTHORS
+    source_type: project_document
+    source_reference: AUTHORS; AUTHORS.md
+    result: FILES_NOT_PRESENT
+  - source_id: SRC-OWNER-CITATION
+    source_type: project_document
+    source_reference: CITATION.cff
+    result: FILE_NOT_PRESENT
+  - source_id: SRC-OWNER-PAPER-METADATA
+    source_type: project_document
+    source_reference: paper/manuscript-outline.md
+    result: NO_PERSONAL_AUTHOR_DECLARATION_FOUND
+  - source_id: SRC-OWNER-GOVERNANCE
+    source_type: project_governance_documents
+    source_reference: research-context/; ADR/; research/research-question.md
+    result: ROLE_DEFINED_BUT_NO_PERSON_ASSIGNED
+  - source_id: SRC-OWNER-PUBMED
+    source_type: public_bibliographic_metadata
+    source_reference: "https://pubmed.ncbi.nlm.nih.gov/42204020/"
+    repository_reference: "DOI 10.1007/s10278-026-02019-6 in source-candidates.yaml"
+    result: FOUND
+  - source_id: SRC-OWNER-CROSSREF
+    source_type: public_bibliographic_metadata
+    source_reference: "https://api.crossref.org/works/10.1007%2Fs10278-026-02019-6"
+    repository_reference: "DOI 10.1007/s10278-026-02019-6 in source-candidates.yaml"
+    result: FOUND
+
+evidence_found:
+  - evidence_id: OWNER-EVIDENCE-001
+    source_id: SRC-OWNER-GIT-CONFIG
+    observation: "Resolved Git user.name is 'BIN Zhang' and user.email is 'joy7759@gmail.com'."
+    limitation: This is user-level Git configuration, not a project Owner appointment or acceptance of scientific responsibility.
+  - evidence_id: OWNER-EVIDENCE-002
+    source_id: SRC-OWNER-GIT-COMMIT
+    observation: "The initial commit records author and committer as 'BIN Zhang <joy7759@gmail.com>'."
+    limitation: Repository authorship and commit control do not establish Human Research Owner authority.
+  - evidence_id: OWNER-EVIDENCE-003
+    source_id: SRC-OWNER-PUBMED
+    observation: "PubMed record 42204020 lists 'Zhang B' for the repository-referenced Paper 1 DOI."
+    limitation: Bibliographic authorship supports a research-role candidacy only; it does not prove that the author accepts responsibility for this Pilot.
+  - evidence_id: OWNER-EVIDENCE-004
+    source_id: SRC-OWNER-CROSSREF
+    observation: "Crossref metadata for DOI 10.1007/s10278-026-02019-6 lists 'Bin Zhang'."
+    limitation: Name agreement is corroborating metadata, not identity verification, Owner assignment, or Context approval.
+  - evidence_id: OWNER-EVIDENCE-005
+    source_id: SRC-OWNER-GOVERNANCE
+    observation: "The repository defines Human Research Owner responsibilities while canonical owner_reference remains null."
+    limitation: A defined role is not an assigned person.
+
+confidence: MEDIUM
+confidence_basis: Multiple traceable sources support one candidate name, and the Git email is consistent across configuration and commit metadata. No signed Owner record, project-level owner declaration, ORCID binding, or explicit acceptance of scientific responsibility was found.
+requires_human_confirmation: false
+human_confirmation:
+  confirmed_owner_reference: "owner://bin-zhang"
+  owner_reference_aliases:
+    - bin_zhang
+  candidate_identity_confirmed: true
+  responsibility_accepted: true
+  conflict_disclosures: []
+  independent_human_reviewer_required: UNKNOWN
+  confirmation_reference: human-owner-confirmation-record.yaml
+  confirmed_at: "2026-07-21T08:50:05+08:00"
+  assurance: SELF_ATTESTED_NOT_CRYPTOGRAPHICALLY_VERIFIED
+assignment_effect: HUMAN_OWNER_RECORD_CREATED
+context_status_effect: NONE
+authorization_effect: NONE

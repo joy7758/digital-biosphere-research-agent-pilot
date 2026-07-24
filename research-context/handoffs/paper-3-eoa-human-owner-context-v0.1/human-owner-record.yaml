@@ -1,0 +1,49 @@
+owner_record_id: HRO-PAPER3-EOA-0001
+version: v0.1
+human_owner_reference: bin_zhang
+canonical_owner_reference: "owner://bin-zhang"
+owner_reference_aliases:
+  - bin_zhang
+display_name: Bin Zhang
+research_role: Human Research Owner
+assignment_scope:
+  project: digital-biosphere-research-agent-pilot
+  research_focus: Paper 3 Evidence Object Architecture
+
+responsibility_scope:
+  - Final scientific conclusions
+  - Research-question, hypothesis, benchmark, and protocol decisions
+  - Source inclusion and exclusion
+  - Unknown preservation and resolution decisions
+  - Prototype and experiment authorization decisions
+  - Evidence interpretation and limitation review
+  - Data, ethics, privacy, and safety determinations
+  - Authorship, publication, correction, and withdrawal decisions
+
+final_scientific_decision_owner_confirmed: true
+authorship_and_publication_responsibility_confirmed: true
+human_owns_scientific_conclusions: true
+data_and_ethics_responsibility_reference: null
+data_and_ethics_decision_status: UNKNOWN
+conflict_disclosures: []
+independent_human_reviewer_required: UNKNOWN
+
+confirmation:
+  identity_confirmed: true
+  responsibility_accepted: true
+  method: SELF_ATTESTED_STRUCTURED_HUMAN_INPUT
+  source_reference: human-owner-confirmation-record.yaml
+  confirmation_id: HOC-001
+  assurance: SELF_ATTESTED_NOT_CRYPTOGRAPHICALLY_VERIFIED
+
+status: ASSIGNED
+recorded_by: bin_zhang
+timestamp: "2026-07-21T08:50:05+08:00"
+
+assignment_effect: HUMAN_RESEARCH_OWNER_ASSIGNED
+context_approval_effect: NONE
+source_approval_effect: NONE
+prototype_authorization_effect: NONE
+experiment_authorization_effect: NONE
+permission_effect: NONE
+execution_effect: NONE

@@ -1,0 +1,11 @@
+run_id,event,phase,round,active_agents,total_agents,phase_start,phase_end
+DEB-001-LITE-VALIDATION-001,round_complete,Stable,0,9,9,,
+DEB-001-LITE-VALIDATION-001,round_complete,Stable,1,9,9,,
+DEB-001-LITE-VALIDATION-001,round_complete,Stable,2,9,9,,
+DEB-001-LITE-VALIDATION-001,phase_boundary,Stable,,9,,0,3
+DEB-001-LITE-VALIDATION-001,round_complete,Shock,3,9,9,,
+DEB-001-LITE-VALIDATION-001,round_complete,Shock,4,9,9,,
+DEB-001-LITE-VALIDATION-001,phase_boundary,Shock,,9,,3,5
+DEB-001-LITE-VALIDATION-001,round_complete,Recovery,5,9,9,,
+DEB-001-LITE-VALIDATION-001,round_complete,Recovery,6,9,9,,
+DEB-001-LITE-VALIDATION-001,phase_boundary,Recovery,,9,,5,7

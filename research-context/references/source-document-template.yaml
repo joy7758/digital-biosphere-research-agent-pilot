@@ -1,0 +1,21 @@
+# Source Document Record Template v0.1（来源文档记录模板 v0.1）
+#
+# Template ≠ Source Record。Source Selection ≠ Source Validation。
+# 本模板不会自动读取、下载、摘要或批准任何来源。
+
+source_id: null
+source_type: null
+title: null
+origin: null
+author_or_owner: null
+version: null
+publication_or_release_date: null
+stable_reference: null
+content_digest: null
+access_limitations: []
+known_limitations: []
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selected_by: null
+reviewed_by: null
+timestamp: null

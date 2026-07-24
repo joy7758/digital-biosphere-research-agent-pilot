@@ -32,6 +32,8 @@ SAEE 在未来接收经过明确范围约束的研究过程记录，对 Research
 
 本项目不预设分数、阈值或权重；这些必须在未来实验执行前单独预注册。
 
+未来 Evaluation Result（评价结果）结构准备见 [`../evaluation/evaluation-result-template.yaml`](../evaluation/evaluation-result-template.yaml)。该模板当前全部指标值为空，不是 SAEE Output 或实验评价结果。
+
 ## 4. SAEE Non-responsibilities（SAEE 非职责）
 
 SAEE 不：
@@ -65,6 +67,7 @@ DBOS-bounded records
 ## 6. Current Status（当前状态）
 
 ```text
+SAEE_CONNECTION_STATUS=PREPARED_ONLY
 SAEE_EVALUATION_MODEL_DEFINED=true
 SAEE_PROFILE_CREATED=false
 SAEE_INPUT_SUBMITTED=false
@@ -74,3 +77,5 @@ SAEE_MODIFIED=false
 FITNESS_SCORE_CREATED=false
 EVOLUTION_RECOMMENDATION_CREATED=false
 ```
+
+`PREPARED_ONLY` 只表示 Execution History、Evidence Bundle、Verification Result 输入和 Reliability、Evidence Quality、Stability、Adaptability 输出语义已经定义；不表示 SAEE 被调用、修改或已返回结果。

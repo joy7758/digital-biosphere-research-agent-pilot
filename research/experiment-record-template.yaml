@@ -1,0 +1,29 @@
+# Experiment Record Template v0.1（实验记录模板 v0.1）
+#
+# Template ≠ Experiment Record（模板不等于实验记录）。
+# 不得在真实授权执行前填写结果，失败、拒绝、负面与 Unknown 不得删除。
+
+experiment_id: null
+protocol_reference: research/experiment-protocol.md
+protocol_version: v0.1
+condition: null
+task_reference: null
+context_reference: null
+source_references: []
+human_owner_reference: null
+human_reviewer_references: []
+authorization_reference: null
+environment_reference: null
+tool_and_model_versions: []
+started_at: null
+completed_at: null
+outcome_status: NOT_RUN
+input_references: []
+action_references: []
+human_review_references: []
+output_references: []
+failure_references: []
+negative_result_references: []
+unknown_references: []
+protocol_deviations: []
+limitations: []

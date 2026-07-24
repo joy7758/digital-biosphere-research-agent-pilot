@@ -1,0 +1,31 @@
+draft_id: URD-UNK-005
+record_status: DRAFT_NOT_HUMAN_REVIEWED
+unknown_id: UNK-005
+topic: deployment_status
+statement: Whether any production, hospital, DBOS, SAEE, or real-workflow deployment exists is unknown outside the bounded fact that this Pilot authorizes none.
+source_references:
+  - ../unknown-register.yaml#UNK-005
+  - ../../../../prototype/prototype-specification.md
+  - ../../../../architecture/research-agent-readiness-gate.md
+impact_scope:
+  - deployment claims
+  - production-readiness claims
+  - adoption claims
+status: OPEN
+truth_value: UNKNOWN
+known_boundary: Current specifications state deployment_authorized=false and Prototype Authorization=NOT_AUTHORIZED; no deployment exists under this handoff.
+resolution_requires: Separate Human authorization and verified deployment evidence if deployment is ever proposed.
+prohibited_inference: Do not infer production readiness, hospital deployment, DBOS registration, SAEE operation, or real workflow adoption.
+non_binding_recommendation: KEEP_OPEN
+candidate_resolution_reference: null
+resolution_reference: null
+resolution_statement: null
+human_review_decision: PENDING_HUMAN_DECISION
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations:
+  - A no-authorization fact for this Pilot is not a universal claim about external deployments.
+draft_prepared_at: "2026-07-21"
+unknown_resolution_effect: NONE
+context_status_effect: NONE

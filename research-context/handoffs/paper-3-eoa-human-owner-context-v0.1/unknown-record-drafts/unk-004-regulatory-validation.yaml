@@ -1,0 +1,29 @@
+draft_id: URD-UNK-004
+record_status: DRAFT_NOT_HUMAN_REVIEWED
+unknown_id: UNK-004
+topic: regulatory_validation
+statement: Whether Evidence Object Architecture satisfies any jurisdiction-specific regulatory requirement is unknown.
+source_references:
+  - ../unknown-register.yaml#UNK-004
+impact_scope:
+  - regulatory claims
+  - compliance claims
+  - certification claims
+status: OPEN
+truth_value: UNKNOWN
+known_boundary: No regulatory-validation claim, registry-closure study, or authorization is present.
+resolution_requires: Human-approved regulatory question, jurisdiction, authoritative sources, and qualified review.
+prohibited_inference: Do not infer compliance, approval, certification, or regulatory suitability.
+non_binding_recommendation: KEEP_OPEN
+candidate_resolution_reference: null
+resolution_reference: null
+resolution_statement: null
+human_review_decision: PENDING_HUMAN_DECISION
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations:
+  - This repository does not perform regulatory review.
+draft_prepared_at: "2026-07-21"
+unknown_resolution_effect: NONE
+context_status_effect: NONE

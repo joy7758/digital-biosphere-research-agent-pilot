@@ -1,0 +1,249 @@
+docket_id: HCRD-PAPER3-EOA-0001
+version: v0.1
+status: REVIEW_PENDING_HUMAN_REVIEW_OF_RECORDED_DECISIONS
+context_id: RCP-DBRAP-0001
+context_version: v0.1
+
+purpose: Provide a complete decision index for Human Research Owner review without making, inferring, or preselecting any decision.
+human_decision_input_template_reference: human-context-decision-input-template.yaml
+human_decision_record_reference: human-context-decision-record.yaml
+human_decision_record_status: HUMAN_CONFIRMED
+human_decisions_status: RECORDED
+
+owner_review:
+  candidate_id: HROC-PAPER3-EOA-0001
+  candidate_status: CONFIRMED_AND_ASSIGNED
+  identity_confirmation: CONFIRMED_BY_HUMAN
+  responsibility_acceptance: ACCEPTED_BY_HUMAN
+  canonical_owner_reference: "owner://bin-zhang"
+  owner_reference_aliases:
+    - bin_zhang
+  conflict_disclosures: []
+  independent_reviewer_requirement: UNKNOWN
+  owner_record_reference: human-owner-record.yaml
+  owner_confirmation_reference: human-owner-confirmation-record.yaml
+
+source_review_items:
+  - source_id: SRC-EOA-ADVISORY-V02
+    source_record_draft_reference: source-record-drafts/src-eoa-advisory-v02.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-EOA-ADVISORY-V02
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-EOA-ADVISORY-V02
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+  - source_id: SRC-EOA-SPEC-V01
+    source_record_draft_reference: source-record-drafts/src-eoa-spec-v01.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-EOA-SPEC-V01
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-EOA-SPEC-V01
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+  - source_id: SRC-EOA-BENCHMARK-V01
+    source_record_draft_reference: source-record-drafts/src-eoa-benchmark-v01.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-EOA-BENCHMARK-V01
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-EOA-BENCHMARK-V01
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+  - source_id: SRC-EOA-M1-REPORT
+    source_record_draft_reference: source-record-drafts/src-eoa-m1-report.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-EOA-M1-REPORT
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-EOA-M1-REPORT
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+  - source_id: SRC-UDI-DICOM-PAPER1
+    source_record_draft_reference: source-record-drafts/src-udi-dicom-paper1.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-UDI-DICOM-PAPER1
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-UDI-DICOM-PAPER1
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+  - source_id: SRC-UDI-DICOM-PAPER2
+    source_record_draft_reference: source-record-drafts/src-udi-dicom-paper2.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-UDI-DICOM-PAPER2
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-UDI-DICOM-PAPER2
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+  - source_id: SRC-PILOT-SPEC-V01
+    source_record_draft_reference: source-record-drafts/src-pilot-spec-v01.yaml
+    assistant_verification_reference: source-verification-report.yaml#SRC-PILOT-SPEC-V01
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    inclusion_decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    decision_reference: human-context-decision-record.yaml#SRC-PILOT-SPEC-V01
+    metadata_verified: false
+    limitations_acknowledged: false
+    human_notes: null
+
+pending_research_decision_items:
+  - decision_id: RD-003
+    assistant_recommendation_reference: context-review-recommendation.yaml#RD-003
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    confirmation_status: HUMAN_CONFIRMED_PENDING_REVIEW
+    human_decision: CONFIRM_WITH_BOUNDARIES
+    decision_reference: human-context-decision-record.yaml#RD-003
+    human_notes: null
+  - decision_id: RD-004
+    assistant_recommendation_reference: context-review-recommendation.yaml#RD-004
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    confirmation_status: HUMAN_CONFIRMED_PENDING_REVIEW
+    human_decision: CONFIRM_WITH_BOUNDARIES
+    decision_reference: human-context-decision-record.yaml#RD-004
+    human_notes: null
+  - decision_id: RD-006
+    assistant_recommendation_reference: context-review-recommendation.yaml#RD-006
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    confirmation_status: HUMAN_CONFIRMED_PENDING_REVIEW
+    human_decision: CONFIRM_WITH_BOUNDARIES
+    decision_reference: human-context-decision-record.yaml#RD-006
+    human_notes: null
+  - decision_id: RD-009
+    assistant_recommendation_reference: context-review-recommendation.yaml#RD-009
+    non_binding_recommendation: CONFIRM_WITH_BOUNDARIES
+    confirmation_status: PENDING_HUMAN_CONFIRMATION
+    human_decision: null
+    human_notes: null
+
+unknown_review_items:
+  - unknown_id: UNK-001
+    unknown_record_draft_reference: unknown-record-drafts/unk-001-clinical-validation.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-001
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-001
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-002
+    unknown_record_draft_reference: unknown-record-drafts/unk-002-external-validation.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-002
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-002
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-003
+    unknown_record_draft_reference: unknown-record-drafts/unk-003-real-device-validation.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-003
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-003
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-004
+    unknown_record_draft_reference: unknown-record-drafts/unk-004-regulatory-validation.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-004
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-004
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-005
+    unknown_record_draft_reference: unknown-record-drafts/unk-005-deployment-status.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-005
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-005
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-006
+    unknown_record_draft_reference: unknown-record-drafts/unk-006-human-research-owner-reference.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-006
+    non_binding_recommendation: RESOLVE_WITH_HUMAN_CONFIRMATION_RECORD
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-006
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-007
+    unknown_record_draft_reference: unknown-record-drafts/unk-007-approved-source-set.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-007
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-007
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-008
+    unknown_record_draft_reference: unknown-record-drafts/unk-008-final-protocol.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-008
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-008
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-009
+    unknown_record_draft_reference: unknown-record-drafts/unk-009-ethics-privacy-data-governance.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-009
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-009
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+  - unknown_id: UNK-010
+    unknown_record_draft_reference: unknown-record-drafts/unk-010-eoa-novelty.yaml
+    assistant_recommendation_reference: context-review-recommendation.yaml#UNK-010
+    non_binding_recommendation: KEEP_UNKNOWN
+    current_status: UNKNOWN
+    human_disposition: ACCEPT_UNKNOWN
+    decision_reference: human-context-decision-record.yaml#UNK-010
+    review_status: PENDING_HUMAN_REVIEW
+    resolution_reference: null
+    human_notes: null
+
+review_completion_requirements:
+  - A Human Research Owner is confirmed and recorded separately.
+  - Every source item receives an explicit include, exclude, or defer decision with notes.
+  - Every pending research decision receives an explicit confirm, revise, or reject decision.
+  - Every Unknown is reviewed and either remains UNKNOWN or receives an adequate Human-approved resolution reference.
+  - Scope, AI usage boundaries, limitations, and prohibited actions are acknowledged.
+  - A separate canonical Human Review Record is created and signed.
+
+human_reviewer_reference: null
+human_owner_reference: bin_zhang
+review_started_at: null
+review_completed_at: null
+canonical_review_record_reference: null
+recorded_ai_usage_boundary_reference: human-context-decision-record.yaml#ai_usage_boundary
+recorded_autonomy_preference: APPROVAL_REQUIRED
+context_manifest_updated: false
+context_status_effect: NONE
+owner_assignment_effect: NONE
+source_approval_effect: NONE
+unknown_resolution_effect: NONE
+authorization_effect: NONE

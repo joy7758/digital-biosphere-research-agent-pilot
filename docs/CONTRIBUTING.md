@@ -32,9 +32,22 @@
 - [ ] `git diff --check` 通过；
 - [ ] `Agent=0`；
 - [ ] `Runtime=0`；
+- [ ] `Entity=0`；
 - [ ] `Digital Entity=0`；
 - [ ] `Permission=0`；
 - [ ] `Execution=0`；
+- [ ] `Research Result=0`；
+- [ ] 没有自动读取 Chat History 或修改 Research Context Package；
+- [ ] 没有自动批准 Context 或把 Agent 指定为 Reviewer；
+- [ ] Review 没有生成 Permission，Approval 没有生成 Scientific Truth；
+- [ ] Unknown 没有被自动填充；
+- [ ] Readiness Gate 没有在缺少直接证据时升级为 `READY_FOR_PROTOTYPE`；
+- [ ] Experiment/Evidence/Evaluation Template 没有被误写为 Record 或 Result；
+- [ ] Owner/Source/Unknown/Authorization/Verification Template 没有被误写为真实人类 Record；
+- [ ] `NOT_AUTHORIZED`、`NOT_PREREGISTERED` 和 `NOT_VERIFIED` 没有被自动推进；
+- [ ] 失败、拒绝、负面、修改、Unknown 和 Protocol Deviation 保留规则完整；
+- [ ] `PREPARED_ONLY` 没有被写成 DBOS 或 SAEE 已连接；
+- [ ] `DRAFT_ONLY` 没有被写成 Manuscript Draft、Submitted、Accepted 或 Published；
 - [ ] 未修改 DBA、DBOS 或 SAEE；
 - [ ] 没有把本地检查写成科研验证或产品能力。
 

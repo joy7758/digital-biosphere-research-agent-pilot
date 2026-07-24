@@ -1,0 +1,86 @@
+handoff_id: HROCH-PAPER3-EOA-0001
+version: v0.1
+status: DRAFT_PENDING_HUMAN_CONFIRMATION
+
+status_semantics:
+  accepted: A documented current project or specification boundary; it is not approval of this Context Package and not a scientific conclusion.
+  pending: A candidate research decision requiring explicit Human Research Owner confirmation.
+
+research_decisions:
+  - decision_id: RD-001
+    statement: The Pilot primary research question is "Can a governed Research Agent improve reproducibility of scientific workflows?"
+    basis:
+      - digital-biosphere-research-agent-pilot/research/research-question.md
+      - digital-biosphere-research-agent-pilot/README.md
+    status: accepted
+
+  - decision_id: RD-002
+    statement: Human owns scientific conclusions; AI assistance cannot become a scientific responsibility subject or final decision owner.
+    basis:
+      - digital-biosphere-research-agent-pilot/architecture/human-oversight-model.md
+      - digital-biosphere-research-agent-pilot/research-context/human-owner-record-template.yaml
+    status: accepted
+
+  - decision_id: RD-003
+    statement: The current Paper 3 target is a falsifiable test of domain-semantic evidence closure in a bounded medical-imaging AI workflow.
+    basis:
+      - evidence-object-architecture/review/dba-advisory-clarification.md
+      - evidence-object-architecture/docs/evidence-object-model.md
+      - evidence-object-architecture/docs/benchmark-design.md
+    status: pending
+
+  - decision_id: RD-004
+    statement: EOA should be positioned as a bounded medical evidence-closure profile and diagnostic benchmark, not as a validated universal evidence theory or Digital Biosphere theory.
+    basis:
+      - evidence-object-architecture/review/dba-advisory-decision.json
+      - evidence-object-architecture/review/dba-advisory-clarification.md
+    status: pending
+
+  - decision_id: RD-005
+    statement: The current EOA operational abstraction is EO=(Identity,DataObject,Action,Validation,Provenance), and closure under the selected profile is non-compensatory.
+    basis:
+      - evidence-object-architecture/research-manifest.json
+      - evidence-object-architecture/docs/evidence-object-model.md
+      - evidence-object-architecture/docs/evidence-closure-model.md
+    status: accepted
+
+  - decision_id: RD-006
+    statement: "DBA, EOA, and UDI-DICOM should remain distinct: DBA is an evaluation lens, EOA is a domain closure contract, and UDI-DICOM is a bounded identity-profile input."
+    basis:
+      - evidence-object-architecture/review/dba-advisory-clarification.md
+      - evidence-object-architecture/review/dba-advisory-decision.json
+    status: pending
+
+  - decision_id: RD-007
+    statement: DBO remains a future concept and is not a canonical object type, runtime contract, or paper claim for the current Pilot.
+    basis:
+      - evidence-object-architecture/research-manifest.json
+      - evidence-object-architecture/docs/evidence-object-model.md
+      - evidence-object-architecture/review/dba-advisory-decision.json
+    status: accepted
+
+  - decision_id: RD-008
+    statement: SAEE generic declared-evidence coverage does not establish domain-semantic medical evidence closure; the two evaluations must not be collapsed into one authority score.
+    basis:
+      - evidence-object-architecture/docs/benchmark-design.md
+      - evidence-object-architecture/experiments/command-001/REPORT.md
+    status: accepted
+
+  - decision_id: RD-009
+    statement: A future benchmark should compare equal-source-evidence baselines and prioritize fault detection, false acceptance/rejection, reason-code agreement, and abstention over a weighted Evidence Closure Score.
+    basis:
+      - evidence-object-architecture/review/dba-advisory-decision.json
+      - evidence-object-architecture/docs/benchmark-design.md
+      - evidence-object-architecture/docs/evidence-closure-model.md
+    status: pending
+
+  - decision_id: RD-010
+    statement: This handoff does not authorize Agent creation, prototype execution, experiment execution, manuscript conclusions, authorship, publication, or modification of original data.
+    basis:
+      - digital-biosphere-research-agent-pilot/docs/human-authorization-handoff.md
+      - digital-biosphere-research-agent-pilot/research-context/README.md
+      - digital-biosphere-research-agent-pilot/prototype/prototype-authorization-template.yaml
+    status: accepted
+
+decision_effect: NONE
+context_review_status: REVIEW_PENDING

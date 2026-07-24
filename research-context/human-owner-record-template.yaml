@@ -1,0 +1,15 @@
+# Human Research Owner Record Template v0.1（人类研究负责人记录模板 v0.1）
+#
+# Template ≠ Owner Assignment（模板不等于负责人任命）。
+# `ASSIGNED` 只能由可定位的人类记录产生，不能由 Agent 推断。
+
+owner_record_id: null
+human_owner_reference: null
+responsibility_scope: []
+final_scientific_decision_owner_confirmed: false
+authorship_and_publication_responsibility_confirmed: false
+data_and_ethics_responsibility_reference: null
+conflict_disclosures: []
+status: UNASSIGNED
+recorded_by: null
+timestamp: null

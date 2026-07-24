@@ -1,0 +1,216 @@
+template_id: HCDIT-PAPER3-EOA-0001
+version: v0.1
+template_status: AWAITING_EXPLICIT_HUMAN_INPUT
+record_status: TEMPLATE_NOT_A_DECISION_RECORD
+
+purpose: Capture explicit Human Research Owner decisions for the Paper 3 EOA Context Review without preselecting, inferring, or applying any decision.
+
+context_reference:
+  context_id: RCP-DBRAP-0001
+  context_version: v0.1
+  current_context_status: DRAFT
+  context_manifest_reference: ../../context-manifest.yaml
+
+human_decision_authority:
+  expected_human_owner_reference: "owner://bin-zhang"
+  owner_confirmation_reference: human-owner-confirmation-record.yaml
+  submitted_by: null
+  submitted_at: null
+  human_attestation: null
+
+decision_vocabulary:
+  source_decision:
+    - INCLUDE_WITH_LIMITATIONS
+    - EXCLUDE
+    - DEFER
+  research_decision:
+    - CONFIRM_WITH_BOUNDARIES
+    - REVISE
+    - REJECT
+  unknown_disposition:
+    - ACCEPT_UNKNOWN
+    - RESOLUTION_REQUIRED
+    - DEFERRED
+  ai_usage_boundary_decision:
+    - CONFIRM_AS_WRITTEN
+    - REVISE
+    - REJECT
+  autonomy_preference:
+    - APPROVAL_REQUIRED
+    - DELEGATED_AUTONOMY
+    - FULL_AUTONOMY_WITHIN_SCOPE
+  review_intent:
+    - RETURN_FOR_REVISION
+    - SOURCE_SELECTION_COMPLETE_CONTEXT_REVIEW_STILL_PENDING
+    - PROCEED_TO_CANONICAL_REVIEW_RECORD
+
+independent_human_reviewer_decision:
+  required: null
+  allowed_values:
+    - true
+    - false
+    - UNKNOWN
+  rationale: null
+
+source_decisions:
+  - source_id: SRC-EOA-ADVISORY-V02
+    source_record_draft_reference: source-record-drafts/src-eoa-advisory-v02.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-EOA-SPEC-V01
+    source_record_draft_reference: source-record-drafts/src-eoa-spec-v01.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-EOA-BENCHMARK-V01
+    source_record_draft_reference: source-record-drafts/src-eoa-benchmark-v01.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-EOA-M1-REPORT
+    source_record_draft_reference: source-record-drafts/src-eoa-m1-report.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-UDI-DICOM-PAPER1
+    source_record_draft_reference: source-record-drafts/src-udi-dicom-paper1.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-UDI-DICOM-PAPER2
+    source_record_draft_reference: source-record-drafts/src-udi-dicom-paper2.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+  - source_id: SRC-PILOT-SPEC-V01
+    source_record_draft_reference: source-record-drafts/src-pilot-spec-v01.yaml
+    decision: null
+    metadata_verified_by_human: null
+    limitations_acknowledged: null
+    human_notes: null
+
+research_decisions:
+  - decision_id: RD-003
+    recommendation_reference: context-review-recommendation.yaml#RD-003
+    decision: null
+    boundary_revisions: []
+    human_notes: null
+  - decision_id: RD-004
+    recommendation_reference: context-review-recommendation.yaml#RD-004
+    decision: null
+    boundary_revisions: []
+    human_notes: null
+  - decision_id: RD-006
+    recommendation_reference: context-review-recommendation.yaml#RD-006
+    decision: null
+    boundary_revisions: []
+    human_notes: null
+  - decision_id: RD-009
+    recommendation_reference: context-review-recommendation.yaml#RD-009
+    decision: null
+    boundary_revisions: []
+    human_notes: null
+
+unknown_decisions:
+  - unknown_id: UNK-001
+    unknown_record_draft_reference: unknown-record-drafts/unk-001-clinical-validation.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-002
+    unknown_record_draft_reference: unknown-record-drafts/unk-002-external-validation.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-003
+    unknown_record_draft_reference: unknown-record-drafts/unk-003-real-device-validation.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-004
+    unknown_record_draft_reference: unknown-record-drafts/unk-004-regulatory-validation.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-005
+    unknown_record_draft_reference: unknown-record-drafts/unk-005-deployment-status.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-006
+    unknown_record_draft_reference: unknown-record-drafts/unk-006-human-research-owner-reference.yaml
+    disposition: null
+    candidate_resolution_reference: human-owner-confirmation-record.yaml
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-007
+    unknown_record_draft_reference: unknown-record-drafts/unk-007-approved-source-set.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-008
+    unknown_record_draft_reference: unknown-record-drafts/unk-008-final-protocol.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-009
+    unknown_record_draft_reference: unknown-record-drafts/unk-009-ethics-privacy-data-governance.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+  - unknown_id: UNK-010
+    unknown_record_draft_reference: unknown-record-drafts/unk-010-eoa-novelty.yaml
+    disposition: null
+    resolution_reference: null
+    resolution_statement: null
+    human_notes: null
+
+ai_usage_boundary_decision:
+  recommendation_reference: context-review-recommendation.yaml
+  decision: null
+  allowed_scope_revisions: []
+  prohibited_scope_revisions: []
+  human_notes: null
+
+autonomy_preference_decision:
+  preference: null
+  rationale: null
+
+review_intent:
+  decision: null
+  rationale: null
+
+submission_rules:
+  - Every source decision must be explicit; null is not a decision.
+  - Every pending research decision must be explicit; silence does not confirm a recommendation.
+  - Every Unknown must be reviewed; a disposition does not itself resolve the Unknown, and any later resolution requires a traceable resolution reference and statement.
+  - Autonomy preference must be explicitly selected by the Human Research Owner; null does not imply APPROVAL_REQUIRED or any other level.
+  - Human identity, timestamp, and attestation must be present before this input can support a canonical Review Record.
+  - This template must not be edited in place into a Review Record; preserve it and create a separate Human-authored submission or record.
+
+human_decisions_recorded: 0
+source_approval_effect: NONE
+unknown_resolution_effect: NONE
+context_status_effect: NONE
+prototype_authorization_effect: NONE
+experiment_authorization_effect: NONE
+agent_creation_effect: NONE
+runtime_creation_effect: NONE
+permission_effect: NONE
+execution_effect: NONE

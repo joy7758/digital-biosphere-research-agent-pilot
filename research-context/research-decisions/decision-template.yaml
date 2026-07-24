@@ -1,0 +1,12 @@
+# Research Decision Template v0.1（研究决策模板 v0.1）
+#
+# 这是 Template（模板），不是已确认的 Decision Record（决策记录）。
+# 只有明确的人类批准者可以把 decision_status 设置为 `CONFIRMED`。
+# 建议状态词表：PROPOSED、CONFIRMED、SUPERSEDED、REJECTED。
+
+decision_id: null
+statement: null
+source_reference: []
+decision_status: PROPOSED
+approved_by: []
+timestamp: null

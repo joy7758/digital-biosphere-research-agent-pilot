@@ -1,0 +1,28 @@
+draft_id: SRD-SRC-UDI-DICOM-PAPER1
+record_status: DRAFT_NOT_APPROVED
+source_id: SRC-UDI-DICOM-PAPER1
+source_type: published_peer_reviewed_article
+title: A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows
+origin: Journal of Imaging Informatics in Medicine
+author_or_owner: Bin Zhang
+version: version_of_record
+publication_or_release_date: "2026-05-27"
+stable_reference: https://doi.org/10.1007/s10278-026-02019-6
+content_digest: null
+content_digest_reference: ../source-verification-report.yaml#SRC-UDI-DICOM-PAPER1
+access_limitations:
+  - Publisher and bibliographic-service access terms may apply.
+  - No local version-of-record content file is bound by this draft.
+known_limitations:
+  - Prior publication does not prove the Paper 3 hypothesis.
+  - No clinical, regulatory, real-device, hospital-deployment, or universal-interoperability inference.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selection_decision: PENDING_HUMAN_DECISION
+non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+selected_by: null
+reviewed_by: null
+timestamp: null
+source_approval_effect: NONE
+context_binding_effect: NONE
+

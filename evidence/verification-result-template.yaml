@@ -1,0 +1,17 @@
+# Verification Result Template v0.1（验证结果模板 v0.1）
+#
+# Template ≠ Verification Result。Verification ≠ Scientific Truth；Verification ≠ Permission。
+# 当前 result 必须保持 NOT_VERIFIED。
+
+verification_id: null
+experiment_record_references: []
+evidence_record_references: []
+verifier_reference: null
+verification_scope: []
+verification_method_reference: null
+verified_at: null
+result: NOT_VERIFIED
+findings: []
+failures: []
+unknowns: []
+limitations: []

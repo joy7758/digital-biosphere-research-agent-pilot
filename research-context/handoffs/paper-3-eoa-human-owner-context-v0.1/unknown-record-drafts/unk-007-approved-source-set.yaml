@@ -1,0 +1,31 @@
+draft_id: URD-UNK-007
+record_status: DRAFT_NOT_HUMAN_REVIEWED
+unknown_id: UNK-007
+topic: approved_source_set
+statement: The approved and Context-bound source set for Paper 3 EOA is unknown.
+source_references:
+  - ../unknown-register.yaml#UNK-007
+  - ../source-verification-report.yaml
+  - ../source-record-drafts/README.md
+impact_scope:
+  - context provenance
+  - literature tasks
+  - experiment inputs
+status: OPEN
+truth_value: UNKNOWN
+known_boundary: Seven candidates and seven Source Record Drafts exist, but approved and Context-bound Source Record instances remain zero.
+resolution_requires: Human verification, inclusion or exclusion decisions, canonical Source Records, and an explicit context-manifest update.
+prohibited_inference: Do not treat candidate listing, file existence, publication status, verification, recommendation, or prior use as source approval.
+non_binding_recommendation: KEEP_OPEN
+candidate_resolution_reference: null
+resolution_reference: null
+resolution_statement: null
+human_review_decision: PENDING_HUMAN_DECISION
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations:
+  - Verification determines traceability, not scientific correctness or inclusion approval.
+draft_prepared_at: "2026-07-21"
+unknown_resolution_effect: NONE
+context_status_effect: NONE

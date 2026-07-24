@@ -1,0 +1,29 @@
+draft_id: SRD-SRC-EOA-M1-REPORT
+record_status: DRAFT_NOT_APPROVED
+source_id: SRC-EOA-M1-REPORT
+source_type: existing_local_synthetic_report
+title: COMMAND 001 Milestone 1 Execution Report
+origin: /Users/zhangbin/GitHub/evidence-object-architecture/experiments/command-001/REPORT.md
+author_or_owner: null
+version: Milestone 1
+publication_or_release_date: "2026-07-20"
+stable_reference: null
+content_digest: 08bcf691e019b5f61c7699824cd20bcb71382c4a1bd64c53e3e3f507f187d1a8
+content_digest_reference: ../source-verification-report.yaml#SRC-EOA-M1-REPORT
+access_limitations:
+  - Local workspace access only.
+  - Source repository has no Git commit HEAD.
+known_limitations:
+  - Existing local synthetic report only; not a Pilot Experiment Record.
+  - Not independently validated.
+  - Not clinical, real-device, regulatory, or deployment evidence.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selection_decision: PENDING_HUMAN_DECISION
+non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+selected_by: null
+reviewed_by: null
+timestamp: null
+source_approval_effect: NONE
+context_binding_effect: NONE
+

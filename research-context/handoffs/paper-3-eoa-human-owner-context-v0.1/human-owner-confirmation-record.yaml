@@ -1,0 +1,31 @@
+confirmation_id: HOC-001
+version: v0.1
+
+candidate_identity_confirmed: true
+accepts_human_research_owner_responsibility: true
+canonical_owner_reference: "owner://bin-zhang"
+conflict_disclosures: []
+independent_human_reviewer_required: UNKNOWN
+confirmation_status: CONFIRMED
+confirmed_by: "Human Research Owner"
+timestamp: "2026-07-21T08:57:10+08:00"
+
+confirmation_source: EXPLICIT_HUMAN_INPUT
+confirmation_assurance: SELF_ATTESTED_NOT_CRYPTOGRAPHICALLY_VERIFIED
+owner_reference_aliases:
+  - bin_zhang
+
+responsibility_scope_reference: human-owner-record.yaml
+human_owns_scientific_conclusions: true
+
+context_manifest_update_effect: NONE
+context_status_effect: NONE
+review_status_effect: NONE
+approval_effect: NONE
+prototype_authorization_effect: NONE
+agent_creation_effect: NONE
+runtime_creation_effect: NONE
+entity_creation_effect: NONE
+permission_effect: NONE
+execution_effect: NONE
+

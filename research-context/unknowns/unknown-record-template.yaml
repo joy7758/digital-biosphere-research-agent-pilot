@@ -1,0 +1,16 @@
+# Unknown Record Template v0.1（未知事项记录模板 v0.1）
+#
+# Template ≠ Unknown Record。Unknown must remain Unknown。
+# 只有可定位的来源与人类决定可以把 status 从 OPEN 改为 RESOLVED。
+
+unknown_id: null
+statement: null
+source_references: []
+impact_scope: []
+status: OPEN
+resolution_reference: null
+resolution_statement: null
+approved_by: []
+introduced_at: null
+resolved_at: null
+limitations: []

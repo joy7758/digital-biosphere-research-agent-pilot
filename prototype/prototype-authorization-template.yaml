@@ -1,0 +1,24 @@
+# Prototype Authorization Record Template v0.1（原型授权记录模板 v0.1）
+#
+# Template ≠ Authorization。当前 decision_status 必须保持 NOT_AUTHORIZED。
+# 只有 Human Research Owner 可以对冻结版本作出 AUTHORIZED / REJECTED / REVOKED 决定。
+# Prototype Authorization ≠ Agent Permission，也不授权实验执行。
+
+authorization_id: null
+prototype_specification_reference: prototype/prototype-specification.md
+prototype_specification_version: v0.1
+task_definition_reference: prototype/task-definition.md
+human_interaction_model_reference: prototype/human-interaction-model.md
+readiness_gate_reference: architecture/research-agent-readiness-gate.md
+readiness_gate_status: NOT_READY
+context_reference: null
+human_owner_reference: null
+authorized_task_references: []
+allowed_tool_and_model_references: []
+prohibited_actions: []
+valid_from: null
+valid_until: null
+decision_status: NOT_AUTHORIZED
+decision_notes: []
+decided_by: null
+timestamp: null

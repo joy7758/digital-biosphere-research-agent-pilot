@@ -1,0 +1,81 @@
+handoff_id: HROCH-PAPER3-EOA-0001
+version: v0.1
+status: DRAFT_UNKNOWN_REGISTER
+
+rule: Unknowns remain UNKNOWN until a Human Research Owner accepts adequate evidence. Absence of evidence must not be converted into a negative or positive research fact.
+
+unknowns:
+  - unknown_id: UNK-001
+    topic: clinical_validation
+    status: UNKNOWN
+    known_boundary: No clinical-validation claim or authorization is present in the candidate sources.
+    resolution_requires: Human decision plus an approved clinical study design and evidence, if clinical validation is ever placed in scope.
+    prohibited_inference: Do not infer clinical validity, clinical invalidity, safety, effectiveness, or patient benefit.
+
+  - unknown_id: UNK-002
+    topic: external_validation
+    status: UNKNOWN
+    known_boundary: The EOA advisory states external review is incomplete, and the local synthetic report is not independent validation.
+    resolution_requires: Human-approved external evaluator, protocol, source set, and review record.
+    prohibited_inference: Do not treat local agreement, peer publication of prior papers, DBA advice, or SAEE coverage as external validation of EOA.
+
+  - unknown_id: UNK-003
+    topic: real_device_validation
+    status: UNKNOWN
+    known_boundary: Candidate EOA sources report synthetic-only work and real_device_validation=false.
+    resolution_requires: Human-approved real-device scope, lawful data source, protocol, governance, and evidence record.
+    prohibited_inference: Do not infer real-device performance from synthetic fixtures, public metadata, or software-route tests.
+
+  - unknown_id: UNK-004
+    topic: regulatory_validation
+    status: UNKNOWN
+    known_boundary: No regulatory-validation claim, registry-closure study, or authorization is present.
+    resolution_requires: Human-approved regulatory question, jurisdiction, authoritative sources, and qualified review.
+    prohibited_inference: Do not infer compliance, approval, certification, or regulatory suitability.
+
+  - unknown_id: UNK-005
+    topic: deployment_status
+    status: UNKNOWN
+    known_boundary: Current specifications state deployment_authorized=false and Prototype Authorization=NOT_AUTHORIZED; no deployment exists under this handoff.
+    resolution_requires: Separate Human authorization and verified deployment evidence if deployment is ever proposed.
+    prohibited_inference: Do not infer production readiness, hospital deployment, DBOS registration, SAEE operation, or real workflow adoption.
+
+  - unknown_id: UNK-006
+    topic: human_research_owner_reference
+    status: UNKNOWN
+    known_boundary: HOC-001 now explicitly confirms owner://bin-zhang and responsibility acceptance, but this Unknown Register has not received a Human Context Review decision resolving UNK-006.
+    resolution_requires: The Human Research Owner must explicitly accept HOC-001 as the resolution reference during Context Review.
+    prohibited_inference: Do not infer the owner from usernames, repository history, email addresses, model memory, or conversation metadata, and do not convert Owner confirmation into Context approval or experiment authorization.
+
+  - unknown_id: UNK-007
+    topic: approved_source_set
+    status: UNKNOWN
+    known_boundary: The current context manifest contains Source Documents=0; source-candidates.yaml is only an intake list.
+    resolution_requires: Human verification, inclusion/exclusion decisions, and approved context-manifest updates.
+    prohibited_inference: Do not treat candidate listing, file existence, publication status, or prior use as source approval.
+
+  - unknown_id: UNK-008
+    topic: paper3_final_hypothesis_and_benchmark_protocol
+    status: UNKNOWN
+    known_boundary: The Human Research Owner recorded 12 research-design decisions, including the candidate baseline, scenario-factor, ablation, and methods-review direction. The source set remains unapproved, the remaining statistical fields are pending, the protocol is not frozen or preregistered, and no Pilot experiment is authorized.
+    design_decision_reference: human-protocol-design-decision-addendum-v0.1.yaml
+    resolution_requires: Human confirmation of the final hypotheses, approved source set, remaining statistical parameters, frozen method contracts, stopping rules, protocol freeze, and preregistration.
+    prohibited_inference: Do not convert advisory recommendations or existing synthetic sanity checks into the final protocol or results.
+
+  - unknown_id: UNK-009
+    topic: ethics_privacy_and_data_governance_determination
+    status: UNKNOWN
+    known_boundary: This handoff processes no research data and executes no experiment; future data and external cases are not yet approved.
+    resolution_requires: Human determination based on the final data sources, jurisdiction, institution, and protocol.
+    prohibited_inference: Do not infer that future work is exempt, approved, risk-free, or outside human-subjects or privacy review.
+
+  - unknown_id: UNK-010
+    topic: eoa_novelty_beyond_existing_assurance_checklists
+    status: UNKNOWN
+    known_boundary: The advisory explicitly states that a unique formal primitive is not established; a targeted candidate-source collision audit also found existing uses of Evidence Object and evidence-closure terminology, but it is not a systematic or Human-approved review.
+    candidate_review_reference: repo://evidence-object-architecture/research/related-work-and-novelty-collision-audit-v0.1.md
+    resolution_requires: Human-approved primary-source literature review, full-text closest-neighbor comparison, reproducible search log, independent novelty challenge, and Human Research Owner decision.
+    prohibited_inference: Do not claim a new universal theory, first-of-kind architecture, or unique formal primitive.
+
+unknown_resolution_effect: NONE
+auto_fill_unknowns: false

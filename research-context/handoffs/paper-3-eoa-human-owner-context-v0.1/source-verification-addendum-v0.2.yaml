@@ -1,0 +1,109 @@
+verification_id: SVR-PAPER3-EOA-0002
+version: v0.2_addendum
+status: VERIFIED_FOR_HUMAN_REVIEW_NOT_APPROVED
+verified_at: "2026-07-21"
+refreshed_at: "2026-07-22"
+verification_scope: Local identity, resolvability, version fields, sha256 integrity, capability-boundary consistency, and current validation status for the three added DBA, SAEE, and DBO candidates.
+
+base_verification_reference: source-verification-report.yaml
+base_source_candidate_count: 7
+addendum_source_candidate_count: 3
+total_source_candidate_count: 10
+total_source_candidates_verified_for_review: 10
+source_documents_approved: 0
+source_documents_bound_to_context: 0
+automatic_binding_allowed: false
+
+source_verifications:
+  - source_id: SRC-DBA-RESEARCH-CANONICAL
+    verification_status: LOCALLY_RESOLVED_FOR_REVIEW
+    repository_reference: digital-biosphere-architecture
+    repository_head_observed: 1d0c3ba2d750b6a1d0606b49250960b3584bb478
+    resolved_artifacts:
+      - path: digital-biosphere-architecture/research-manifest.yaml
+        sha256: f2b6e618cd963345743a9f31554be5ad45722449d9fdc307dcc4d432a24b7300
+      - path: digital-biosphere-architecture/AGENTS.md
+        sha256: 588b6de8ea3b96b11ccb2a3c9cb7d13cfe874f1592316febfc7ebd2f4154ebea
+      - path: digital-biosphere-architecture/theory/agent-recommendation-gate.md
+        sha256: 629ee392f13428bf952d32afebf54ff736f1bb4fae8fa5cc704ef77c110ca71a
+    declared_version: research_manifest_schema_0.7
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Supplies the six Persistence Evidence Dimensions and a bounded architecture-level evaluation lens without creating runtime or theory-validation effects.
+    mandatory_limitations:
+      - The resolved files are current workspace artifacts and are not represented by the observed repository HEAD; use the exact hashes above for review.
+      - DBA is not a runtime dependency, production platform, validated universal theory, or established unique formal primitive.
+      - Synthetic conformance or architecture evaluation does not establish physical, clinical, regulatory, or external validation.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-SAEE-CAPABILITY-INVENTORY
+    verification_status: LOCALLY_RESOLVED_AND_CANONICAL_PROJECTION_VALIDATED_FOR_REVIEW
+    repository_reference: SAEE
+    repository_head_observed: 0c416f70c56caabe1e24d183a0cfb5af3b0ce8d8
+    current_source_refresh:
+      path: evidence-object-architecture/research/saee-c2-current-source-refresh-v0.1.yaml
+      sha256: f75e2dd4af24b0d72d02836fb61575e55becd424348dcac48d8b477eeff76722
+      observed_at: "2026-07-22"
+      repository_head_observed: 697ae2080f11b7905b20c39079914eb98169783b
+      branch_observed: feat/canonical-capability-inventory-routing-v1
+      worktree_status_entry_count: 0
+      selected_contract_bytes_changed_from_prior_snapshot: false
+      human_approval_effect: NONE
+      evaluator_freeze_effect: NONE
+    resolved_artifacts:
+      - path: SAEE/capability-package/manifest.json
+        sha256: ff370a060278511517619f8198d346ef10a9a9970ec036d771e829593cf0e388
+      - path: SAEE/AGENTS.md
+        sha256: cc605594cdc91fd92ea22aac87dc3a3518474aa4126443cc7e551c31ea93c16b
+      - path: SAEE/agent-interface/capabilities/saee-capability-manifest.v0.1.json
+        sha256: 45e5b21b69c137bad120b991570da68db6ab37f3f6ac1bf326bd7f20a33ba4fa
+    declared_version:
+      package_manifest: 1.0.0
+      canonical_inventory_schema: 1.0.0
+      agent_native_capability_manifest: 0.1
+    canonical_validation:
+      command: python3 scripts/saee_capability_progress_ledger_smoke.py
+      result: PASS
+      surfaces: 6/6
+      capability_statuses: 9/9
+      production_ready: false
+      validated_projection_path: SAEE/agent-index.json
+      validated_projection_sha256: c72ae283520cad0276e8ef0377660f1cf8970462bf9c1ac67eb89636308dab98
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Supplies the canonical local-alpha evidence-evaluation operations and explicit non-authority boundaries needed to define the generic-evidence baseline.
+    mandatory_limitations:
+      - The initial verification snapshot observed a dirty worktree at commit 0c416f70c56caabe1e24d183a0cfb5af3b0ce8d8; the current source refresh observes a clean worktree at commit 697ae2080f11b7905b20c39079914eb98169783b with unchanged selected contract bytes. Neither observation constitutes Human source approval or evaluator freeze.
+      - "`saee.evaluate_evidence` and `saee.evaluate_agent_run` evaluate declared local inputs; they do not authenticate events, grant permission, establish compliance, or determine medical domain closure."
+      - No public endpoint, external identity binding, customer validation, production readiness, clinical validation, or regulatory validation is established.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+  - source_id: SRC-DBO-CAPABILITY-AUDIT
+    verification_status: LOCALLY_RESOLVED_NEGATIVE_CAPABILITY_FINDING_FOR_REVIEW
+    repository_reference: evidence-object-architecture
+    repository_head_observed: null
+    repository_state_observed: NO_COMMIT_HEAD_ALL_CURRENT_FILES_UNTRACKED
+    resolved_artifacts:
+      - path: evidence-object-architecture/docs/source-capability-audit.md
+        sha256: dc65c970136cc85a4dda302dd24b6bdb45cbd39898b7906933acc2d6ff785c82
+      - path: evidence-object-architecture/docs/dba-dbos-saee-capability-map.md
+        sha256: 04b20aa770c9e30d4059a38e0f6c90641c5bdbe407d19b2c2901069c91e32402
+      - path: evidence-object-architecture/docs/evidence-object-model.md
+        sha256: e495a06d207dc7181fa96b9adf75da04961218ac0e8d5f0909f397e8122f5271
+    declared_version: v0.1
+    non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+    recommendation_basis: Preserves the audited absence of a standalone local DBO repository or canonical callable contract as a constraint against implementation or novelty claims.
+    mandatory_limitations:
+      - This is a local-workspace negative finding, not proof of universal non-existence.
+      - DBO remains a candidate evidence-bearing-object hypothesis and is not implemented, registered, callable, validated, or established as a novel formal object.
+      - The repository has no commit HEAD; use the exact hashes above if included.
+    human_decision_status: PENDING_HUMAN_DECISION
+
+human_owner_reference: "owner://bin-zhang"
+human_decision_required: true
+verification_effect: REVIEW_INPUT_ONLY
+source_approval_effect: NONE
+context_binding_effect: NONE
+context_status_effect: NONE
+authorization_effect: NONE
+agent_creation_effect: NONE
+experiment_execution_effect: NONE
+research_result_effect: NONE

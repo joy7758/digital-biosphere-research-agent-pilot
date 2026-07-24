@@ -1,0 +1,167 @@
+decision_id: HCD-001
+version: v0.1
+record_type: HUMAN_CONTEXT_DECISION_RECORD
+context_id: RCP-DBRAP-0001
+context_version: v0.1
+owner_reference: "owner://bin-zhang"
+status: HUMAN_CONFIRMED
+owner_confirmation: CONFIRMED
+confirmation_source: EXPLICIT_HUMAN_INPUT
+confirmation_assurance: SELF_ATTESTED_NOT_CRYPTOGRAPHICALLY_VERIFIED
+
+purpose: Preserve explicit Human Research Owner context decisions as a historical governance record without allowing AI inference or automatic status transition.
+
+record_references:
+  decision_input_template: human-context-decision-input-template.yaml
+  review_docket: human-context-review-docket.yaml
+  owner_confirmation: human-owner-confirmation-record.yaml
+  context_manifest: ../../context-manifest.yaml
+
+decision_vocabulary:
+  source_decision:
+    - INCLUDE_WITH_LIMITATIONS
+    - EXCLUDE
+    - DEFER
+  research_decision:
+    - CONFIRM_WITH_BOUNDARIES
+    - REVISE
+    - REJECT
+  unknown_disposition:
+    - ACCEPT_UNKNOWN
+    - RESOLUTION_REQUIRED
+    - DEFERRED
+  autonomy_preference:
+    - APPROVAL_REQUIRED
+    - DELEGATED_AUTONOMY
+    - FULL_AUTONOMY_WITHIN_SCOPE
+
+source_decisions:
+  - source_id: SRC-EOA-ADVISORY-V02
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected EOA advisory v0.2 as bounded Context input subject to its recorded limitations.
+  - source_id: SRC-EOA-SPEC-V01
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected the EOA specification as bounded Context input subject to its recorded limitations.
+  - source_id: SRC-EOA-BENCHMARK-V01
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected the benchmark design documents as bounded Context input subject to their recorded limitations.
+  - source_id: SRC-EOA-M1-REPORT
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected the existing local EOA research report as bounded Context input, not as independent validation or a new experiment result.
+  - source_id: SRC-UDI-DICOM-PAPER1
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected Paper 1 and its UDI-DICOM research materials as bounded Context input subject to the published-work limitations.
+  - source_id: SRC-UDI-DICOM-PAPER2
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected Paper 2 and its UDI-DICOM research materials while preserving accepted_for_publication / awaiting_production as the current formal status.
+  - source_id: SRC-PILOT-SPEC-V01
+    decision: INCLUDE_WITH_LIMITATIONS
+    selected_by_human: true
+    reason: Human Research Owner selected the Pilot governance and research specification as bounded Context input, not as implementation or authorization evidence.
+
+research_scope_confirmation:
+  confirmed_target: domain-semantic evidence closure
+  explicitly_out_of_scope:
+    - DBOS theory validation
+    - Digital Biosphere theory validation
+    - autonomous research
+
+research_decisions:
+  - decision_id: RD-003
+    decision: CONFIRM_WITH_BOUNDARIES
+    rationale: Human Research Owner confirmed Paper 3 as a bounded study of domain-semantic evidence closure.
+  - decision_id: RD-004
+    decision: CONFIRM_WITH_BOUNDARIES
+    rationale: Human Research Owner confirmed that the study does not validate Digital Biosphere theory and does not elevate EOA into a universal theory.
+  - decision_id: RD-006
+    decision: CONFIRM_WITH_BOUNDARIES
+    rationale: Human Research Owner confirmed that the Pilot does not perform DBOS theory validation and preserves the separation among DBA, EOA, and UDI-DICOM roles.
+  - decision_id: RD-009
+    decision: null
+    rationale: null
+
+unknown_reviews:
+  - unknown_id: UNK-001
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-002
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-003
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-004
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-005
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-006
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-007
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-008
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-009
+    disposition: ACCEPT_UNKNOWN
+  - unknown_id: UNK-010
+    disposition: ACCEPT_UNKNOWN
+
+automatic_unknown_resolution_allowed: false
+
+ai_usage_boundary:
+  allowed:
+    - Literature organization
+    - Knowledge synthesis
+    - Experiment planning assistance
+    - Draft assistance
+  restricted:
+    - Scientific conclusion ownership
+    - Autonomous publication
+    - Autonomous authorship
+    - Raw data modification
+    - Evidence deletion
+  approval_required: []
+
+autonomy_preference: APPROVAL_REQUIRED
+autonomy_preference_rationale: The first research experiment requires a Human-supervised baseline.
+
+independent_human_reviewer_required: null
+reviewer_reference: null
+review_status: PENDING_HUMAN_REVIEW
+decision_recorded_by: "owner://bin-zhang"
+decision_recorded_at: "2026-07-21T09:54:03+08:00"
+human_attestation: EXPLICIT_HUMAN_INSTRUCTION_TO_RECORD_HCD_001
+
+completion_requirements:
+  - Every source decision and reason is explicitly provided by the Human Research Owner.
+  - Every pending research decision and rationale is explicitly provided by the Human Research Owner.
+  - Every Unknown receives exactly one Human-selected disposition.
+  - AI usage boundaries and autonomy preference are explicitly provided by the Human Research Owner.
+  - Human reviewer requirements, identity, timestamp, and attestation are recorded.
+  - A separate review verifies this record before any Context update is considered.
+
+human_decisions_status: RECORDED
+human_decisions_recorded: 23
+human_decision_count_basis:
+  owner_confirmation: 1
+  source_decisions: 7
+  research_decisions: 3
+  unknown_dispositions: 10
+  ai_usage_boundary: 1
+  autonomy_preference: 1
+pending_human_decision_items:
+  - RD-009
+  - independent_human_reviewer_required
+context_status_at_preparation: DRAFT
+context_update_effect: NONE
+context_approval_effect: NONE
+scientific_truth_effect: NONE
+prototype_authorization_effect: NONE
+experiment_authorization_effect: NONE
+agent_permission_effect: NONE
+agent_creation_effect: NONE
+runtime_creation_effect: NONE
+entity_creation_effect: NONE
+execution_effect: NONE

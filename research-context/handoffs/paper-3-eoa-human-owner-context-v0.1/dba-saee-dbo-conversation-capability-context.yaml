@@ -1,0 +1,409 @@
+context_id: PAPER3-EOA-CONVERSATION-CAPABILITY-0001
+version: v0.12
+date: "2026-07-22"
+status: LOADED_FOR_CONTEXT_ONLY
+
+load_semantics:
+  conversation_context_loaded: true
+  runtime_loaded: false
+  agent_created: false
+  capability_invoked: false
+  experiment_executed: false
+  result_generated: false
+  context_approved: false
+  authorization_effect: NONE
+  truth_effect: NONE
+
+paper_role:
+  central_research_object: Evidence Object Architecture domain-semantic closure profile
+  primary_question: Can explicit domain-semantic evidence closure add diagnostic value beyond generic evidence-presence evaluation under bounded, equal-source-evidence conditions?
+  pilot_question: Can a governed Research Agent improve reproducibility of scientific workflows?
+  human_authority: Human owns scientific conclusions.
+
+human_authorization_snapshot:
+  authorization_record: human-protocol-design-decision-addendum-v0.1.yaml
+  reconfirmed_on: "2026-07-22"
+  reconfirmation_scope: DEC-001_AND_DEC-003_THROUGH_DEC-012_AS_RECOMMENDED_RESEARCH_DESIGN_ONLY_DEC-002_CONTINUES_SOURCE_BY_SOURCE_REVIEW
+  authorization_scope: RESEARCH_DESIGN_ONLY
+  authorization_level_within_scope: FULL
+  approved_research_design_decisions:
+    - DEC-001
+    - DEC-003
+    - DEC-004
+    - DEC-005
+    - DEC-006
+    - DEC-007
+    - DEC-008
+    - DEC-009
+    - DEC-010
+    - DEC-011
+    - DEC-012
+  continuing_review_decision:
+    decision_id: DEC-002
+    status: CONTINUE_SOURCE_BY_SOURCE_REVIEW
+    human_selection_values_recorded: 1
+    complete_human_source_decisions: 1
+    human_included_sources: 1
+    candidate_bibliography_sources: 1
+    remaining_pending_source_decisions: 21
+    final_numeric_citations_frozen: false
+    gsn_v3_human_scope_field_set_confirmations: 1
+    gsn_v3_human_scope_field_set_confirmation_scope: FIELD_SET_AND_REVIEW_BOUNDARIES_ONLY
+    gsn_v3_human_source_decisions: 0
+    vids_human_review_surfaces_ready: true
+    vids_human_source_decisions: 0
+    vids_validator_execution_count: 0
+    vids_conformance_results: 0
+    provimaps_human_review_surfaces_ready: true
+    provimaps_human_source_decisions: 0
+    provimaps_version_of_record_full_text_reviews: 0
+    provimaps_cross_version_equivalence_decisions: 0
+    omni_decision_human_review_surfaces_ready: true
+    omni_decision_human_source_decisions: 0
+    omni_decision_benchmark_execution_count: 0
+    omni_decision_reported_results_reproduced: false
+    omni_decision_analysis_unit_novelty_resolution: UNKNOWN
+    odes_human_review_surfaces_ready: true
+    odes_human_source_decisions: 0
+    odes_schema_validation_execution_count: 0
+    odes_conformance_vector_execution_count: 0
+    odes_independent_implementation_reviews: 0
+    odes_external_adoption_reviews: 0
+    odes_analysis_unit_novelty_resolution: UNKNOWN
+    w3c_prov_human_review_surfaces_ready: true
+    w3c_prov_human_source_decisions: 0
+    w3c_prov_reasoner_execution_count: 0
+    w3c_prov_instance_validation_count: 0
+    w3c_prov_constraints_implementation_count: 0
+    c2r_prov_mapping_implementation_count: 0
+    c2r_prov_conformance_results: 0
+    w3c_prov_analysis_unit_novelty_resolution: UNKNOWN
+    dicom_ps3_3_human_review_surfaces_ready: true
+    dicom_ps3_3_human_source_decisions: 0
+    dicom_ps3_3_instance_validation_count: 0
+    dicom_ps3_3_iod_conformance_result_count: 0
+    dicom_ps3_3_private_tag_review_count: 0
+    dicom_ps3_3_registry_lookup_count: 0
+    dicom_ps3_3_real_device_test_count: 0
+    dicom_ps3_3_analysis_unit_novelty_resolution: UNKNOWN
+    dicom_ps3_15_human_review_surfaces_ready: true
+    dicom_ps3_15_human_source_decisions: 0
+    dicom_ps3_15_audit_message_validation_count: 0
+    dicom_ps3_15_instance_validation_count: 0
+    dicom_ps3_15_profile_conformance_result_count: 0
+    dicom_ps3_15_deidentifier_execution_count: 0
+    dicom_ps3_15_private_tag_review_count: 0
+    dicom_ps3_15_real_device_test_count: 0
+    dicom_ps3_15_analysis_unit_novelty_resolution: UNKNOWN
+    fhir_r4_device_human_review_surfaces_ready: true
+    fhir_r4_device_human_source_decisions: 0
+    fhir_r4_device_resource_validation_count: 0
+    fhir_r4_device_official_validator_execution_count: 0
+    fhir_r4_device_profile_conformance_result_count: 0
+    fhir_r4_device_terminology_validation_count: 0
+    fhir_r4_device_registry_resolution_count: 0
+    fhir_r4_device_server_roundtrip_count_for_this_review: 0
+    fhir_r4_device_real_device_test_count: 0
+    fhir_r4_device_clinical_interoperability_test_count: 0
+    fhir_r4_device_analysis_unit_novelty_resolution: UNKNOWN
+    fhir_r4_provenance_human_review_surfaces_ready: true
+    fhir_r4_provenance_human_source_decisions: 0
+    fhir_r4_provenance_resource_validation_count: 0
+    fhir_r4_provenance_official_validator_execution_count: 0
+    fhir_r4_provenance_profile_conformance_result_count: 0
+    fhir_r4_provenance_terminology_validation_count: 0
+    fhir_r4_provenance_reference_resolution_count: 0
+    fhir_r4_provenance_w3c_prov_conformance_count: 0
+    fhir_r4_provenance_server_roundtrip_count_for_this_review: 0
+    fhir_r4_provenance_real_workflow_event_test_count: 0
+    fhir_r4_provenance_clinical_interoperability_test_count: 0
+    fhir_r4_provenance_analysis_unit_novelty_resolution: UNKNOWN
+    fhir_r4_auditevent_human_review_surfaces_ready: true
+    fhir_r4_auditevent_human_source_decisions: 0
+    fhir_r4_auditevent_resource_validation_count: 0
+    fhir_r4_auditevent_official_validator_execution_count: 0
+    fhir_r4_auditevent_profile_conformance_result_count: 0
+    fhir_r4_auditevent_terminology_validation_count: 0
+    fhir_r4_auditevent_dicom_audit_message_validation_count: 0
+    fhir_r4_auditevent_server_roundtrip_count_for_this_review: 0
+    fhir_r4_auditevent_real_workflow_event_test_count: 0
+    fhir_r4_auditevent_clinical_interoperability_test_count: 0
+    fhir_r4_auditevent_event_truth_effect: NONE
+    fhir_r4_auditevent_log_integrity_effect: NONE
+    fhir_r4_auditevent_authorization_effect: NONE
+    fhir_r4_auditevent_identity_assurance_effect: NONE
+    fhir_r4_auditevent_analysis_unit_novelty_resolution: UNKNOWN
+    fhir_r4_imagingstudy_human_review_surfaces_ready: true
+    fhir_r4_imagingstudy_human_source_decisions: 0
+    fhir_r4_imagingstudy_resource_validation_count: 0
+    fhir_r4_imagingstudy_official_validator_execution_count: 0
+    fhir_r4_imagingstudy_profile_conformance_result_count: 0
+    fhir_r4_imagingstudy_terminology_validation_count: 0
+    fhir_r4_imagingstudy_endpoint_resolution_count: 0
+    fhir_r4_imagingstudy_dicom_query_or_retrieval_test_count: 0
+    fhir_r4_imagingstudy_source_dicom_byte_inspection_count: 0
+    fhir_r4_imagingstudy_server_roundtrip_count_for_this_review: 0
+    fhir_r4_imagingstudy_real_workflow_test_count: 0
+    fhir_r4_imagingstudy_clinical_interoperability_test_count: 0
+    fhir_r4_imagingstudy_source_object_existence_effect: NONE
+    fhir_r4_imagingstudy_retrieval_effect: NONE
+    fhir_r4_imagingstudy_completeness_effect: NONE
+    fhir_r4_imagingstudy_identity_assurance_effect: NONE
+    fhir_r4_imagingstudy_authorization_effect: NONE
+    fhir_r4_imagingstudy_udi_effect: NONE
+    fhir_r4_imagingstudy_analysis_unit_novelty_resolution: UNKNOWN
+    opentelemetry_semconv_human_review_surfaces_ready: true
+    opentelemetry_semconv_human_source_decisions: 0
+    opentelemetry_semconv_sdk_execution_count: 0
+    opentelemetry_semconv_instrumentation_execution_count: 0
+    opentelemetry_semconv_collector_execution_count: 0
+    opentelemetry_semconv_exporter_execution_count: 0
+    opentelemetry_semconv_schema_or_code_generation_execution_count: 0
+    opentelemetry_semconv_validator_execution_count: 0
+    opentelemetry_semconv_ingestion_execution_count: 0
+    opentelemetry_semconv_correlation_execution_count: 0
+    opentelemetry_semconv_event_verification_count: 0
+    opentelemetry_semconv_real_workflow_test_count: 0
+    opentelemetry_semconv_clinical_interoperability_test_count: 0
+    opentelemetry_semconv_telemetry_truth_effect: NONE
+    opentelemetry_semconv_event_truth_effect: NONE
+    opentelemetry_semconv_producer_authenticity_effect: NONE
+    opentelemetry_semconv_completeness_effect: NONE
+    opentelemetry_semconv_clock_trust_effect: NONE
+    opentelemetry_semconv_causality_effect: NONE
+    opentelemetry_semconv_identity_assurance_effect: NONE
+    opentelemetry_semconv_authorization_effect: NONE
+    opentelemetry_semconv_medical_binding_effect: NONE
+    opentelemetry_semconv_provenance_effect: NONE
+    opentelemetry_semconv_analysis_unit_novelty_resolution: UNKNOWN
+    slsa_1_2_human_review_surfaces_ready: true
+    slsa_1_2_human_source_decisions: 0
+    slsa_1_2_verifier_execution_count: 0
+    slsa_1_2_build_or_source_workflow_execution_count: 0
+    slsa_1_2_attestation_or_signature_generation_count: 0
+    slsa_1_2_attestation_or_signature_verification_count: 0
+    slsa_1_2_vsa_generation_or_verification_count: 0
+    slsa_1_2_ci_cd_or_artifact_execution_count: 0
+    slsa_1_2_conformance_assessment_count: 0
+    slsa_1_2_medical_event_verification_count: 0
+    slsa_1_2_real_workflow_test_count: 0
+    slsa_1_2_clinical_or_medical_interoperability_test_count: 0
+    slsa_1_2_software_artifact_truth_effect: NONE
+    slsa_1_2_source_revision_truth_effect: NONE
+    slsa_1_2_medical_event_truth_effect: NONE
+    slsa_1_2_identity_assurance_effect: NONE
+    slsa_1_2_authorization_effect: NONE
+    slsa_1_2_medical_semantic_effect: NONE
+    slsa_1_2_clinical_correctness_effect: NONE
+    slsa_1_2_validation_effect: NONE
+    slsa_1_2_provenance_continuity_effect: NONE
+    slsa_1_2_analysis_unit_novelty_resolution: UNKNOWN
+  pending_decisions:
+    - decision_id: DEC-013
+      human_decision: null
+  non_authorized_effects:
+    context_approval: false
+    context_source_binding: false
+    blanket_source_approval: false
+    source_approval_beyond_recorded_bounded_source: false
+    protocol_freeze: false
+    implementation: false
+    capability_invocation: false
+    experiment_execution: false
+    research_agent_creation: false
+    scientific_conclusion: false
+    submission_or_publication: false
+
+loaded_source_snapshot:
+  snapshot_date: "2026-07-22"
+  note: >-
+    Exact local bytes are loaded for bounded research assistance. Repository
+    state is source-specific: the current SAEE refresh observes a clean
+    worktree at a recorded commit while DBA and EOA still require exact
+    artifact hashes. No repository observation constitutes Human approval or
+    protocol freeze.
+  sources:
+    - path: digital-biosphere-architecture/research-manifest.yaml
+      sha256: f2b6e618cd963345743a9f31554be5ad45722449d9fdc307dcc4d432a24b7300
+    - path: digital-biosphere-architecture/AGENTS.md
+      sha256: 588b6de8ea3b96b11ccb2a3c9cb7d13cfe874f1592316febfc7ebd2f4154ebea
+    - path: digital-biosphere-architecture/theory/agent-recommendation-gate.md
+      sha256: 629ee392f13428bf952d32afebf54ff736f1bb4fae8fa5cc704ef77c110ca71a
+    - path: SAEE/capability-package/manifest.json
+      sha256: ff370a060278511517619f8198d346ef10a9a9970ec036d771e829593cf0e388
+    - path: SAEE/AGENTS.md
+      sha256: cc605594cdc91fd92ea22aac87dc3a3518474aa4126443cc7e551c31ea93c16b
+    - path: SAEE/agent-interface/capabilities/saee-capability-manifest.v0.1.json
+      sha256: 45e5b21b69c137bad120b991570da68db6ab37f3f6ac1bf326bd7f20a33ba4fa
+    - path: evidence-object-architecture/docs/source-capability-audit.md
+      sha256: dc65c970136cc85a4dda302dd24b6bdb45cbd39898b7906933acc2d6ff785c82
+    - path: evidence-object-architecture/docs/dba-dbos-saee-capability-map.md
+      sha256: 04b20aa770c9e30d4059a38e0f6c90641c5bdbe407d19b2c2901069c91e32402
+    - path: evidence-object-architecture/docs/evidence-object-model.md
+      sha256: e495a06d207dc7181fa96b9adf75da04961218ac0e8d5f0909f397e8122f5271
+    - path: evidence-object-architecture/research/saee-c2-current-source-refresh-v0.1.yaml
+      sha256: f75e2dd4af24b0d72d02836fb61575e55becd424348dcac48d8b477eeff76722
+
+  saee_current_repository_observation:
+    repository_head: 697ae2080f11b7905b20c39079914eb98169783b
+    branch: feat/canonical-capability-inventory-routing-v1
+    worktree_status_entry_count: 0
+    selected_contract_bytes_changed_from_prior_snapshot: false
+    human_approval_effect: NONE
+    evaluator_freeze_effect: NONE
+
+loaded_capabilities:
+  DBA:
+    full_name: Digital Biosphere Architecture
+    load_status: REFERENCE_LENS_LOADED
+    canonical_sources:
+      - digital-biosphere-architecture/research-manifest.yaml
+      - digital-biosphere-architecture/AGENTS.md
+      - digital-biosphere-architecture/theory/agent-recommendation-gate.md
+    usable_functions:
+      - Map Paper 3 evidence requirements to six Persistence Evidence Dimensions.
+      - Identify uncovered identity continuity, resource continuity, perception, action outcome, interaction, and governance evidence.
+      - Check unit-versus-composition and task-success-versus-persistence claim boundaries.
+      - Provide a falsifiable evaluation lens for discussion and ablation design.
+    prohibited_uses:
+      - Do not use DBA as a runtime, registry, validator, permission system, or execution engine.
+      - Do not claim DBA theory validation, physical validation, biological life, production readiness, or unique formal primitives.
+      - Do not infer LAU qualification or necessity for Paper 3.
+    recommendation: RECOMMEND_AS_BOUNDED_RESEARCH_INFRASTRUCTURE_ONLY
+
+  SAEE:
+    full_name: Silicon-Amplified Evolutionary Ecology
+    load_status: LOCAL_ALPHA_EVALUATION_CONTRACTS_LOADED
+    canonical_sources:
+      - SAEE/capability-package/manifest.json#canonical_inventory
+      - SAEE/AGENTS.md
+      - SAEE/agent-interface/capabilities/saee-capability-manifest.v0.1.json
+    canonical_inventory_validation:
+      command: python3 scripts/saee_capability_progress_ledger_smoke.py
+      date: "2026-07-21"
+      result: PASS
+      surfaces: 6/6
+      capability_statuses: 9/9
+      repaired_drift:
+        - Restored `saee.otel_sdk_or_otlp_ingestion` projection from `partial` to canonical `missing`.
+        - Removed projected `saee.evaluate_change_readiness` because it is absent from the canonical inventory.
+      handling_rule: Continue to use `capability-package/manifest.json#canonical_inventory` as the sole capability-fact source; the repaired projection is a synchronized derivative, not a second authority.
+    available_capabilities:
+      - capability_id: saee.evaluate_evidence
+        implementation_status: implemented
+        interface: local MCP stdio alpha
+        canonical_entrypoint: python3 scripts/saee_agent_readiness_mcp_stdio.py
+        paper_use: Evaluate whether a declared closed evidence bundle covers an explicit repository-controlled evidence requirement set and return missing requirements and bounded reason codes.
+      - capability_id: saee.evaluate_agent_run
+        implementation_status: implemented
+        interface: local MCP stdio alpha
+        canonical_entrypoint: python3 scripts/saee_agent_readiness_mcp_stdio.py
+        paper_use: Evaluate declared Agent trace metadata and required evidence coverage as a generic comparison surface.
+    comparison_role:
+      - Supply C2 as a generic evidence-presence or adequacy comparator that independently consumes the same frozen source record as C3.
+      - Never consume C3 output, any other method output, or external lookup output as C2 input in the confirmatory design.
+      - Preserve divergence cases where generic evidence is sufficient but domain-semantic closure fails.
+      - Produce reviewable missing-requirement and reason-code outputs without granting authority.
+    prohibited_uses:
+      - Do not treat SAEE output as medical closure, event truth, trace authentication, safety, compliance, permission, or deployment approval.
+      - Do not claim public deployment, customer validation, production readiness, external identity binding, or trusted trace-to-evidence conversion.
+      - Do not let SAEE approve its own benchmark, evidence, conclusions, or publication.
+    recommendation: RECOMMEND_FOR_BOUNDED_LOCAL_EVIDENCE_EVALUATION_ONLY
+
+  DBO:
+    full_name: Digital Biosphere Object
+    load_status: CONCEPT_ONLY_NOT_CALLABLE
+    canonical_sources:
+      - evidence-object-architecture/docs/source-capability-audit.md
+      - evidence-object-architecture/docs/dba-dbos-saee-capability-map.md
+      - evidence-object-architecture/docs/evidence-object-model.md
+    verified_capabilities: []
+    usable_functions:
+      - Serve only as a candidate hypothesis for a persistent evidence-bearing object envelope.
+      - Provide a terminology collision and novelty question for literature and contract review.
+    prohibited_uses:
+      - Do not claim a standalone DBO repository, schema, callable contract, runtime, registration, validation, or implementation.
+      - Do not equate DBO with a DBOS Digital Entity or the EOA Evidence Object.
+      - Do not place DBO in the Paper 3 title or contribution claim as an established construct.
+    recommendation: DO_NOT_RECOMMEND_AS_IMPLEMENTED_CAPABILITY
+
+composition_for_paper3:
+  sequence:
+    - DBA supplies a static persistence-evidence and architecture-boundary lens; it is not a runtime stage.
+    - In a future Human-authorized confirmatory run, one Human-frozen source record would fan out independently to C0, C1, C2, C2R, and C3 under equal-source-evidence conditions.
+    - C2 uses the bounded SAEE contract as a source-only generic evidence-adequacy comparator.
+    - C3 performs the bounded EOA domain-semantic closure evaluation without supplying input to C2.
+    - DBO remains an unimplemented hypothesis and terminology boundary.
+  non_collapse_rule: No output from DBA, EOA, SAEE, DBOS, or the DBO hypothesis becomes another confirmatory method's input or upgrades another layer's truth, authority, validation, or permission status.
+  dbos_runtime_loaded: false
+
+conversation_operating_contract:
+  allowed_now:
+    - Use DBA as a static persistence-evidence and architecture-boundary lens.
+    - Use SAEE contracts to design a future equal-source generic evidence comparator.
+    - Use DBO only as a terminology, collision, and negative-capability boundary.
+    - Refine approved research questions, hypotheses, baselines, ablations, metrics, and review packets within DEC-001 and DEC-003 through DEC-012.
+    - Continue DEC-002 source-by-source review without preselection or blanket approval.
+    - Use the completed AI Model Passport decision only for the approved background, method-boundary, baseline-design, and novelty-collision roles and five bounded claims.
+    - Place that source in the candidate bibliography while keeping final numeric citation freeze and the remaining 21 source decisions pending.
+    - Review the VIDS Human passage worksheet and zero-preselection decision gate without treating either surface as a source decision, validator execution, or conformance result.
+    - Review the PROVIMAPS Human passage worksheet and zero-preselection decision gate while keeping the official abstract and arXiv v1 as separate access surfaces and recording no source decision by default.
+    - Review the Omni-Decision Human passage worksheet and zero-preselection decision gate while keeping terminology collision, reported-result citation scope, and analysis-unit distinction as separate Human decisions with no source selection by default.
+    - Review the ODES Human passage worksheet and zero-preselection decision gate while keeping citation surface, mutable technical-grey-literature status, terminology collision, and analysis-unit distinction as separate Human decisions with no source selection by default.
+    - Review the W3C PROV Human passage worksheet and zero-preselection decision gate while keeping dated Recommendation identity, citation surface, conceptual reuse, C2R mapping/conformance, event truth, and analysis-unit distinction separate with no source selection by default.
+    - Review the DICOM PS3.3 Human passage worksheet and zero-preselection decision gate while keeping corrected official locators, citation surface, Type semantics, Device UID/UDI-DI, representation-path reuse, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the DICOM PS3.15 Human passage worksheet and zero-preselection decision gate while keeping citation surface, audit format, event truth, configurable triggering, de-identification scope, UDI retention, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the FHIR R4 Device Human passage worksheet and zero-preselection decision gate while keeping versioned citation surface, Device/DeviceDefinition, business identifier/UDI-DI, UDI-source precondition, local readback/conformance, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the FHIR R4 Provenance Human passage worksheet and zero-preselection decision gate while keeping versioned citation surface, Provenance/AuditEvent role, generic C2R relations, reference resolution/versioning, event truth/authenticity/authorization, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the FHIR R4 AuditEvent Human passage worksheet and zero-preselection decision gate while keeping versioned citation surface, AuditEvent/Provenance role, generic multi-actor log consistency, event truth/completeness, policy/authorization/identity, update/delete integrity guidance, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the FHIR R4 ImagingStudy Human passage worksheet and zero-preselection decision gate while keeping versioned citation surface, generic imaging linkage in C2R, source-object existence and retrieval, identity/UDI/authorization, subset/completeness, resource separation, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the OpenTelemetry Semantic Conventions 1.43.0 Human passage worksheet and zero-preselection decision gate while keeping versioned citation surface, generic telemetry assignment to C2R, attribute absence and requirement levels, stability, event representation and truth, correlation and medical binding, and workflow-instance analysis-unit distinction separate with no source selection by default.
+    - Review the SLSA 1.2 Human passage worksheet and zero-preselection decision gate while keeping immutable-tag, maintained-branch and official-site citation surfaces, generic software-supply-chain assignment to C2R, level/trust boundaries, dependency completeness, medical-workflow non-inference, and workflow-instance analysis-unit distinction separate with no source selection by default.
+  requires_new_human_authorization:
+    - Invoke SAEE on Paper 3 research cases.
+    - Freeze the protocol, source set, evaluator bytes, benchmark cases, or environment.
+    - Implement or generate benchmark cases.
+    - Execute an experiment or accept a result.
+    - Resolve DEC-013.
+    - Record INCLUDE, EXCLUDE, or DEFER for W3C PROV and approve its bounded roles, claims, citation surface, C2R relationship, and prohibited-inference review.
+    - Implement or execute a C2R-to-PROV mapping, ontology reasoner, PROV instance validation, PROV constraints, or conformance assessment.
+    - Record INCLUDE, EXCLUDE, or DEFER for DICOM PS3.3 and approve its bounded roles, claims, citation surface, type-semantics interpretation, Device UID/UDI-DI boundary, analysis unit, and prohibited-inference review.
+    - Execute DICOM instance validation, IOD conformance assessment, private-tag review, registry lookup, or real-device testing.
+    - Record INCLUDE, EXCLUDE, or DEFER for DICOM PS3.15 and approve its bounded roles, claims, citation surface, audit/event-truth boundary, triggering interpretation, de-identification scope, analysis unit, and prohibited-inference review.
+    - Execute DICOM audit-message or instance validation, profile-conformance assessment, de-identifier operation, private-tag review, or real-device testing for the PS3.15 source decision.
+    - Record INCLUDE, EXCLUDE, or DEFER for FHIR R4 Device and approve its bounded roles, claims, citation surface, Device/DeviceDefinition boundary, identifier/UDI-DI boundary, UDI-source precondition, readback/conformance boundary, analysis unit, and prohibited-inference review.
+    - Execute FHIR resource validation, an official FHIR validator, implementation-guide conformance, terminology validation, registry resolution, a server roundtrip for this review, real-device testing, or clinical-interoperability testing.
+    - Record INCLUDE, EXCLUDE, or DEFER for FHIR R4 Provenance and approve its bounded roles, claims, citation surface, Provenance/AuditEvent boundary, generic-relation assignment, reference-resolution/versioning boundary, event-truth/authenticity/authorization non-inference, analysis unit, and prohibited-inference review.
+    - Execute FHIR Provenance resource validation, an official FHIR validator, implementation-guide conformance, terminology validation, reference resolution, W3C PROV conformance, a server roundtrip for this review, real-workflow-event testing, or clinical-interoperability testing.
+    - Record INCLUDE, EXCLUDE, or DEFER for FHIR R4 AuditEvent and approve its bounded roles, claims, citation surface, AuditEvent/Provenance boundary, generic multi-actor assignment, event-truth/completeness non-inference, policy/authorization/identity boundary, update/delete integrity boundary, analysis unit, and prohibited-inference review.
+    - Execute FHIR AuditEvent resource validation, an official FHIR validator, implementation-guide conformance, terminology validation, DICOM audit-message validation, a server roundtrip for this review, real-workflow-event testing, or clinical-interoperability testing.
+    - Record INCLUDE, EXCLUDE, or DEFER for FHIR R4 ImagingStudy and approve its bounded roles, claims, citation surface, generic-linkage assignment, source-object/retrieval boundary, identity/UDI/authorization non-inference, subset/completeness boundary, resource separation, analysis unit, and prohibited-inference review.
+    - Execute FHIR ImagingStudy resource validation, an official FHIR validator, implementation-guide conformance, terminology validation, endpoint resolution, DICOM query or retrieval, source DICOM byte inspection, a server roundtrip for this review, real-workflow testing, or clinical-interoperability testing.
+    - Record INCLUDE, EXCLUDE, or DEFER for OpenTelemetry Semantic Conventions 1.43.0 and approve its bounded roles, claims, citation surface, C2R generic-telemetry assignment, attribute-absence/requirement boundary, stability boundary, event-representation/truth boundary, correlation/medical-binding boundary, analysis unit, and prohibited-inference review.
+    - Execute OpenTelemetry SDK instrumentation, Collector or exporter operation, schema or code generation, validation, ingestion, cross-signal correlation, event verification, real-workflow testing, or clinical-interoperability testing.
+    - Record INCLUDE, EXCLUDE, or DEFER for SLSA 1.2 and approve its bounded roles, claims, citation surface, C2R generic-supply-chain assignment, level/trust boundary, dependency-completeness boundary, medical-workflow boundary, analysis unit, and prohibited-inference review.
+    - Execute a SLSA verifier, build or source workflow, attestation or signature generation or verification, VSA, CI/CD or artifact route, conformance assessment, medical-event verification, real-workflow testing, or clinical-interoperability testing.
+    - Create or activate a Research Agent.
+    - State a scientific conclusion, novelty verdict, submission claim, or publication claim.
+  fail_closed_rule: If an action crosses the research-design-only boundary or depends on an unapproved source, stop at a review artifact and preserve UNKNOWN or null.
+
+human_review_required_before:
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-VIDS-2026 and completing its required source-scope fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-PROVIMAPS-2026 and completing its required access-surface and claim-scope fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-OMNI-DECISION-2026 and completing its citation-surface, reported-result, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-ODES-2026 and completing its citation-surface, technical-status, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-W3C-PROV-O and completing its citation-surface, C2R-relationship, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-DICOM-PS3-3-2025D and completing its corrected-source, citation-surface, type-semantics, Device UID/UDI-DI, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-DICOM-PS3-15-2025D and completing its citation-surface, audit/event-truth, triggering, de-identification, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-FHIR-R4-DEVICE and completing its versioned citation-surface, Device/DeviceDefinition, identifier/UDI-DI, UDI-source, readback/conformance, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-FHIR-R4-PROVENANCE and completing its versioned citation-surface, Provenance/AuditEvent, generic-relation, reference-resolution/versioning, event-truth/authenticity/authorization, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-FHIR-R4-AUDITEVENT and completing its versioned citation-surface, AuditEvent/Provenance, generic multi-actor, event-truth/completeness, policy/authorization/identity, update/delete integrity, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-FHIR-R4-IMAGINGSTUDY and completing its versioned citation-surface, generic-linkage, source-object/retrieval, identity/UDI/authorization, subset/completeness, resource-separation, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-OTEL-SEMCONV-1-43 and completing its versioned citation-surface, C2R generic-telemetry, attribute-absence/requirement, stability, event-representation/truth, correlation/medical-binding, role, claim, prohibited-inference, and analysis-unit fields.
+  - Selecting INCLUDE, EXCLUDE, or DEFER for LIT-SLSA-PROVENANCE-1-2 and completing its versioned citation-surface, C2R generic-supply-chain, level/trust, dependency-completeness, medical-workflow, role, claim, prohibited-inference, and analysis-unit fields.
+  - Approving these sources in the canonical Research Context Package.
+  - Invoking SAEE on research cases.
+  - Freezing hypotheses, baselines, metrics, or benchmark cases.
+  - Executing any experiment.
+  - Generating or accepting scientific results.
+  - Writing contribution or novelty claims for submission.

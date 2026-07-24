@@ -1,0 +1,17 @@
+# Human Review Record Template v0.1（人工复核记录模板 v0.1）
+#
+# 这是 Template（模板），不是已完成的 Review Record（复核记录）。
+# 只有明确的 Human Research Owner 可以作出最终 `APPROVED` 决定。
+# `APPROVED` 不自动修改 Context Manifest，也不创建 Agent、Permission 或 Scientific Truth。
+#
+# Allowed review_status vocabulary（允许的复核状态词表）:
+# REVIEW_PENDING, REVIEWED, APPROVED, REJECTED
+
+review_id: null
+context_id: null
+reviewer_reference: null
+review_status: REVIEW_PENDING
+review_notes: []
+approved_sources: []
+identified_unknowns: []
+timestamp: null

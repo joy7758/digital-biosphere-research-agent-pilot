@@ -22,3 +22,6 @@ ENV/
 .cache/
 tmp/
 temp/
+
+# DeepSeek local credential file（DeepSeek 本地凭据文件）
+.deepseek.env

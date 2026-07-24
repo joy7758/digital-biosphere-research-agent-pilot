@@ -1,0 +1,28 @@
+draft_id: SRD-SRC-DBA-RESEARCH-CANONICAL
+record_status: DRAFT_NOT_APPROVED
+source_id: SRC-DBA-RESEARCH-CANONICAL
+source_type: architecture_research_reference
+title: DBA Research Manifest and Canonical Research Boundaries
+origin: digital-biosphere-architecture/research-manifest.yaml; AGENTS.md; theory/agent-recommendation-gate.md
+author_or_owner: null
+version: research_manifest_schema_0.7
+publication_or_release_date: "2026-07-21"
+stable_reference: null
+content_digest: null
+content_digest_reference: ../source-verification-addendum-v0.2.yaml#SRC-DBA-RESEARCH-CANONICAL
+access_limitations:
+  - Local workspace access only.
+  - Current source files are not pinned by the observed repository HEAD; use the verified sha256 set.
+known_limitations:
+  - DBA supplies a bounded meaning and evaluation lens, not a runtime dependency.
+  - No validated universal theory, unique formal primitive, production readiness, or physical validation is established.
+  - DBA recommendations do not replace Human Research Owner decisions.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selection_decision: PENDING_HUMAN_DECISION
+non_binding_recommendation: INCLUDE_WITH_LIMITATIONS
+selected_by: null
+reviewed_by: null
+timestamp: null
+source_approval_effect: NONE
+context_binding_effect: NONE

@@ -1,0 +1,446 @@
+{
+  "run_id": "DEB-001-LITE-VALIDATION-001",
+  "experiment_id": "DEB-001-LITE",
+  "version": "v0.1",
+  "seed": 20260725,
+  "timestamp": "2026-07-24T21:15:58.925903+00:00",
+  "population_outcome": {
+    "Efficiency": {
+      "active_agents": 3,
+      "continuation_rate": 1.0,
+      "resource_summary": {
+        "min": 38.7,
+        "max": 38.7,
+        "avg": 38.7
+      },
+      "adaptation_events": 3,
+      "dropout_events": []
+    },
+    "Balance": {
+      "active_agents": 3,
+      "continuation_rate": 1.0,
+      "resource_summary": {
+        "min": 33.24,
+        "max": 33.24,
+        "avg": 33.24
+      },
+      "adaptation_events": 0,
+      "dropout_events": []
+    },
+    "Exploration": {
+      "active_agents": 3,
+      "continuation_rate": 1.0,
+      "resource_summary": {
+        "min": 31.82,
+        "max": 31.82,
+        "avg": 31.82
+      },
+      "adaptation_events": 3,
+      "dropout_events": []
+    }
+  },
+  "phase_outcome": {
+    "Stable": {
+      "start_round": 0,
+      "end_round": 3,
+      "active_agents": 9,
+      "active_delta": 0,
+      "strategies": [
+        {
+          "strategy_type": "Efficiency",
+          "active_agents": 3,
+          "avg_resource": 38.7
+        },
+        {
+          "strategy_type": "Balance",
+          "active_agents": 3,
+          "avg_resource": 33.24
+        },
+        {
+          "strategy_type": "Exploration",
+          "active_agents": 3,
+          "avg_resource": 31.82
+        }
+      ]
+    },
+    "Shock": {
+      "start_round": 3,
+      "end_round": 5,
+      "active_agents": 9,
+      "active_delta": 0,
+      "strategies": [
+        {
+          "strategy_type": "Efficiency",
+          "active_agents": 3,
+          "avg_resource": 38.7
+        },
+        {
+          "strategy_type": "Balance",
+          "active_agents": 3,
+          "avg_resource": 33.24
+        },
+        {
+          "strategy_type": "Exploration",
+          "active_agents": 3,
+          "avg_resource": 31.82
+        }
+      ]
+    },
+    "Recovery": {
+      "start_round": 5,
+      "end_round": 7,
+      "active_agents": 9,
+      "active_delta": 0,
+      "strategies": [
+        {
+          "strategy_type": "Efficiency",
+          "active_agents": 3,
+          "avg_resource": 38.7
+        },
+        {
+          "strategy_type": "Balance",
+          "active_agents": 3,
+          "avg_resource": 33.24
+        },
+        {
+          "strategy_type": "Exploration",
+          "active_agents": 3,
+          "avg_resource": 31.82
+        }
+      ]
+    }
+  },
+  "selection_observation": {
+    "continuation_changes": [
+      {
+        "phase": "Stable",
+        "strategy_type": "Efficiency",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 33.0,
+        "avg_adaptation": 0.0
+      },
+      {
+        "phase": "Stable",
+        "strategy_type": "Balance",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 29.0,
+        "avg_adaptation": 0.8
+      },
+      {
+        "phase": "Stable",
+        "strategy_type": "Exploration",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 27.6,
+        "avg_adaptation": 1.0
+      },
+      {
+        "phase": "Shock",
+        "strategy_type": "Efficiency",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 31.5,
+        "avg_adaptation": 0.8
+      },
+      {
+        "phase": "Shock",
+        "strategy_type": "Balance",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 29.32,
+        "avg_adaptation": 1.0
+      },
+      {
+        "phase": "Shock",
+        "strategy_type": "Exploration",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 27.86,
+        "avg_adaptation": 1.0
+      },
+      {
+        "phase": "Recovery",
+        "strategy_type": "Efficiency",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 38.7,
+        "avg_adaptation": 0.8
+      },
+      {
+        "phase": "Recovery",
+        "strategy_type": "Balance",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 33.24,
+        "avg_adaptation": 1.0
+      },
+      {
+        "phase": "Recovery",
+        "strategy_type": "Exploration",
+        "active_start": 3,
+        "active_end": 3,
+        "continuation_change": 0,
+        "avg_resource": 31.82,
+        "avg_adaptation": 1.0
+      }
+    ],
+    "dropout_events": [],
+    "strategy_behavior_changes": [
+      {
+        "round": 1,
+        "agent_id": "BALA1",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 1,
+        "agent_id": "BALA2",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 1,
+        "agent_id": "BALA3",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 1,
+        "agent_id": "EXPL1",
+        "strategy_type": "Exploration",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 1,
+        "agent_id": "EXPL2",
+        "strategy_type": "Exploration",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 1,
+        "agent_id": "EXPL3",
+        "strategy_type": "Exploration",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 2,
+        "agent_id": "EXPL1",
+        "strategy_type": "Exploration",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 2,
+        "agent_id": "EXPL2",
+        "strategy_type": "Exploration",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 2,
+        "agent_id": "EXPL3",
+        "strategy_type": "Exploration",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 3,
+        "agent_id": "EFFI1",
+        "strategy_type": "Efficiency",
+        "action_prev_round": "exploit",
+        "action_current": "adapt"
+      },
+      {
+        "round": 3,
+        "agent_id": "EFFI2",
+        "strategy_type": "Efficiency",
+        "action_prev_round": "exploit",
+        "action_current": "adapt"
+      },
+      {
+        "round": 3,
+        "agent_id": "EFFI3",
+        "strategy_type": "Efficiency",
+        "action_prev_round": "exploit",
+        "action_current": "adapt"
+      },
+      {
+        "round": 3,
+        "agent_id": "BALA1",
+        "strategy_type": "Balance",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 3,
+        "agent_id": "BALA2",
+        "strategy_type": "Balance",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 3,
+        "agent_id": "BALA3",
+        "strategy_type": "Balance",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 4,
+        "agent_id": "EFFI1",
+        "strategy_type": "Efficiency",
+        "action_prev_round": "adapt",
+        "action_current": "exploit"
+      },
+      {
+        "round": 4,
+        "agent_id": "EFFI2",
+        "strategy_type": "Efficiency",
+        "action_prev_round": "adapt",
+        "action_current": "exploit"
+      },
+      {
+        "round": 4,
+        "agent_id": "EFFI3",
+        "strategy_type": "Efficiency",
+        "action_prev_round": "adapt",
+        "action_current": "exploit"
+      },
+      {
+        "round": 4,
+        "agent_id": "BALA1",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 4,
+        "agent_id": "BALA2",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 4,
+        "agent_id": "BALA3",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 4,
+        "agent_id": "EXPL1",
+        "strategy_type": "Exploration",
+        "action_prev_round": "explore",
+        "action_current": "adapt"
+      },
+      {
+        "round": 4,
+        "agent_id": "EXPL2",
+        "strategy_type": "Exploration",
+        "action_prev_round": "explore",
+        "action_current": "adapt"
+      },
+      {
+        "round": 4,
+        "agent_id": "EXPL3",
+        "strategy_type": "Exploration",
+        "action_prev_round": "explore",
+        "action_current": "adapt"
+      },
+      {
+        "round": 5,
+        "agent_id": "BALA1",
+        "strategy_type": "Balance",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 5,
+        "agent_id": "BALA2",
+        "strategy_type": "Balance",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 5,
+        "agent_id": "BALA3",
+        "strategy_type": "Balance",
+        "action_prev_round": "exploit",
+        "action_current": "explore"
+      },
+      {
+        "round": 5,
+        "agent_id": "EXPL1",
+        "strategy_type": "Exploration",
+        "action_prev_round": "adapt",
+        "action_current": "explore"
+      },
+      {
+        "round": 5,
+        "agent_id": "EXPL2",
+        "strategy_type": "Exploration",
+        "action_prev_round": "adapt",
+        "action_current": "explore"
+      },
+      {
+        "round": 5,
+        "agent_id": "EXPL3",
+        "strategy_type": "Exploration",
+        "action_prev_round": "adapt",
+        "action_current": "explore"
+      },
+      {
+        "round": 6,
+        "agent_id": "BALA1",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 6,
+        "agent_id": "BALA2",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      },
+      {
+        "round": 6,
+        "agent_id": "BALA3",
+        "strategy_type": "Balance",
+        "action_prev_round": "explore",
+        "action_current": "exploit"
+      }
+    ]
+  },
+  "evidence_references": {
+    "agent_state_log": "prototype/deb001-lite-simulator/output/DEB-001-LITE-VALIDATION-001/agent_state_log.csv",
+    "selection_log": "prototype/deb001-lite-simulator/output/DEB-001-LITE-VALIDATION-001/selection_log.csv",
+    "phase_log": "prototype/deb001-lite-simulator/output/DEB-001-LITE-VALIDATION-001/phase_log.csv",
+    "outcome_log": "prototype/deb001-lite-simulator/output/DEB-001-LITE-VALIDATION-001/outcome_log.csv"
+  },
+  "notes": {
+    "scope": "DEB-001 Lite minimal dry-run compatible",
+    "reproducible": true,
+    "seed_used": 20260725,
+    "total_rounds": 7,
+    "active_agents_end": 9,
+    "observation_confidence": "minimal"
+  }
+}
