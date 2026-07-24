@@ -1,0 +1,24 @@
+# Source Document Record
+
+source_id: SRC-EOA-ADVISORY-V02
+source_type: internal_architecture_advisory
+title: EOA DBA Advisory and Clarification v0.2
+origin: /Users/zhangbin/GitHub/evidence-object-architecture/review/
+author_or_owner: null
+version: v0.2.0
+publication_or_release_date: '2026-07-20'
+stable_reference: null
+content_digest: null
+access_limitations:
+- Local workspace access only.
+- Source repository has no Git commit HEAD; files must be pinned by the verified sha256
+  set.
+known_limitations:
+- Local constraint-based advisory, not external DBA review.
+- No DBA runtime evaluation was executed.
+- Advisory recommendations are not Human Research Owner decisions.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selected_by: null
+reviewed_by: null
+timestamp: null

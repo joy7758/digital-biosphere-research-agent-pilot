@@ -1,0 +1,26 @@
+# Source Document Record
+
+source_id: SRC-UDI-DICOM-PAPER2
+source_type: accepted_manuscript
+title: A Bounded Public DICOM Metadata Audit for UDI-DICOM Evidence Readiness in Medical
+  Imaging Workflows
+origin: Journal of Imaging Informatics in Medicine; manuscript JDIM-D-26-01809R1
+author_or_owner: Bin Zhang
+version: accepted_revision_R1_v0.5
+publication_or_release_date: '2026-07-20'
+stable_reference: JDIM-D-26-01809R1
+content_digest: 2cb9f341577d923c6603150c57c9c4c7dcd9a075085e1528ed5c524dd5a42d5b
+access_limitations:
+- Local accepted-revision package and formal local ledger only.
+- No DOI, online publication, proof, issue assignment, or version-of-record evidence
+  is bound.
+known_limitations:
+- Formal status is accepted_for_publication / awaiting_production.
+- Do not transfer Paper 1 publication metadata to Paper 2.
+- No clinical, regulatory, real-device, hospital, deployment, or universal public-DICOM
+  conclusion.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selected_by: null
+reviewed_by: null
+timestamp: null

@@ -1,0 +1,25 @@
+# Source Document Record
+
+source_id: SRC-EOA-SPEC-V01
+source_type: local_research_specification
+title: Evidence Object Architecture v0.1 Specification Package
+origin: /Users/zhangbin/GitHub/evidence-object-architecture/
+author_or_owner: null
+version: v0.1.0
+publication_or_release_date: '2026-07-20'
+stable_reference: null
+content_digest: null
+access_limitations:
+- Local workspace access only.
+- Source repository has no Git commit HEAD; files must be pinned by the verified sha256
+  set.
+known_limitations:
+- Local research specification, not a validated universal theory.
+- Not a canonical DBO contract, clinical system, regulatory artifact, or deployment
+  authorization.
+- Schema validity does not establish scientific validity.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selected_by: null
+reviewed_by: null
+timestamp: null
