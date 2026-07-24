@@ -1,0 +1,22 @@
+# Prototype Authorization Record（原型授权记录）
+
+authorization_id: AUTH-PROTOTYPE-DBRAP-0001
+prototype_specification_reference: prototype/prototype-specification.md
+prototype_specification_version: v0.1
+task_definition_reference: prototype/task-definition.md
+human_interaction_model_reference: prototype/human-interaction-model.md
+readiness_gate_reference: architecture/research-agent-readiness-gate.md
+readiness_gate_status: NOT_READY
+context_reference: RCP-DBRAP-0001
+human_owner_reference: bin_zhang
+authorized_task_references: []
+allowed_tool_and_model_references: []
+prohibited_actions:
+  - "Do not process raw medical imaging data"
+  - "Do not execute unreviewed commercial release"
+valid_from: null
+valid_until: null
+decision_status: NOT_AUTHORIZED
+decision_notes: []
+decided_by: bin_zhang
+timestamp: null

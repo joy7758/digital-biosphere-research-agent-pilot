@@ -1,0 +1,30 @@
+# Human Review Record
+
+review_id: REVIEW-RCP-DBRAP-0001
+context_id: RCP-DBRAP-0001
+reviewer_reference: bin_zhang
+review_status: REVIEW_PENDING
+review_notes: []
+approved_sources:
+- SRC-DBA-RESEARCH-CANONICAL
+- SRC-DBO-CAPABILITY-AUDIT
+- SRC-EOA-ADVISORY-V02
+- SRC-EOA-BENCHMARK-V01
+- SRC-EOA-M1-REPORT
+- SRC-EOA-SPEC-V01
+- SRC-PILOT-SPEC-V01
+- SRC-SAEE-CAPABILITY-INVENTORY
+- SRC-UDI-DICOM-PAPER1
+- SRC-UDI-DICOM-PAPER2
+identified_unknowns:
+- UNK-001
+- UNK-002
+- UNK-003
+- UNK-004
+- UNK-005
+- UNK-006
+- UNK-007
+- UNK-008
+- UNK-009
+- UNK-010
+timestamp: null

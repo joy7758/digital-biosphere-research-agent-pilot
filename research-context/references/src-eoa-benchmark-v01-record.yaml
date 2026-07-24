@@ -1,0 +1,24 @@
+# Source Document Record
+
+source_id: SRC-EOA-BENCHMARK-V01
+source_type: benchmark_design
+title: Evidence Closure Benchmark Design v0.1
+origin: /Users/zhangbin/GitHub/evidence-object-architecture/docs/benchmark-design.md
+author_or_owner: null
+version: v0.1
+publication_or_release_date: '2026-07-20'
+stable_reference: null
+content_digest: null
+access_limitations:
+- Local workspace access only.
+- Source repository has no Git commit HEAD; files must be pinned by the verified sha256
+  set.
+known_limitations:
+- Five synthetic cases only.
+- Expected results are not observed Pilot results.
+- Benchmark is not preregistered or authorized.
+conflict_references: []
+human_review_status: REVIEW_PENDING
+selected_by: null
+reviewed_by: null
+timestamp: null
