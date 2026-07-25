@@ -1,0 +1,11 @@
+experiment_id,experiment_version,run_id,seed,event,phase,round,environment_multiplier,active_agents,total_agents,phase_start,phase_end
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Stable,0,1.0,9,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Stable,1,1.0,9,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Stable,2,1.0,9,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,phase_boundary,Stable,,,9,,0,3
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Shock,3,0.2316,9,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Shock,4,0.1618,8,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,phase_boundary,Shock,,,8,,3,5
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Recovery,5,0.9839,8,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,round_complete,Recovery,6,1.0865,8,9,,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,phase_boundary,Recovery,,,8,,5,7

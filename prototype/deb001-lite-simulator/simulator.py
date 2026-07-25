@@ -15,7 +15,9 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
+import random
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,6 +25,8 @@ from typing import Dict, List, Tuple
 
 
 PHASE_ORDER = ["Stable", "Shock", "Recovery"]
+EXPERIMENT_ID = "DEB-001-LITE"
+EXPERIMENT_VERSION = "v0.1"
 
 
 @dataclass
@@ -30,6 +34,9 @@ class AgentState:
     agent_id: str
     strategy: str
     resource: float
+    strategy_origin: str
+    generation: int
+    continuation_bias: float
     active: bool = True
     last_action: str = ""
     lineage_id: str = ""
@@ -38,33 +45,57 @@ class AgentState:
     dropout_reason: str = ""
     adaptation_events: int = 0
     adaptation_level: float = 0.0
+    last_continuation_score: float = 0.0
+    last_continuation_threshold: float = 0.0
 
 
 def create_agents() -> List[AgentState]:
     """Create nine agents: 3 per strategy."""
     agents: List[AgentState] = []
-    index = 1
-    for strategy in ("Efficiency", "Balance", "Exploration"):
+    for strategy, lineage_prefix in (
+        ("Efficiency", "EFF"),
+        ("Balance", "BAL"),
+        ("Exploration", "EXP"),
+    ):
         for i in range(3):
             agents.append(
                 AgentState(
                     agent_id=f"{strategy[:4].upper()}{i + 1}",
                     strategy=strategy,
                     resource=24.0,
-                    lineage_id=f"{strategy[:1]}-lineage-{i + 1}",
+                    strategy_origin=strategy,
+                    generation=0,
+                    continuation_bias=(-0.06, 0.0, 0.06)[i],
+                    lineage_id=f"{lineage_prefix}-lineage-{i + 1}",
                 )
             )
-            index += 1
     return agents
+
+
+def create_environment_schedule(
+    stable_rounds: int,
+    shock_rounds: int,
+    recovery_rounds: int,
+    seed: int,
+) -> Dict[str, List[float]]:
+    """Create fair, seed-controlled environment multipliers for every round."""
+    rng = random.Random(seed)
+    return {
+        "Stable": [1.0 for _ in range(stable_rounds)],
+        "Shock": [
+            round(rng.uniform(0.12, 0.28), 4) for _ in range(shock_rounds)
+        ],
+        "Recovery": [
+            round(rng.uniform(0.95, 1.20), 4) for _ in range(recovery_rounds)
+        ],
+    }
 
 
 def strategy_action(agent: AgentState, phase: str, round_in_phase: int) -> str:
     """Rule-based action selection for one agent."""
     if agent.strategy == "Efficiency":
         if phase == "Shock":
-            if agent.resource < 10.0:
-                return "adapt"
-            if round_in_phase % 4 == 0:
+            if agent.resource < 18.0:
                 return "adapt"
             return "exploit"
         if phase == "Recovery":
@@ -90,75 +121,119 @@ def action_profile(strategy: str, action: str) -> Tuple[float, float]:
     """Return (reward, cost)."""
     if strategy == "Efficiency":
         if action == "exploit":
-            return 6.0, 3.0
-        return 3.0, 1.5
+            return 7.0, 3.0
+        return 2.5, 2.0
 
     if strategy == "Balance":
         if action == "explore":
-            return 3.2, 1.8
-        return 4.0, 2.2
+            return 3.2, 2.0
+        return 4.5, 2.5
 
     # Exploration strategy
     if action == "explore":
-        return 3.8, 2.2
+        return 3.0, 2.2
     if action == "adapt":
         return 2.8, 1.5
-    return 2.4, 2.0
+    return 2.2, 2.0
 
 
-def evaluation_step(agent: AgentState, phase: str, action: str) -> Tuple[float, str, bool]:
+def evaluation_step(
+    agent: AgentState,
+    phase: str,
+    action: str,
+    environment_multiplier: float,
+) -> Tuple[float, str, bool, float, float]:
     """Apply resource dynamics and determine continuation state."""
     reward, cost = action_profile(agent.strategy, action)
-
-    # Global phase multipliers define environment influence.
-    if phase == "Shock":
-        reward *= 0.6
-    elif phase == "Recovery":
-        reward *= 1.1
+    reward *= environment_multiplier
 
     # Penalty for mismatch under shock.
     penalty = 0.0
+    scarcity_cost = 4.5 if phase == "Shock" else 0.0
     mismatch = False
     mismatch_reason = ""
     if phase == "Shock":
         if agent.strategy == "Efficiency" and action == "exploit":
-            penalty = 2.4
+            penalty = 4.5
             mismatch = True
             mismatch_reason = "Efficiency strategy did not adapt in shock"
-        if agent.strategy == "Balance" and action == "exploit" and agent.resource < 7.0:
-            penalty = 1.2
+        if agent.strategy == "Balance" and action == "exploit" and agent.resource < 12.0:
+            penalty = 1.0
             mismatch = True
             mismatch_reason = "Balance exploit under low resource in shock"
 
     # Adaptation support for future rounds.
-    adaptation_delta = 0.8 if action in {"adapt", "explore"} else 0.0
+    adaptation_delta = 0.35 if action == "adapt" else 0.20 if action == "explore" else 0.0
     if action == "adapt":
         agent.adaptation_events += 1
 
-    delta = reward - cost - penalty
+    delta = reward - cost - penalty - scarcity_cost
     agent.resource += delta
     agent.adaptation_level = min(1.0, agent.adaptation_level + adaptation_delta)
     agent.last_action = action
+
+    adaptation_component = 0.0
+    behavior_component = 0.0
+    continuation_threshold = 0.20
+    if phase == "Shock":
+        adaptation_component = 0.35 * agent.adaptation_level
+        continuation_threshold = 0.35
+        if action == "adapt":
+            behavior_component = 0.15
+        elif action == "explore":
+            behavior_component = 0.10
+        elif agent.strategy == "Efficiency":
+            behavior_component = -0.25
+        else:
+            behavior_component = -0.05
+    elif phase == "Recovery":
+        adaptation_component = 0.25 * agent.adaptation_level
+        continuation_threshold = 0.25
+        behavior_component = 0.10 if action in {"adapt", "explore"} else 0.05
+
+    continuation_score = (
+        max(0.0, agent.resource / 24.0)
+        + adaptation_component
+        + behavior_component
+        + agent.continuation_bias
+    )
+    agent.last_continuation_score = continuation_score
+    agent.last_continuation_threshold = continuation_threshold
 
     reason = ""
     if agent.resource <= 0:
         agent.active = False
         reason = "resource exhausted"
-    elif phase == "Shock" and action == "exploit" and mismatch and agent.resource < 4:
+    elif continuation_score < continuation_threshold:
         agent.active = False
-        reason = mismatch_reason
+        reason = (
+            f"continuation score {continuation_score:.4f} below "
+            f"threshold {continuation_threshold:.4f}"
+        )
+        if mismatch_reason:
+            reason = f"{reason}; {mismatch_reason}"
 
     if not agent.active and not reason:
         reason = "continuation threshold"
 
-    if not agent.active and agent.dropout_round is None:
-        agent.dropout_round = agent.continuation_events
-        agent.dropout_reason = reason
-
     agent.continuation_events += 1
 
-    continuation_score = max(0.0, agent.resource / 24.0)
-    return delta, reason, mismatch
+    return (
+        delta,
+        reason,
+        mismatch,
+        continuation_score,
+        continuation_threshold,
+    )
+
+
+def sha256_file(path: Path) -> str:
+    """Return the SHA-256 digest for one evidence file."""
+    digest = hashlib.sha256()
+    with path.open("rb") as artifact:
+        for chunk in iter(lambda: artifact.read(65536), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def run_simulation(
@@ -175,6 +250,12 @@ def run_simulation(
         ("Shock", shock_rounds),
         ("Recovery", recovery_rounds),
     ]
+    environment_schedule = create_environment_schedule(
+        stable_rounds=stable_rounds,
+        shock_rounds=shock_rounds,
+        recovery_rounds=recovery_rounds,
+        seed=seed,
+    )
 
     timestamp = datetime.now(timezone.utc).isoformat()
 
@@ -206,6 +287,7 @@ def run_simulation(
         }
 
         for round_in_phase in range(max_round):
+            environment_multiplier = environment_schedule[phase][round_in_phase]
             for agent in agents:
                 if not agent.active:
                     continue
@@ -214,48 +296,88 @@ def run_simulation(
                 prev_resource = agent.resource
                 prev_active = agent.active
                 prev_action = agent.last_action
+                state_before = "ACTIVE" if prev_active else "DROPPED"
 
-                resource_delta, dropout_reason, mismatch = evaluation_step(
-                    agent, phase, action
+                (
+                    resource_delta,
+                    dropout_reason,
+                    mismatch,
+                    continuation_score,
+                    continuation_threshold,
+                ) = evaluation_step(
+                    agent,
+                    phase,
+                    action,
+                    environment_multiplier,
                 )
+                state_after = "ACTIVE" if agent.active else "DROPPED"
+                state_transition = f"{state_before}->{state_after}"
 
                 # state log
                 agent_rows.append(
                     {
+                        "experiment_id": EXPERIMENT_ID,
+                        "experiment_version": EXPERIMENT_VERSION,
                         "run_id": run_id,
+                        "seed": seed,
                         "phase": phase,
                         "round": total_round,
                         "round_in_phase": round_in_phase,
+                        "environment_multiplier": environment_multiplier,
                         "agent_id": agent.agent_id,
                         "lineage_id": agent.lineage_id,
+                        "strategy_origin": agent.strategy_origin,
+                        "generation": agent.generation,
                         "strategy_type": agent.strategy,
+                        "continuation_bias": agent.continuation_bias,
                         "action_id": action,
                         "resource_before": round(prev_resource, 4),
                         "resource_delta": round(resource_delta, 4),
                         "resource_after": round(agent.resource, 4),
                         "active": agent.active,
                         "adaptation_level": round(agent.adaptation_level, 4),
+                        "continuation_score": round(continuation_score, 4),
+                        "continuation_threshold": round(continuation_threshold, 4),
+                        "state_before": state_before,
+                        "state_after": state_after,
+                        "state_transition": state_transition,
                     }
                 )
 
                 selection_rows.append(
                     {
+                        "experiment_id": EXPERIMENT_ID,
+                        "experiment_version": EXPERIMENT_VERSION,
                         "run_id": run_id,
+                        "seed": seed,
                         "round": total_round,
                         "agent_id": agent.agent_id,
+                        "lineage_id": agent.lineage_id,
+                        "strategy_origin": agent.strategy_origin,
+                        "generation": agent.generation,
                         "strategy_type": agent.strategy,
+                        "continuation_score": round(continuation_score, 4),
+                        "continuation_threshold": round(continuation_threshold, 4),
                         "continuation_state": "ACTIVE" if agent.active else "DROPPED",
                         "continuation_reason": dropout_reason if not agent.active else "",
+                        "state_before": state_before,
+                        "state_after": state_after,
+                        "state_transition": state_transition,
                         "phase": phase,
                         "mismatch": mismatch,
                     }
                 )
 
                 if prev_active and not agent.active:
+                    agent.dropout_round = total_round
+                    agent.dropout_reason = dropout_reason
                     dropouts.append(
                         {
                             "round": total_round,
                             "agent_id": agent.agent_id,
+                            "lineage_id": agent.lineage_id,
+                            "strategy_origin": agent.strategy_origin,
+                            "generation": agent.generation,
                             "strategy_type": agent.strategy,
                             "phase": phase,
                             "reason": dropout_reason,
@@ -276,23 +398,42 @@ def run_simulation(
                 if prev_active and not agent.active:
                     outcome_rows.append(
                         {
+                            "experiment_id": EXPERIMENT_ID,
+                            "experiment_version": EXPERIMENT_VERSION,
                             "run_id": run_id,
+                            "seed": seed,
                             "phase": phase,
                             "round": total_round,
                             "agent_id": agent.agent_id,
+                            "lineage_id": agent.lineage_id,
+                            "strategy_origin": agent.strategy_origin,
+                            "generation": agent.generation,
                             "strategy_type": agent.strategy,
                             "event": "dropout",
+                            "action_id": action,
                             "resource": round(agent.resource, 4),
+                            "continuation_score": round(continuation_score, 4),
+                            "continuation_threshold": round(
+                                continuation_threshold,
+                                4,
+                            ),
+                            "state_before": state_before,
+                            "state_after": state_after,
+                            "state_transition": state_transition,
                             "reason": dropout_reason,
                         }
                     )
 
             phase_rows.append(
                 {
+                    "experiment_id": EXPERIMENT_ID,
+                    "experiment_version": EXPERIMENT_VERSION,
                     "run_id": run_id,
+                    "seed": seed,
                     "event": "round_complete",
                     "phase": phase,
                     "round": total_round,
+                    "environment_multiplier": environment_multiplier,
                     "active_agents": sum(1 for a in agents if a.active),
                     "total_agents": len(agents),
                 }
@@ -302,9 +443,13 @@ def run_simulation(
 
         phase_rows.append(
             {
+                "experiment_id": EXPERIMENT_ID,
+                "experiment_version": EXPERIMENT_VERSION,
                 "run_id": run_id,
+                "seed": seed,
                 "event": "phase_boundary",
                 "phase": phase,
+                "environment_multiplier": "",
                 "phase_start": start_round,
                 "phase_end": total_round,
                 "active_agents": sum(1 for a in agents if a.active),
@@ -312,6 +457,35 @@ def run_simulation(
         )
 
         active_now = sum(1 for a in agents if a.active)
+        strategy_snapshots: List[Dict] = []
+        for strategy in ("Efficiency", "Balance", "Exploration"):
+            strategy_agents = [a for a in agents if a.strategy == strategy]
+            strategy_active = sum(1 for a in strategy_agents if a.active)
+            strategy_snapshots.append(
+                {
+                    "strategy_type": strategy,
+                    "active_agents": strategy_active,
+                    "continuation_rate": round(
+                        strategy_active / len(strategy_agents),
+                        4,
+                    ),
+                    "resource_summary": {
+                        "min": round(min(a.resource for a in strategy_agents), 4),
+                        "max": round(max(a.resource for a in strategy_agents), 4),
+                        "avg": round(
+                            sum(a.resource for a in strategy_agents)
+                            / len(strategy_agents),
+                            4,
+                        ),
+                    },
+                    "avg_adaptation": round(
+                        sum(a.adaptation_level for a in strategy_agents)
+                        / len(strategy_agents),
+                        4,
+                    ),
+                }
+            )
+
         phase_bounds[phase] = {
             "start_round": start_round,
             "end_round": total_round,
@@ -325,6 +499,8 @@ def run_simulation(
                 )
                 for strategy in ("Efficiency", "Balance", "Exploration")
             },
+            "strategies": strategy_snapshots,
+            "environment_multipliers": environment_schedule[phase],
         }
         for strategy in ("Efficiency", "Balance", "Exploration"):
             strat_agents = [a for a in agents if a.strategy == strategy]
@@ -352,6 +528,34 @@ def run_simulation(
     for agent in agents:
         if not agent.active and agent.dropout_round is None:
             agent.dropout_round = total_round
+        terminal_state = "ACTIVE" if agent.active else "DROPPED"
+        outcome_rows.append(
+            {
+                "experiment_id": EXPERIMENT_ID,
+                "experiment_version": EXPERIMENT_VERSION,
+                "run_id": run_id,
+                "seed": seed,
+                "phase": "Terminal",
+                "round": total_round,
+                "agent_id": agent.agent_id,
+                "lineage_id": agent.lineage_id,
+                "strategy_origin": agent.strategy_origin,
+                "generation": agent.generation,
+                "strategy_type": agent.strategy,
+                "event": "final_status",
+                "action_id": agent.last_action,
+                "resource": round(agent.resource, 4),
+                "continuation_score": round(agent.last_continuation_score, 4),
+                "continuation_threshold": round(
+                    agent.last_continuation_threshold,
+                    4,
+                ),
+                "state_before": terminal_state,
+                "state_after": terminal_state,
+                "state_transition": f"{terminal_state}->{terminal_state}",
+                "reason": agent.dropout_reason if not agent.active else "",
+            }
+        )
 
     population_outcome: Dict[str, Dict] = {}
     for strategy in ("Efficiency", "Balance", "Exploration"):
@@ -374,31 +578,22 @@ def run_simulation(
     phase_outcome: Dict[str, Dict] = {}
     for phase in PHASE_ORDER:
         info = phase_bounds[phase]
-        phase_strat = [
-            {
-                "strategy_type": strategy,
-                "active_agents": sum(
-                    1 for a in agents if a.strategy == strategy and a.active
-                ),
-                "avg_resource": round(
-                    sum(a.resource for a in agents if a.strategy == strategy) / 3,
-                    4,
-                ),
-            }
-            for strategy in ("Efficiency", "Balance", "Exploration")
-        ]
         phase_outcome[phase] = {
             "start_round": info["start_round"],
             "end_round": info["end_round"],
             "active_agents": info["active_agents"],
             "active_delta": info["active_delta"],
-            "strategies": phase_strat,
+            "environment_multipliers": info["environment_multipliers"],
+            "strategies": info["strategies"],
+            "observation_notes": (
+                "Local workflow-validation snapshot; not a scientific conclusion."
+            ),
         }
 
     minimal_result = {
         "run_id": run_id,
-        "experiment_id": "DEB-001-LITE",
-        "version": "v0.1",
+        "experiment_id": EXPERIMENT_ID,
+        "version": EXPERIMENT_VERSION,
         "seed": seed,
         "timestamp": timestamp,
         "population_outcome": population_outcome,
@@ -408,15 +603,11 @@ def run_simulation(
             "dropout_events": dropouts,
             "strategy_behavior_changes": behavior_changes,
         },
-        "evidence_references": {
-            "agent_state_log": str(agent_state_log_path),
-            "selection_log": str(selection_log_path),
-            "phase_log": str(phase_log_path),
-            "outcome_log": str(outcome_log_path),
-        },
+        "evidence_references": {},
         "notes": {
             "scope": "DEB-001 Lite minimal dry-run compatible",
-            "reproducible": True,
+            "deterministic_seed_policy": True,
+            "independent_replay_verified": False,
             "seed_used": seed,
             "total_rounds": total_round,
             "active_agents_end": sum(1 for a in agents if a.active),
@@ -428,19 +619,31 @@ def run_simulation(
         writer = csv.DictWriter(
             f,
             fieldnames=[
+                "experiment_id",
+                "experiment_version",
                 "run_id",
+                "seed",
                 "phase",
                 "round",
                 "round_in_phase",
+                "environment_multiplier",
                 "agent_id",
                 "lineage_id",
+                "strategy_origin",
+                "generation",
                 "strategy_type",
+                "continuation_bias",
                 "action_id",
                 "resource_before",
                 "resource_delta",
                 "resource_after",
                 "active",
                 "adaptation_level",
+                "continuation_score",
+                "continuation_threshold",
+                "state_before",
+                "state_after",
+                "state_transition",
             ],
         )
         writer.writeheader()
@@ -450,12 +653,23 @@ def run_simulation(
         writer = csv.DictWriter(
             f,
             fieldnames=[
+                "experiment_id",
+                "experiment_version",
                 "run_id",
+                "seed",
                 "round",
                 "agent_id",
+                "lineage_id",
+                "strategy_origin",
+                "generation",
                 "strategy_type",
+                "continuation_score",
+                "continuation_threshold",
                 "continuation_state",
                 "continuation_reason",
+                "state_before",
+                "state_after",
+                "state_transition",
                 "phase",
                 "mismatch",
             ],
@@ -466,7 +680,20 @@ def run_simulation(
     with phase_log_path.open("w", newline="") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["run_id", "event", "phase", "round", "active_agents", "total_agents", "phase_start", "phase_end"],
+            fieldnames=[
+                "experiment_id",
+                "experiment_version",
+                "run_id",
+                "seed",
+                "event",
+                "phase",
+                "round",
+                "environment_multiplier",
+                "active_agents",
+                "total_agents",
+                "phase_start",
+                "phase_end",
+            ],
         )
         writer.writeheader()
         for row in phase_rows:
@@ -478,18 +705,46 @@ def run_simulation(
         writer = csv.DictWriter(
             f,
             fieldnames=[
+                "experiment_id",
+                "experiment_version",
                 "run_id",
+                "seed",
                 "phase",
                 "round",
                 "agent_id",
+                "lineage_id",
+                "strategy_origin",
+                "generation",
                 "strategy_type",
                 "event",
+                "action_id",
                 "resource",
+                "continuation_score",
+                "continuation_threshold",
+                "state_before",
+                "state_after",
+                "state_transition",
                 "reason",
             ],
         )
         writer.writeheader()
         writer.writerows(outcome_rows)
+
+    evidence_paths = {
+        "agent_state_log": agent_state_log_path,
+        "selection_log": selection_log_path,
+        "phase_log": phase_log_path,
+        "outcome_log": outcome_log_path,
+    }
+    minimal_result["evidence_references"] = {
+        evidence_name: {
+            "source_id": f"{run_id}:{evidence_name}",
+            "location": str(evidence_path),
+            "hash_algorithm": "sha256",
+            "sha256": sha256_file(evidence_path),
+        }
+        for evidence_name, evidence_path in evidence_paths.items()
+    }
 
     result_path = output_dir / "DEB-001-LITE-MINIMAL-RESULT-v0.1.json"
     with result_path.open("w") as f:

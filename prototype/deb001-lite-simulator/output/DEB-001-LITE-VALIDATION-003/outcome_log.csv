@@ -1,0 +1,11 @@
+experiment_id,experiment_version,run_id,seed,phase,round,agent_id,lineage_id,strategy_origin,generation,strategy_type,event,action_id,resource,continuation_score,continuation_threshold,state_before,state_after,state_transition,reason
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Shock,4,EFFI1,EFF-lineage-1,Efficiency,0,Efficiency,dropout,exploit,14.7538,0.3047,0.35,ACTIVE,DROPPED,ACTIVE->DROPPED,continuation score 0.3047 below threshold 0.3500; Efficiency strategy did not adapt in shock
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,EFFI1,EFF-lineage-1,Efficiency,0,Efficiency,final_status,exploit,14.7538,0.3047,0.35,DROPPED,DROPPED,DROPPED->DROPPED,continuation score 0.3047 below threshold 0.3500; Efficiency strategy did not adapt in shock
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,EFFI2,EFF-lineage-2,Efficiency,0,Efficiency,final_status,exploit,23.2466,1.0186,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,EFFI3,EFF-lineage-3,Efficiency,0,Efficiency,final_status,exploit,23.2466,1.0786,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,BALA1,BAL-lineage-1,Balance,0,Balance,final_status,exploit,20.7069,1.0028,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,BALA2,BAL-lineage-2,Balance,0,Balance,final_status,exploit,20.7069,1.0628,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,BALA3,BAL-lineage-3,Balance,0,Balance,final_status,exploit,20.7069,1.1228,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,EXPL1,EXP-lineage-1,Exploration,0,Exploration,final_status,explore,16.059,0.9591,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,EXPL2,EXP-lineage-2,Exploration,0,Exploration,final_status,explore,16.059,1.0191,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
+DEB-001-LITE,v0.1,DEB-001-LITE-VALIDATION-003,20260725,Terminal,7,EXPL3,EXP-lineage-3,Exploration,0,Exploration,final_status,explore,16.059,1.0791,0.25,ACTIVE,ACTIVE,ACTIVE->ACTIVE,
